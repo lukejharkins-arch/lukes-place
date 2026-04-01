@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Luke's Place</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0c0b14;--bg2:#13121f;
+  --su:rgba(255,255,255,0.04);--su2:rgba(255,255,255,0.08);
+  --bd:rgba(255,255,255,0.08);--bd2:rgba(255,255,255,0.15);
+  --tx:rgba(255,255,255,0.92);--mu:rgba(255,255,255,0.45);--mu2:rgba(255,255,255,0.22);
+  --gold:#c8a96e;--gold2:#f0d49a;--gd:rgba(200,169,110,0.12);--gb:rgba(200,169,110,0.3);
+  --grn:#4ade80;--r:12px;--rs:8px;--rl:18px;
+}
+html,body{height:100%;overflow:hidden}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);display:flex;flex-direction:column}
+
+/* ── NAV ── */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;height:52px;border-bottom:1px solid var(--bd);background:rgba(12,11,20,0.98);flex-shrink:0;gap:.75rem;z-index:50}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;color:var(--gold);white-space:nowrap;flex-shrink:0}
+.logo em{color:var(--mu);font-style:normal;font-weight:400;font-size:11px;margin-left:6px}
+.nav-tabs{display:flex;gap:2px;background:var(--su);border:1px solid var(--bd);border-radius:32px;padding:3px;flex-shrink:0}
+.ntab{padding:5px 14px;border-radius:24px;border:none;background:transparent;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--mu);transition:all .18s;white-space:nowrap}
+.ntab.on{background:var(--su2);color:var(--tx);border:1px solid var(--bd2)}
+.nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.env-tog{display:flex;background:var(--su);border:1px solid var(--bd);border-radius:32px;padding:3px;gap:2px}
+.env-btn{padding:4px 10px;border-radius:20px;border:none;background:transparent;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;color:var(--mu);transition:all .18s;white-space:nowrap}
+.env-btn.on{background:var(--su2);color:var(--tx);border:1px solid var(--bd2)}
+.key-btn{padding:4px 10px;border-radius:20px;border:1px solid var(--bd);background:transparent;font-family:'DM Sans',sans-serif;font-size:10px;color:var(--mu2);cursor:pointer;white-space:nowrap}
+.key-btn:hover{border-color:var(--bd2);color:var(--mu)}
+
+/* ── VIEWS ── */
+.view{display:none;flex:1;overflow:hidden;flex-direction:column}
+.view.on{display:flex}
+.view.row{flex-direction:row}
+
+/* ── SIDEBAR ── */
+.sb{width:200px;border-right:1px solid var(--bd);display:flex;flex-direction:column;flex-shrink:0;background:rgba(8,7,16,0.8)}
+.sb-hd{padding:.75rem .875rem .6rem;border-bottom:1px solid var(--bd)}
+.sb-ht{font-size:9px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu2)}
+.sb-sub{font-size:9px;color:var(--mu2);margin-top:2px;line-height:1.4}
+.sb-srch{padding:.4rem .5rem;border-bottom:1px solid var(--bd)}
+.sb-srch input{width:100%;background:var(--su);border:1px solid var(--bd);border-radius:6px;padding:4px 9px;font-family:'DM Sans',sans-serif;font-size:10px;color:var(--tx);outline:none}
+.sb-srch input::placeholder{color:var(--mu2)}
+.sb-body{flex:1;overflow-y:auto;padding:.3rem}
+.sb-body::-webkit-scrollbar{width:0}
+.cat-lbl{font-size:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:8px 8px 3px;color:var(--mu2)}
+.mi{display:flex;align-items:center;gap:7px;padding:5px 7px;border-radius:6px;border:1px solid transparent;margin-bottom:1px;transition:all .12s}
+.mi:hover{background:var(--su)}
+.mi.on{background:var(--su);border-color:var(--bd2)}
+.mi.off{opacity:.28}
+.mi.sel{border-color:var(--gb)!important;background:var(--gd)!important;opacity:1!important}
+.mi-av{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;flex-shrink:0;border:1px solid rgba(255,255,255,0.08)}
+.mi-info{flex:1;min-width:0}
+.mi-name{font-size:10px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mi-role{font-size:8px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mi-star{font-size:8px;color:var(--gold);opacity:0;flex-shrink:0;transition:opacity .2s}
+.mi.sel .mi-star{opacity:1}
+.mi-tog{width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.2);flex-shrink:0;cursor:pointer;transition:all .12s}
+.mi-tog.on{background:var(--gold);border-color:var(--gold)}
+.sb-ft{padding:.6rem .875rem;border-top:1px solid var(--bd)}
+.sb-ct{font-size:10px;color:var(--mu2)}
+.sb-ct strong{color:var(--gold);font-size:16px;display:block;font-family:'Syne',sans-serif;font-weight:800}
+.sb-leg{font-size:9px;color:var(--gold2);margin-top:5px;padding:4px 7px;background:var(--gd);border-radius:5px;border:1px solid var(--gb);display:none}
+
+/* ── CHAT ── */
+.chat{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.mw{flex:1;overflow-y:auto;padding:1.25rem 1.5rem .5rem}
+.mw::-webkit-scrollbar{width:4px}
+.mw::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:4px}
+.empty-st{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:2rem}
+.eg{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:var(--gold);opacity:.08;line-height:1}
+.et{font-family:'Syne',sans-serif;font-weight:700;font-size:17px;color:var(--mu)}
+.es{font-size:12px;color:var(--mu2);line-height:1.6;max-width:340px}
+.msg{display:flex;gap:10px;margin-bottom:1.1rem;animation:fu .25s ease}
+@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.mav{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;flex-shrink:0;margin-top:2px}
+.mbody{flex:1;max-width:640px}
+.mmeta{display:flex;align-items:baseline;gap:6px;margin-bottom:4px}
+.mname{font-size:11px;font-weight:600}
+.mtag{font-size:8px;color:var(--mu2);background:var(--su);padding:1px 6px;border-radius:7px;border:1px solid var(--bd)}
+.mtext{font-size:13px;line-height:1.65;color:rgba(255,255,255,.76)}
+.divider{display:flex;align-items:center;gap:10px;margin:.75rem 0}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--bd)}
+.divider span{font-size:9px;color:var(--mu2);white-space:nowrap}
+.banner{background:var(--gd);border:1px solid var(--gb);border-radius:var(--rs);padding:7px 11px;margin-bottom:.875rem;font-size:10px;color:var(--gold2);line-height:1.5}
+.errmsg{background:rgba(255,80,80,0.08);border:1px solid rgba(255,80,80,0.2);border-radius:var(--rs);padding:11px 14px;font-size:12px;color:#ff9090;line-height:1.6;margin:.875rem 0}
+
+/* ── INPUT ── */
+.ia{padding:.75rem 1.25rem .875rem;border-top:1px solid var(--bd);background:rgba(8,7,16,0.85);flex-shrink:0}
+.ctx-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.ctx-lbl{font-size:10px;color:var(--mu2);white-space:nowrap;font-weight:500}
+.ctx-box{flex:1;background:var(--su);border:1px solid var(--bd);border-radius:var(--rs);padding:5px 11px}
+.ctx-inp{width:100%;background:transparent;border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:11px;color:var(--mu)}
+.ctx-inp::placeholder{color:var(--mu2)}
+.t-row{display:flex;gap:8px}
+.t-inp{flex:1;background:var(--su);border:1px solid var(--bd);border-radius:var(--r);padding:9px 14px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--tx);outline:none;transition:border-color .15s}
+.t-inp:focus{border-color:var(--gold)}
+.t-inp::placeholder{color:var(--mu2)}
+.go-btn{padding:9px 18px;border-radius:var(--r);border:none;background:var(--gold);color:#0c0b14;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;transition:opacity .2s}
+.go-btn:disabled{opacity:.4;cursor:not-allowed}
+.go-btn:hover:not(:disabled){opacity:.85}
+
+/* ── RIGHT PANEL ── */
+.rp{width:196px;border-left:1px solid var(--bd);display:flex;flex-direction:column;background:rgba(8,7,16,0.8);flex-shrink:0;overflow-y:auto}
+.rp::-webkit-scrollbar{width:0}
+.rps{padding:.875rem;border-bottom:1px solid var(--bd)}
+.rpt{font-size:8px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu2);margin-bottom:.65rem}
+.rpe{font-size:10px;color:var(--mu2);line-height:1.5}
+.tk-list,.ac-list{display:flex;flex-direction:column;gap:5px}
+.tki,.aci{font-size:10px;color:rgba(255,255,255,.62);line-height:1.5;display:flex;gap:5px}
+.tki::before{content:'·';color:var(--gold);flex-shrink:0;font-weight:700}
+.aci::before{content:'→';color:var(--gold);flex-shrink:0;font-size:9px;margin-top:1px}
+.mvp-c{background:var(--gd);border:1px solid var(--gb);border-radius:var(--rs);padding:9px}
+.mvp-av{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;margin-bottom:5px}
+.mvp-n{font-size:11px;font-weight:600;color:var(--gold2);margin-bottom:2px}
+.mvp-w{font-size:9px;color:var(--mu);line-height:1.5}
+.lb-list{display:flex;flex-direction:column;gap:2px}
+.lbr{display:flex;align-items:center;gap:6px;padding:4px 3px}
+.lb-rk{font-size:9px;color:var(--mu2);width:12px;text-align:center;flex-shrink:0}
+.lb-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.lb-n{font-size:10px;flex:1;color:rgba(255,255,255,.55)}
+.lb-pts{font-size:10px;font-weight:600;color:var(--mu)}
+
+/* ── STATS VIEW ── */
+.sv{overflow-y:auto;padding:1.5rem}
+.sv::-webkit-scrollbar{width:4px}
+.sv::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:4px}
+.sec-title{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;letter-spacing:-.5px;margin-bottom:4px}
+.sec-sub{font-size:12px;color:var(--mu);margin-bottom:1.25rem}
+.scards{display:grid;grid-template-columns:repeat(4,1fr);gap:.875rem;margin-bottom:1.25rem}
+.sc{background:var(--bg2);border:1px solid var(--bd);border-radius:var(--r);padding:1rem}
+.sc.gc{border-color:var(--gb);background:var(--gd)}
+.sc-lbl{font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--mu2);margin-bottom:.4rem}
+.sc-num{font-family:'Syne',sans-serif;font-weight:800;font-size:28px;letter-spacing:-1px;color:var(--tx);line-height:1}
+.sc.gc .sc-num{color:var(--gold2)}
+.sc-d{font-size:10px;color:var(--mu2);margin-top:3px}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:.875rem;margin-bottom:1.25rem}
+.dp{background:var(--bg2);border:1px solid var(--bd);border-radius:var(--r);padding:1rem}
+.dp-t{font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--mu2);margin-bottom:.875rem}
+.achart{display:flex;align-items:flex-end;gap:5px;height:72px}
+.abw{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px}
+.ab{width:100%;border-radius:3px 3px 0 0;background:var(--su2);min-height:2px;transition:height .4s}
+.ab.hd{background:linear-gradient(180deg,var(--gold) 0%,rgba(200,169,110,.3) 100%)}
+.abl{font-size:8px;color:var(--mu2)}
+.mu-list{display:flex;flex-direction:column;gap:6px}
+.mu-row{display:flex;align-items:center;gap:7px}
+.mu-av{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:6px;font-weight:700;flex-shrink:0}
+.mu-nm{font-size:9px;color:var(--mu);width:58px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mu-bw{flex:1;height:4px;background:var(--su);border-radius:2px;overflow:hidden}
+.mu-b{height:100%;border-radius:2px}
+.mu-ct{font-size:8px;color:var(--mu2);width:18px;text-align:right;flex-shrink:0}
+.t-tags{display:flex;flex-wrap:wrap;gap:5px}
+.ttag{padding:3px 8px;border-radius:20px;font-size:10px;background:var(--su);border:1px solid var(--bd);color:var(--mu)}
+.ttag.f3{background:var(--gd);border-color:var(--gb);color:var(--gold2)}
+.ttag.f2{background:var(--su2);border-color:var(--bd2);color:rgba(255,255,255,.6)}
+.slog-list{display:flex;flex-direction:column;gap:6px;max-height:200px;overflow-y:auto}
+.slog-list::-webkit-scrollbar{width:0}
+.slr{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:var(--rs);background:var(--su);border:1px solid var(--bd)}
+.sl-env{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.sl-env.sunday{background:var(--gold)}
+.sl-env.boardroom{background:#6090ff}
+.sl-body{flex:1;min-width:0}
+.sl-topic{font-size:10px;color:var(--tx);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:1px}
+.sl-meta{font-size:8px;color:var(--mu2)}
+.sl-mvp{font-size:8px;padding:2px 5px;border-radius:6px;background:var(--gd);color:var(--gold2);border:1px solid var(--gb);white-space:nowrap;flex-shrink:0}
+.no-data{font-size:11px;color:var(--mu2);padding:.75rem 0}
+
+/* ── TROPHY VIEW ── */
+.tv{overflow-y:auto;padding:1.5rem}
+.tv::-webkit-scrollbar{width:4px}
+.tv::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:4px}
+.cat-pills{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:1.1rem}
+.cpill{padding:3px 11px;border-radius:20px;font-size:10px;font-weight:500;border:1px solid var(--bd);background:transparent;color:var(--mu);cursor:pointer;transition:all .15s}
+.cpill.on{border-color:var(--gb);background:var(--gd);color:var(--gold2)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:1rem}
+.tc{background:var(--bg2);border:1px solid var(--bd);border-radius:var(--rl);padding:1.25rem;position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
+.tc:hover{transform:translateY(-2px);border-color:var(--bd2)}
+.tc.active-m{border-color:var(--gb)}
+.tc-glow{position:absolute;top:-30px;right:-30px;width:90px;height:90px;border-radius:50%;opacity:.06;pointer-events:none}
+.tc-crown{position:absolute;top:9px;right:9px;font-size:13px}
+.tc-status{position:absolute;bottom:9px;right:9px;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--bg2)}
+.tc-status.active{background:var(--grn)}
+.tc-status.inactive{background:var(--mu2)}
+.tc-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:.875rem}
+.tc-portrait{width:64px;height:64px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2.5px solid rgba(255,255,255,0.1)}
+.tc-portrait svg{width:100%;height:100%;display:block}
+.tc-id{flex:1}
+.tc-name{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;letter-spacing:-.3px;margin-bottom:1px}
+.tc-role{font-size:9px;color:var(--mu);margin-bottom:5px}
+.tc-cat{display:inline-block;font-size:8px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:6px;margin-bottom:4px}
+.tc-tags{display:flex;gap:3px;flex-wrap:wrap}
+.tc-tag{font-size:8px;padding:1px 6px;border-radius:6px;background:var(--su2);border:1px solid var(--bd);color:var(--mu)}
+.tc-energy{font-size:10px;color:var(--mu2);margin-bottom:.6rem;font-style:italic}
+.tc-energy strong{font-style:normal;font-weight:500;color:var(--mu)}
+.tc-quote{font-style:italic;font-size:11px;line-height:1.6;color:rgba(255,255,255,.44);margin-bottom:.75rem;padding-left:.75rem;border-left:2px solid rgba(255,255,255,.1)}
+.tc-why{font-size:11px;line-height:1.6;color:var(--mu);margin-bottom:.875rem}
+.tc-why strong{color:rgba(255,255,255,.72);font-weight:500}
+.tc-stats{display:flex;gap:.875rem;padding-top:.75rem;border-top:1px solid var(--bd)}
+.tcs{text-align:center;flex:1}
+.tcs-num{font-family:'Syne',sans-serif;font-weight:700;font-size:15px;margin-bottom:1px}
+.tcs-lbl{font-size:8px;color:var(--mu2);text-transform:uppercase;letter-spacing:.5px}
+
+/* ── STATUS BAR ── */
+.sbar{height:27px;display:flex;align-items:center;gap:7px;padding:0 1.25rem;border-top:1px solid var(--bd);background:rgba(8,7,16,.95);flex-shrink:0}
+.sdot{width:5px;height:5px;border-radius:50%;background:var(--mu2);flex-shrink:0}
+.sdot.live{background:var(--grn)}
+.sdot.run{background:var(--gold);animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.stxt{font-size:10px;color:var(--mu2);flex:1}
+.scred{font-size:9px;color:var(--mu2);opacity:.35}
+
+@media(max-width:820px){.sb,.rp{display:none}.scards{grid-template-columns:1fr 1fr}.dgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">Luke's Place<em>/ advisory council</em></div>
+  <div class="nav-tabs">
+    <button class="ntab on" id="tab-council" onclick="showView('council','tab-council')">Council</button>
+    <button class="ntab" id="tab-stats" onclick="showView('stats','tab-stats')">Dashboard</button>
+    <button class="ntab" id="tab-trophy" onclick="showView('trophy','tab-trophy')">Trophy Case</button>
+  </div>
+  <div class="nav-right">
+    <div class="env-tog">
+      <button class="env-btn on" id="btn-s" onclick="setEnv('sunday')">☕ Sunday</button>
+      <button class="env-btn" id="btn-b" onclick="setEnv('boardroom')">⬛ Boardroom</button>
+    </div>
+    <button class="key-btn" onclick="changeKey()">🔑 API Key</button>
+  </div>
+</nav>
+
+<!-- COUNCIL VIEW -->
+<div class="view row on" id="view-council">
+
+  <div class="sb">
+    <div class="sb-hd">
+      <div class="sb-ht">Full Council (26)</div>
+      <div class="sb-sub">AI picks who's relevant per topic</div>
+    </div>
+    <div class="sb-srch">
+      <input id="sb-search" placeholder="Search…" oninput="filterSB(this.value)"/>
+    </div>
+    <div class="sb-body" id="sb-body"></div>
+    <div class="sb-ft">
+      <div class="sb-ct"><strong id="act-num">26</strong>active</div>
+      <div class="sb-leg" id="sb-leg">★ Selected for this topic</div>
+    </div>
+  </div>
+
+  <div class="chat">
+    <div class="mw" id="mw">
+      <div class="empty-st" id="empty-st">
+        <div class="eg">LP</div>
+        <div class="et">Your council is ready, Luke</div>
+        <div class="es">Type a topic below. The AI controller picks 3–5 of the most relevant mentors from your 26 and convenes the debate.</div>
+      </div>
+      <div id="msgs"></div>
+    </div>
+    <div class="ia">
+      <div class="ctx-row">
+        <span class="ctx-lbl">Context</span>
+        <div class="ctx-box">
+          <input class="ctx-inp" id="ctx" placeholder="e.g. Week 6 of 90-day goal, $3k revenue, tough week parenting…"/>
+        </div>
+      </div>
+      <div class="t-row">
+        <input class="t-inp" id="topic" placeholder="Ask your council anything…"/>
+        <button class="go-btn" id="go-btn" onclick="runSession()">Convene ↑</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="rp">
+    <div class="rps"><div class="rpt">Takeaways</div><div id="out-tk"><div class="rpe">Run a session first.</div></div></div>
+    <div class="rps"><div class="rpt">Actions</div><div id="out-ac"><div class="rpe">Actions appear here.</div></div></div>
+    <div class="rps"><div class="rpt">Session MVP</div><div id="out-mvp"><div class="rpe">MVP after session.</div></div></div>
+    <div class="rps"><div class="rpt">Leaderboard</div><div class="lb-list" id="lb"></div></div>
+  </div>
+
+</div>
+
+<!-- STATS VIEW -->
+<div class="view sv" id="view-stats">
+  <div class="sec-title">Dashboard</div>
+  <div class="sec-sub">Session history, mentor usage, and patterns</div>
+  <div class="scards">
+    <div class="sc"><div class="sc-lbl">Total Sessions</div><div class="sc-num" id="s-total">0</div><div class="sc-d">all time</div></div>
+    <div class="sc"><div class="sc-lbl">Mentor Turns</div><div class="sc-num" id="s-turns">0</div><div class="sc-d">across all debates</div></div>
+    <div class="sc gc"><div class="sc-lbl">Top Mentor</div><div class="sc-num" id="s-top" style="font-size:14px;margin-top:4px">—</div><div class="sc-d" id="s-top-d">0 MVP wins</div></div>
+    <div class="sc"><div class="sc-lbl">Fav Mode</div><div class="sc-num" id="s-mode" style="font-size:16px;margin-top:5px">—</div><div class="sc-d" id="s-mode-d">sessions</div></div>
+  </div>
+  <div class="dgrid">
+    <div class="dp"><div class="dp-t">Session Activity (last 8)</div><div class="achart" id="achart"><div class="no-data">No sessions yet.</div></div></div>
+    <div class="dp"><div class="dp-t">Top Mentor Appearances</div><div class="mu-list" id="mu-list"><div class="no-data">No data yet.</div></div></div>
+  </div>
+  <div class="dgrid">
+    <div class="dp"><div class="dp-t">Topics Cloud</div><div class="t-tags" id="t-tags"><div class="no-data">Topics appear as you run sessions.</div></div></div>
+    <div class="dp"><div class="dp-t">Session Log</div><div class="slog-list" id="slog"><div class="no-data">No sessions logged.</div></div></div>
+  </div>
+</div>
+
+<!-- TROPHY VIEW -->
+<div class="view tv" id="view-trophy">
+  <div class="sec-title">Trophy Case</div>
+  <div class="sec-sub">Your permanent council of 26 — every mind that shapes your decisions</div>
+  <div class="cat-pills" id="cat-pills"></div>
+  <div class="tgrid" id="tgrid"></div>
+</div>
+
+<!-- STATUS -->
+<div class="sbar">
+  <div class="sdot" id="sdot"></div>
+  <div class="stxt" id="stxt">Click 🔑 API Key to get started, then type a topic</div>
+  <div class="scred">Luke's Place v3 · Claude</div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════
+// MENTOR DATA
+// ═══════════════════════════════════════════════════
+const CATS = ['All','Finance','AI & Tech','Health','Psychology','Mindset','Parenting'];
+const CAT_COL = {'Finance':'#50d0a0','AI & Tech':'#6090ff','Health':'#ff7070','Psychology':'#c080ff','Mindset':'#f0b060','Parenting':'#ff90b0'};
+
+const MENTORS = [
+  {id:'pal',name:'Raoul Pal',init:'RP',cat:'Finance',role:'Macro & Cycles',col:'#50d0a0',bg:'rgba(80,208,160,0.2)',active:true,energy:'Calm visionary',tags:['Macro','Cycles','Long-term'],quote:'"Investing is about understanding the cycle you\'re in, not predicting the future."',why:'When you get emotionally pulled into situations, Raoul teaches you to <strong>zoom out and see the bigger game</strong>. He thinks in decades — balancing your reactive nature with macro calm.',kw:['invest','money','finance','crypto','macro','market','wealth','economy','savings','capital','cycle']},
+  {id:'wood',name:'Cathie Wood',init:'CW',cat:'Finance',role:'Innovation Investor',col:'#50d0a0',bg:'rgba(80,208,160,0.2)',active:true,energy:'Conviction under pressure',tags:['Innovation','Conviction','Long-term'],quote:'"If you\'re right about the direction, you just have to be willing to be early."',why:'You want to build something meaningful — she reinforces <strong>sticking to your vision when challenged</strong>. She invests where others doubt and stands by her decisions.',kw:['vision','invest','innovation','future','technology','believe','conviction','disruption','market','build','ai','criticism']},
+  {id:'pape',name:'Scott Pape',init:'SP',cat:'Finance',role:'Financial Discipline',col:'#50d0a0',bg:'rgba(80,208,160,0.2)',active:true,energy:'Grounded, practical',tags:['Family Finance','Discipline','Security'],quote:'"The best financial plan is one that fits your actual life."',why:'Balances your ambition with <strong>real-life stability and responsibility</strong> — family included. As a single dad with three girls, financial security isn\'t optional.',kw:['money','budget','family','savings','debt','finance','security','bills','kids','stability','cash','expenses','income']},
+  {id:'fridman',name:'Lex Fridman',init:'LF',cat:'AI & Tech',role:'Deep Listening',col:'#6090ff',bg:'rgba(96,144,255,0.2)',active:true,energy:'Calm and curious',tags:['AI','Dialogue','Listening'],quote:'"The most important skill is the ability to listen without judgment."',why:'Helps you <strong>slow down reactions and actually hear people</strong>. Given your communication frustrations, Lex is your model for how curiosity and patience creates better outcomes.',kw:['listen','communicate','conversation','react','ai','tech','slow','patience','dialogue','understand','relationship','talk','emotional']},
+  {id:'karpathy',name:'Andrej Karpathy',init:'AK',cat:'AI & Tech',role:'AI Systems Builder',col:'#6090ff',bg:'rgba(96,144,255,0.2)',active:true,energy:'Structured clarity',tags:['AI','Systems','Build'],quote:'"The best code is no code. The best model is the simplest one that works."',why:'You think big — he helps you <strong>execute simply</strong>. Turns overwhelming complexity into clear fundamentals. Every AI product you build benefits from his discipline.',kw:['ai','build','code','tech','system','software','app','product','develop','model','simple','execute','technical','saas']},
+  {id:'jensen',name:'Jensen Huang',init:'JH',cat:'AI & Tech',role:'Infrastructure Builder',col:'#6090ff',bg:'rgba(96,144,255,0.2)',active:true,energy:'Intense, relentless builder',tags:['Infrastructure','Scale','Vision'],quote:'"You have to be very patient and very persistent."',why:'You\'re not just building ideas — Jensen pushes you to <strong>build systems that last</strong>. He thinks in long-term infrastructure dominance, not short-term wins.',kw:['build','scale','infrastructure','system','long-term','technology','product','platform','future','ai','company','vision','execution','business']},
+  {id:'bartlett',name:'Steven Bartlett',init:'SB',cat:'AI & Tech',role:'Brand & Storytelling',col:'#6090ff',bg:'rgba(96,144,255,0.2)',active:true,energy:'Reflective and modern',tags:['Brand','Storytelling','Social'],quote:'"Your story is your most powerful asset. Don\'t outsource it."',why:'You\'re expressive — Steven shows you how to <strong>turn that into influence and business</strong>. He built a personal brand into an empire.',kw:['brand','story','social','content','media','influence','podcast','marketing','audience','personal brand','emotional','express','startup','entrepreneur']},
+  {id:'vaynerchuk',name:'Gary Vaynerchuk',init:'GV',cat:'AI & Tech',role:'Execution & Content',col:'#6090ff',bg:'rgba(96,144,255,0.2)',active:true,energy:'High energy, no excuses',tags:['Content','Hustle','Execution'],quote:'"Ideas are worthless without execution. Stop romanticising, start posting."',why:'Stops you from overthinking — <strong>forces movement</strong>. When you\'re stuck in your head, GV\'s voice kicks in: document it, post it, iterate publicly.',kw:['content','social','post','hustle','execution','speed','overthink','marketing','brand','media','video','create','audience','distribution']},
+  {id:'huberman',name:'Andrew Huberman',init:'AH',cat:'Health',role:'Neuroscience & Biology',col:'#ff7070',bg:'rgba(255,112,112,0.2)',active:true,energy:'Scientific, grounded',tags:['Neuroscience','Sleep','Stress'],quote:'"You have far more control over your biology than you think."',why:'Gives you <strong>precise tools to regulate stress, focus, and sleep</strong>. As a single dad running five ventures, your nervous system is your engine.',kw:['sleep','stress','focus','brain','biology','energy','morning','sunlight','anxiety','health','cortisol','dopamine','routine','tired','burnout','overwhelm']},
+  {id:'goggins',name:'David Goggins',init:'DG',cat:'Health',role:'Mental Toughness',col:'#ff7070',bg:'rgba(255,112,112,0.2)',active:true,energy:'Brutal honesty',tags:['Discipline','Toughness','Limits'],quote:'"The only way to grow is to go to the places that make you uncomfortable."',why:'<strong>Cuts through excuses instantly.</strong> When you\'re avoiding the hard thing, Goggins doesn\'t sympathise — he confronts.',kw:['excuse','lazy','avoid','discipline','hard','difficult','push','limits','tough','quit','uncomfortable','challenge','procrastinate','accountable']},
+  {id:'patrick',name:'Rhonda Patrick',init:'RP2',cat:'Health',role:'Nutrition & Recovery',col:'#ff7070',bg:'rgba(255,112,112,0.2)',active:true,energy:'Analytical and precise',tags:['Nutrition','Sauna','Recovery'],quote:'"Small, consistent habits in health compound just as powerfully as financial investments."',why:'Directly aligns with your lifestyle — especially <strong>sauna, recovery, and optimisation</strong>. She gives the science behind what you\'re already doing.',kw:['sauna','recovery','nutrition','diet','supplement','health','longevity','inflammation','food','cold','exercise','body','fitness','biohack']},
+  {id:'roll',name:'Rich Roll',init:'RR',cat:'Health',role:'Sustainable Transformation',col:'#ff7070',bg:'rgba(255,112,112,0.2)',active:true,energy:'Calm discipline',tags:['Endurance','Transformation','Habits'],quote:'"Sustainable change is about identity, not motivation."',why:'Balances Goggins — <strong>long-term transformation, not short-term burnout</strong>. Rich shows the most powerful changes come slowly and consistently.',kw:['sustainable','transform','change','habits','long-term','consistency','burnout','balance','health','identity','recover','slow','endurance','lifestyle']},
+  {id:'barkley',name:'Russell Barkley',init:'RB',cat:'Psychology',role:'ADHD & Executive Function',col:'#c080ff',bg:'rgba(192,128,255,0.2)',active:true,energy:'Clinical, empowering',tags:['ADHD','Focus','Executive Function'],quote:'"ADHD is not a problem of knowing what to do. It\'s a problem of doing what you know."',why:'Gives you <strong>structure for how your brain actually works</strong>. Understanding your ADHD through Barkley transforms self-criticism into self-strategy.',kw:['adhd','focus','distracted','forget','disorganised','brain','impulse','emotion','regulate','attention','procrastinate','structure','plan','time']},
+  {id:'mate',name:'Gabor Maté',init:'GM',cat:'Psychology',role:'Emotional Awareness',col:'#c080ff',bg:'rgba(192,128,255,0.2)',active:true,energy:'Compassionate, deep',tags:['Trauma','Emotions','Triggers'],quote:'"The question is never why the addiction, but why the pain."',why:'Helps you understand your <strong>emotional triggers and reactions</strong>. For a single dad carrying everything, understanding the root of your emotions is not optional.',kw:['emotion','trigger','react','anger','hurt','trauma','pain','stress','relationship','attachment','sensitive','feel','overwhelm','pattern','behaviour']},
+  {id:'peterson',name:'Jordan Peterson',init:'JP',cat:'Psychology',role:'Order & Responsibility',col:'#c080ff',bg:'rgba(192,128,255,0.2)',active:true,energy:'Intense, ordered',tags:['Responsibility','Order','Truth'],quote:'"Clean your room before you try to change the world."',why:'<strong>Grounds you when things feel chaotic.</strong> Peterson pushes responsibility and order — both in fatherhood and in business.',kw:['responsibility','chaos','order','structure','father','dad','children','meaning','truth','discipline','focus','purpose','man','parenting','kids','family']},
+  {id:'manson',name:'Mark Manson',init:'MM',cat:'Psychology',role:'Brutal Clarity',col:'#c080ff',bg:'rgba(192,128,255,0.2)',active:true,energy:'Direct, irreverent',tags:['Clarity','Values','No BS'],quote:'"The desire for more positive experience is itself a negative experience."',why:'<strong>Cuts through emotional noise with hard truth.</strong> When you\'re overcomplicating something, Manson strips it back to what actually matters.',kw:['overthink','story','excuse','emotion','complicated','values','truth','clarity','noise','distract','simple','problem','victim','perspective']},
+  {id:'naval',name:'Naval Ravikant',init:'NR',cat:'Mindset',role:'Clarity & Leverage',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Still, precise',tags:['Clarity','Leverage','Peace'],quote:'"Seek wealth, not money or status. Wealth is assets that earn while you sleep."',why:'Your inner compass for <strong>clarity and peace</strong>. Naval helps you figure out which game is actually worth playing.',kw:['clarity','leverage','wealth','peace','decision','simple','life','purpose','startup','scale','compound','freedom','time','earn','passive','thinking']},
+  {id:'mel',name:'Mel Robbins',init:'MR',cat:'Mindset',role:'Breaking Hesitation',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Energetic, direct',tags:['Action','Hesitation','5-Second Rule'],quote:'"You are never going to feel like it. Stop waiting to feel ready."',why:'Your action trigger. When you <strong>feel the hesitation before a hard task</strong>, Mel\'s 5-second rule cuts through the freeze.',kw:['hesitate','freeze','procrastinate','action','start','motivation','stuck','ready','afraid','begin','push','go','do','move','anxiety','resist','delay']},
+  {id:'howes',name:'Lewis Howes',init:'LH',cat:'Mindset',role:'Growth & Vulnerability',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Open, growth-focused',tags:['Growth','Masculinity','Vulnerability'],quote:'"The biggest thing holding most men back is the mask they refuse to take off."',why:'Supports your <strong>growth and connection</strong> — especially as a man navigating fatherhood, relationships, and business simultaneously.',kw:['grow','connection','relationship','vulnerable','man','masculinity','strength','open','heal','identity','mask','dad','partner','community','network']},
+  {id:'holiday',name:'Ryan Holiday',init:'RH',cat:'Mindset',role:'Stoicism & Focus',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Grounded, philosophical',tags:['Stoicism','Focus','Long-game'],quote:'"The obstacle is the way. What impedes action, advances action."',why:'Your reset button. Holiday reminds you that <strong>patience and clarity beat urgency every time</strong>. The Stoic filter is why you\'ve walked away from distractions.',kw:['stress','focus','distract','patience','clarity','burnout','ego','urgency','priorities','decision','noise','obstacle','setback','failure','long-game','stoic']},
+  {id:'shetty',name:'Jay Shetty',init:'JS',cat:'Mindset',role:'Emotional Intelligence',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Warm, reflective',tags:['EQ','Purpose','Mindfulness'],quote:'"If you don\'t make time for your wellness, you will be forced to make time for your illness."',why:'Your emotional intelligence guide. Jay helps you <strong>process feelings before they become reactions</strong>.',kw:['emotion','mindful','meditate','purpose','calm','feel','wellbeing','gratitude','habit','morning','slow down','presence','intention','anxiety','peace']},
+  {id:'tony',name:'Tony Robbins',init:'TR',cat:'Mindset',role:'State & Energy',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Volcanic, transformative',tags:['State','Energy','Power'],quote:'"Energy is everything. Change your state — change your life."',why:'State change on demand. When you\'re flat or deflated, Tony is the <strong>instant ignition switch</strong>.',kw:['energy','state','motivation','power','stuck','flat','inspire','low','momentum','confidence','fire','drive','unstuck','boost','lift','peak']},
+  {id:'sinek',name:'Simon Sinek',init:'SS',cat:'Mindset',role:'Purpose & Leadership',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Warm, purposeful',tags:['Why','Leadership','Culture'],quote:'"People don\'t buy what you do; they buy why you do it."',why:'Pacific Adrenalin isn\'t just a business umbrella — <strong>it\'s a statement about how you want to live</strong> and what you want to build for Jordan, Miley, and Frankie.',kw:['why','purpose','leadership','culture','team','community','brand','inspire','meaning','family','vision','mission','values','lead','trust']},
+  {id:'fuller',name:'Jem Fuller',init:'JF',cat:'Mindset',role:'Presence & Leadership',col:'#f0b060',bg:'rgba(240,176,96,0.2)',active:true,energy:'Still, grounded',tags:['Presence','Leadership','Calm'],quote:'"Leadership starts with the relationship you have with yourself."',why:'Your presence and calm leadership model. Jem represents the <strong>still centre inside the storm</strong> — leading from groundedness rather than reactivity.',kw:['presence','calm','still','ground','lead','conscious','aware','react','centre','breathe','slow','mindful','leader','present','pause','conflict']},
+  {id:'perel',name:'Esther Perel',init:'EP',cat:'Parenting',role:'Relationships & Communication',col:'#ff90b0',bg:'rgba(255,144,176,0.2)',active:true,energy:'Perceptive, nuanced',tags:['Communication','Relationships','Tension'],quote:'"The quality of our relationships determines the quality of our lives."',why:'Teaches you <strong>communication where tension exists</strong> — co-parenting, partnerships, romantic relationships.',kw:['relationship','co-parent','partner','lisa','communicate','tension','conflict','argue','trust','intimacy','connect','talk','misunderstand','family','difficult']},
+  {id:'coulson',name:'Dr Justin Coulson',init:'JC',cat:'Parenting',role:'Practical Parenting',col:'#ff90b0',bg:'rgba(255,144,176,0.2)',active:true,energy:'Practical, warm',tags:['Parenting','Kids','Connection'],quote:'"Connection before correction — every time."',why:'Real-world parenting tools for your life with Jordan, Miley, and Frankie. Justin gives <strong>practical, evidence-based strategies for single parenting</strong>.',kw:['kids','daughters','parenting','jordan','miley','frankie','behaviour','school','teenager','parent','single dad','discipline','connection','family','children','routine','boundaries']},
+];
+
+// ═══════════════════════════════════════════════════
+// SIMPSONS PORTRAITS
+// ═══════════════════════════════════════════════════
+const PORT = {
+pal:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#1a3a5a"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 60 40 62 Q58 60 64 80Z" fill="#1a2a4a" stroke="#000" stroke-width="1.5"/><path d="M36 62 L40 74 L44 62" fill="white" stroke="#000" stroke-width="1"/><path d="M38 63 L40 72 L42 63" fill="#3a7adf"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 29 Q23 13 40 13 Q57 13 61 29 Q56 18 40 18 Q24 18 19 29Z" fill="#100a05" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="13" rx="5" fill="#100a05" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="35" rx="8" ry="6" fill="none" stroke="#50d0a0" stroke-width="2"/><ellipse cx="49" cy="35" rx="8" ry="6" fill="none" stroke="#50d0a0" stroke-width="2"/><line x1="39" y1="35" x2="41" y2="35" stroke="#50d0a0" stroke-width="2"/><ellipse cx="31" cy="35" rx="5" ry="4" fill="white"/><ellipse cx="49" cy="35" rx="5" ry="4" fill="white"/><circle cx="32" cy="35" r="2.5" fill="#000"/><circle cx="50" cy="35" r="2.5" fill="#000"/><circle cx="33" cy="34" r="1" fill="white"/><circle cx="51" cy="34" r="1" fill="white"/><path d="M40 40 Q43 43 40 45 Q37 43 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 49 Q40 54 46 49" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="36" y="48" width="8" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+wood:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#1a1a2e"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 60 40 62 Q58 60 64 80Z" fill="#2a3a6a" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 30 Q16 54 20 68 Q30 64 40 64 Q50 64 60 68 Q64 54 61 30 Q56 14 40 13 Q24 14 19 30Z" fill="#c8a010" stroke="#000" stroke-width="1.5"/><path d="M19 28 Q25 13 40 13 Q55 13 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#b09000" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3" fill="#000"/><circle cx="50" cy="36" r="3" fill="#000"/><circle cx="33" cy="35" r="1.2" fill="white"/><circle cx="51" cy="35" r="1.2" fill="white"/><path d="M25 31 Q29 28 33 31" fill="none" stroke="#000" stroke-width="1.5"/><path d="M41 31 Q46 28 50 31" fill="none" stroke="#000" stroke-width="1.5"/><path d="M40 41 Q43 45 40 47 Q37 45 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M33 51 Q40 56 47 51" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="50" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+pape:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#1a2a1a"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 60 40 62 Q58 60 64 80Z" fill="#3a5a2a" stroke="#000" stroke-width="1.5"/><path d="M36 62 L40 70 L44 62" fill="white" stroke="#000" stroke-width="1"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 18 40 18 Q23 18 19 28Z" fill="#5a3a1a" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="13" rx="6" fill="#5a3a1a" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3.5" fill="#000"/><circle cx="50" cy="36" r="3.5" fill="#000"/><circle cx="33.5" cy="35" r="1.2" fill="white"/><circle cx="51.5" cy="35" r="1.2" fill="white"/><path d="M40 41 Q43 45 40 47 Q37 45 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M30 50 Q40 59 50 50" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round"/><path d="M32 51 Q40 58 48 51 Q40 62 32 51Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+fridman:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#050510"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#080808" stroke="#000" stroke-width="1.5"/><rect x="31" y="56" width="18" height="9" rx="3" fill="#111" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 18 40 18 Q23 18 19 28Z" fill="#080505" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="12" rx="5" fill="#080505" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="50" rx="13" ry="7" fill="#d4b200" stroke="none"/><circle cx="33" cy="48" r="1.2" fill="#b09400" opacity="0.8"/><circle cx="38" cy="50" r="1.2" fill="#b09400" opacity="0.8"/><circle cx="43" cy="51" r="1.2" fill="#b09400" opacity="0.8"/><circle cx="48" cy="48" r="1.2" fill="#b09400" opacity="0.8"/><ellipse cx="31" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="3" fill="#000"/><circle cx="50" cy="35" r="3" fill="#000"/><circle cx="33" cy="34" r="1.2" fill="white"/><circle cx="51" cy="34" r="1.2" fill="white"/><path d="M40 40 Q43 43 40 45 Q37 43 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M35 52 Q40 55 45 52" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><rect x="36" y="51" width="8" height="3.5" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+karpathy:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#050a1a"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 58 40 60 Q58 58 64 80Z" fill="#1a3a6a" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 18 40 18 Q23 18 19 28Z" fill="#100808" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="12" rx="5" fill="#100808" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="3" fill="#000"/><circle cx="50" cy="35" r="3" fill="#000"/><circle cx="33" cy="34" r="1.2" fill="white"/><circle cx="51" cy="34" r="1.2" fill="white"/><path d="M25 31 L39 30" stroke="#000" stroke-width="1.5" stroke-linecap="round"/><path d="M41 30 L55 31" stroke="#000" stroke-width="1.5" stroke-linecap="round"/><path d="M40 40 Q43 43 40 45 Q37 43 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 50 Q40 54 46 50" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="49" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+jensen:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#050505"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#0a0808" stroke="#000" stroke-width="1.5"/><path d="M36 59 L38 67 L40 63 L42 67 L44 59" fill="#181010" stroke="#000" stroke-width="1"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 12 40 12 Q57 12 61 28 Q57 16 40 16 Q23 16 19 28Z" fill="#050303" stroke="#000" stroke-width="1.5"/><rect x="19" y="12" width="42" height="14" rx="5" fill="#050303" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="3.5" fill="#000"/><circle cx="50" cy="35" r="3.5" fill="#000"/><circle cx="33.5" cy="34" r="1.2" fill="white"/><circle cx="51.5" cy="34" r="1.2" fill="white"/><path d="M23 29 L38 28" stroke="#000" stroke-width="2.5" stroke-linecap="round"/><path d="M42 28 L57 29" stroke="#000" stroke-width="2.5" stroke-linecap="round"/><path d="M40 41 Q43 45 40 47 Q37 45 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 50 Q42 54 47 49" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="36" y="49" width="8" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+bartlett:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#050510"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 58 40 60 Q58 58 64 80Z" fill="#6090ff" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 27 Q23 12 40 12 Q57 12 61 27 Q57 18 40 18 Q23 18 19 27Z" fill="#080505" stroke="#000" stroke-width="1.5"/><rect x="19" y="12" width="42" height="13" rx="6" fill="#080505" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3" fill="#000"/><circle cx="50" cy="36" r="3" fill="#000"/><circle cx="33" cy="35" r="1.2" fill="white"/><circle cx="51" cy="35" r="1.2" fill="white"/><path d="M40 41 Q43 44 40 46 Q37 44 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M31 51 Q40 58 49 51" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round"/><path d="M33 52 Q40 57 47 52 Q40 61 33 52Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+vaynerchuk:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#080308"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#2a2a2a" stroke="#000" stroke-width="1.5"/><path d="M34 59 Q40 63 46 59" fill="none" stroke="#3a3a3a" stroke-width="2.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 27 Q23 11 40 11 Q57 11 61 27 Q57 16 40 16 Q23 16 19 27Z" fill="#100505" stroke="#000" stroke-width="1.5"/><rect x="19" y="11" width="42" height="14" rx="5" fill="#100505" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="4" fill="#000"/><circle cx="50" cy="36" r="4" fill="#000"/><circle cx="33.5" cy="35" r="1.5" fill="white"/><circle cx="51.5" cy="35" r="1.5" fill="white"/><path d="M40 42 Q44 46 40 48 Q36 46 40 42Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M28 50 Q40 62 52 50" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/><path d="M30 51 Q40 61 50 51 Q40 65 30 51Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+huberman:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#050f05"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#3a3a3a" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 12 40 12 Q57 12 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#100808" stroke="#000" stroke-width="1.5"/><rect x="19" y="12" width="42" height="13" rx="5" fill="#100808" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="3.5" fill="#000"/><circle cx="50" cy="35" r="3.5" fill="#000"/><circle cx="33.5" cy="34" r="1.2" fill="white"/><circle cx="51.5" cy="34" r="1.2" fill="white"/><path d="M40 40 Q43 44 40 46 Q37 44 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 50 Q40 55 46 50" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="49" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+goggins:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#020205"/><rect x="33" y="56" width="14" height="11" fill="#c8a010" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 56 40 58 Q58 56 64 80Z" fill="#050505" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="36" rx="22" ry="24" fill="#FFD90F" stroke="#000" stroke-width="2.5"/><ellipse cx="40" cy="23" rx="21" ry="12" fill="#d4b800" stroke="#000" stroke-width="1.5"/><ellipse cx="19" cy="38" rx="5" ry="7" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="38" rx="5" ry="7" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="35" rx="8" ry="7" fill="white" stroke="#000" stroke-width="2"/><ellipse cx="49" cy="35" rx="8" ry="7" fill="white" stroke="#000" stroke-width="2"/><circle cx="32" cy="35" r="4.5" fill="#000"/><circle cx="50" cy="35" r="4.5" fill="#000"/><circle cx="33.5" cy="33.5" r="1.5" fill="white"/><circle cx="51.5" cy="33.5" r="1.5" fill="white"/><path d="M22 27 Q31 23 39 26" stroke="#000" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M41 26 Q49 23 58 27" stroke="#000" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M37 42 Q40 46 43 42 Q40 48 37 42Z" fill="#c8a000" stroke="#000" stroke-width="1"/><line x1="33" y1="52" x2="47" y2="52" stroke="#000" stroke-width="2.5" stroke-linecap="round"/><rect x="35" y="51" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+patrick:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#051008"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#f0f0f0" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 30 Q15 54 19 68 Q29 64 40 64 Q51 64 61 68 Q65 54 61 30 Q56 14 40 13 Q24 14 19 30Z" fill="#8a1a05" stroke="#000" stroke-width="1.5"/><path d="M19 27 Q25 12 40 12 Q55 12 61 27 Q57 16 40 16 Q23 16 19 27Z" fill="#6a1005" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3" fill="#1a0a5a"/><circle cx="50" cy="36" r="3" fill="#1a0a5a"/><circle cx="33" cy="35" r="1.2" fill="white"/><circle cx="51" cy="35" r="1.2" fill="white"/><path d="M24 31 Q29 28 33 31" fill="none" stroke="#000" stroke-width="1.5"/><path d="M41 31 Q46 28 50 31" fill="none" stroke="#000" stroke-width="1.5"/><path d="M40 41 Q43 45 40 47 Q37 45 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M33 51 Q40 56 47 51" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="50" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+roll:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#081428"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#1a3a5a" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#484040" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="12" rx="5" fill="#484040" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="50" rx="13" ry="7" fill="#d4b800"/><circle cx="33" cy="48" r="1.2" fill="#a89000" opacity="0.8"/><circle cx="39" cy="50" r="1.2" fill="#a89000" opacity="0.8"/><circle cx="45" cy="51" r="1.2" fill="#a89000" opacity="0.8"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3" fill="#000"/><circle cx="50" cy="36" r="3" fill="#000"/><circle cx="33" cy="35" r="1.2" fill="white"/><circle cx="51" cy="35" r="1.2" fill="white"/><path d="M40 41 Q43 44 40 46 Q37 44 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 51 Q40 55 46 51" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="50" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+barkley:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#080820"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#2a2a3a" stroke="#000" stroke-width="1.5"/><path d="M35 59 L40 70 L45 59" fill="white" stroke="#000" stroke-width="1"/><path d="M38 60 L40 68 L42 60" fill="#8080ff"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#d0d0d0" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="13" rx="5" fill="#d0d0d0" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><circle cx="31" cy="36" r="8" fill="none" stroke="#c080ff" stroke-width="2.2"/><circle cx="49" cy="36" r="8" fill="none" stroke="#c080ff" stroke-width="2.2"/><line x1="39" y1="36" x2="41" y2="36" stroke="#c080ff" stroke-width="2"/><line x1="20" y1="33" x2="23" y2="34" stroke="#c080ff" stroke-width="1.8"/><line x1="57" y1="34" x2="60" y2="33" stroke="#c080ff" stroke-width="1.8"/><ellipse cx="31" cy="36" rx="5" ry="5" fill="white"/><ellipse cx="49" cy="36" rx="5" ry="5" fill="white"/><circle cx="31" cy="36" r="2.5" fill="#000"/><circle cx="49" cy="36" r="2.5" fill="#000"/><circle cx="32" cy="35" r="1" fill="white"/><circle cx="50" cy="35" r="1" fill="white"/><path d="M40 42 Q43 45 40 47 Q37 45 40 42Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 51 Q40 56 46 51" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="50" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+mate:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#100818"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#3a2a4a" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q22 12 40 12 Q58 12 61 28 Q57 16 40 16 Q23 16 19 28Z" fill="#e8e8e8" stroke="#000" stroke-width="1.5"/><rect x="19" y="12" width="42" height="14" rx="6" fill="#e8e8e8" stroke="#000" stroke-width="1"/><path d="M21 18 Q27 14 33 18 Q39 14 45 18 Q51 14 57 18" fill="none" stroke="#ccc" stroke-width="1.5"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3" fill="#000"/><circle cx="50" cy="36" r="3" fill="#000"/><circle cx="33" cy="35" r="1.2" fill="white"/><circle cx="51" cy="35" r="1.2" fill="white"/><path d="M40 41 Q43 44 40 46 Q37 44 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M33 51 Q40 56 47 51" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="50" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+peterson:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#080808"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#111" stroke="#000" stroke-width="1.5"/><path d="M37 59 L40 71 L43 59" fill="#cc1111" stroke="#000" stroke-width="0.8"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#6a5038" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="13" rx="5" fill="#6a5038" stroke="#000" stroke-width="1"/><path d="M26 14 Q28 21 28 27" fill="none" stroke="#7a6048" stroke-width="2.5"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="3.5" fill="#000"/><circle cx="50" cy="35" r="3.5" fill="#000"/><circle cx="33.5" cy="34" r="1.2" fill="white"/><circle cx="51.5" cy="34" r="1.2" fill="white"/><path d="M23 28 L38 27" stroke="#000" stroke-width="3" stroke-linecap="round"/><path d="M42 27 L57 28" stroke="#000" stroke-width="3" stroke-linecap="round"/><path d="M40 40 Q43 44 40 46 Q37 44 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><line x1="33" y1="51" x2="47" y2="51" stroke="#000" stroke-width="2.2" stroke-linecap="round"/><rect x="35" y="50" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+manson:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#060606"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#1a1a1a" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 27 Q22 11 40 11 Q58 11 61 27 Q57 16 47 14 Q40 12 33 14 Q23 16 19 27Z" fill="#2a1808" stroke="#000" stroke-width="1.5"/><rect x="19" y="11" width="42" height="13" rx="5" fill="#2a1808" stroke="#000" stroke-width="1"/><path d="M20 17 Q23 12 27 14" fill="none" stroke="#3a2010" stroke-width="3"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="50" rx="13" ry="7" fill="#d4b400"/><circle cx="33" cy="48" r="1.2" fill="#a88e00" opacity="0.8"/><circle cx="39" cy="50" r="1.2" fill="#a88e00" opacity="0.8"/><circle cx="46" cy="50" r="1.2" fill="#a88e00" opacity="0.8"/><ellipse cx="31" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="3" fill="#000"/><circle cx="50" cy="35" r="3" fill="#000"/><circle cx="33" cy="34" r="1.2" fill="white"/><circle cx="51" cy="34" r="1.2" fill="white"/><path d="M40 40 Q43 43 40 45 Q37 43 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 51 Q42 55 47 50" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="36" y="50" width="8" height="3.5" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+naval:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#030308"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#080810" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 18 40 18 Q23 18 19 28Z" fill="#060404" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="12" rx="5" fill="#060404" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="50" rx="14" ry="8" fill="#d0ae00"/><path d="M26 48 Q30 56 40 58 Q50 56 54 48" fill="#c0a000"/><ellipse cx="31" cy="35" rx="7" ry="5" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="5" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="2.5" fill="#000"/><circle cx="50" cy="35" r="2.5" fill="#000"/><circle cx="33" cy="34" r="1" fill="white"/><circle cx="51" cy="34" r="1" fill="white"/><path d="M24 32 Q31 29 38 32" stroke="#000" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M42 32 Q49 29 56 32" stroke="#000" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M40 40 Q43 43 40 45 Q37 43 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M35 52 Q40 56 45 52" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="36" y="51" width="8" height="3.5" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+mel:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#180810"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#cc2020" stroke="#000" stroke-width="1.5"/><path d="M35 59 L40 69 L45 59" fill="white" stroke="#000" stroke-width="1"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 30 Q16 54 20 68 Q30 64 40 64 Q50 64 60 68 Q64 54 61 30 Q56 14 40 13 Q24 14 19 30Z" fill="#d4a820" stroke="#000" stroke-width="1.5"/><path d="M19 27 Q25 12 40 12 Q55 12 61 27 Q57 16 40 16 Q23 16 19 27Z" fill="#b89010" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3.5" fill="#1a3a8a"/><circle cx="50" cy="36" r="3.5" fill="#1a3a8a"/><circle cx="33.5" cy="35" r="1.2" fill="white"/><circle cx="51.5" cy="35" r="1.2" fill="white"/><path d="M24 31 Q29 28 33 31" fill="none" stroke="#000" stroke-width="1.8"/><path d="M41 31 Q46 28 50 31" fill="none" stroke="#000" stroke-width="1.8"/><path d="M40 41 Q43 45 40 47 Q37 45 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M29 51 Q40 61 51 51" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/><path d="M31 52 Q40 60 49 52 Q40 63 31 52Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+howes:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#080f18"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#1a2a3a" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 27 Q23 12 40 12 Q57 12 61 27 Q57 17 40 17 Q23 17 19 27Z" fill="#0a0505" stroke="#000" stroke-width="1.5"/><rect x="19" y="12" width="42" height="13" rx="6" fill="#0a0505" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="4" fill="#000"/><circle cx="50" cy="36" r="4" fill="#000"/><circle cx="33.5" cy="35" r="1.5" fill="white"/><circle cx="51.5" cy="35" r="1.5" fill="white"/><path d="M40 42 Q44 46 40 48 Q36 46 40 42Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M28 51 Q40 62 52 51" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/><path d="M30 52 Q40 61 50 52 Q40 64 30 52Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+holiday:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#080805"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#141008" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#302010" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="12" rx="5" fill="#302010" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="50" rx="13" ry="7" fill="#d4b200"/><circle cx="33" cy="48" r="1.2" fill="#a88e00" opacity="0.7"/><circle cx="40" cy="51" r="1.2" fill="#a88e00" opacity="0.7"/><circle cx="47" cy="48" r="1.2" fill="#a88e00" opacity="0.7"/><ellipse cx="31" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="3" fill="#000"/><circle cx="50" cy="35" r="3" fill="#000"/><circle cx="33" cy="34" r="1.2" fill="white"/><circle cx="51" cy="34" r="1.2" fill="white"/><path d="M40 40 Q43 43 40 45 Q37 43 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M35 52 Q40 56 45 52" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><rect x="36" y="51" width="8" height="3.5" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+shetty:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#050810"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#3a2808" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 18 40 18 Q23 18 19 28Z" fill="#060305" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="12" rx="6" fill="#060305" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3" fill="#000"/><circle cx="50" cy="36" r="3" fill="#000"/><circle cx="33" cy="35" r="1.2" fill="white"/><circle cx="51" cy="35" r="1.2" fill="white"/><path d="M40 41 Q43 44 40 46 Q37 44 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M33 51 Q40 56 47 51" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="35" y="50" width="10" height="4" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+tony:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#080305"/><rect x="33" y="58" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M14 80 Q21 57 40 59 Q59 57 66 80Z" fill="#111" stroke="#000" stroke-width="1.5"/><path d="M36 59 L40 72 L44 59" fill="#aa1010" stroke="#000" stroke-width="0.8"/><ellipse cx="40" cy="38" rx="23" ry="25" fill="#FFD90F" stroke="#000" stroke-width="2.5"/><path d="M17 29 Q21 11 40 10 Q59 11 63 29 Q59 16 40 16 Q21 16 17 29Z" fill="#0a0505" stroke="#000" stroke-width="1.5"/><rect x="17" y="10" width="46" height="16" rx="6" fill="#0a0505" stroke="#000" stroke-width="1"/><ellipse cx="17" cy="41" rx="6" ry="7" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="63" cy="41" rx="6" ry="7" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="4.5" fill="#000"/><circle cx="50" cy="36" r="4.5" fill="#000"/><circle cx="34" cy="34.5" r="1.5" fill="white"/><circle cx="52" cy="34.5" r="1.5" fill="white"/><path d="M40 42 Q45 46 40 49 Q35 46 40 42Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M25 52 Q40 68 55 52" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/><path d="M27 53 Q40 66 53 53 Q40 70 27 53Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+sinek:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#050812"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#182840" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q21 11 40 11 Q59 12 61 28 Q57 15 49 14 Q40 12 31 14 Q23 15 19 28Z" fill="#100808" stroke="#000" stroke-width="1.5"/><rect x="19" y="11" width="42" height="15" rx="6" fill="#100808" stroke="#000" stroke-width="1"/><path d="M20 17 Q25 13 30 17 Q35 13 40 17 Q45 13 50 17 Q55 13 60 17" fill="none" stroke="#1a0a0a" stroke-width="3"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3" fill="#000"/><circle cx="50" cy="36" r="3" fill="#000"/><circle cx="33" cy="35" r="1.2" fill="white"/><circle cx="51" cy="35" r="1.2" fill="white"/><path d="M40 41 Q43 44 40 46 Q37 44 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M31 51 Q40 58 49 51" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round"/><path d="M33 52 Q40 57 47 52 Q40 61 33 52Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+fuller:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#040610"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#5a5040" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q22 13 40 13 Q58 13 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#808080" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="13" rx="5" fill="#808080" stroke="#000" stroke-width="1"/><path d="M21 18 Q26 14 31 18 Q36 14 41 18 Q46 14 51 18 Q56 14 60 18" fill="none" stroke="#aaa" stroke-width="1.5"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="35" rx="7" ry="5" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="35" rx="7" ry="5" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="35" r="2.5" fill="#000"/><circle cx="50" cy="35" r="2.5" fill="#000"/><path d="M24 32 Q31 29 38 32" stroke="#000" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M42 32 Q49 29 56 32" stroke="#000" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M40 40 Q43 43 40 45 Q37 43 40 40Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M35 51 Q40 55 45 51" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><rect x="36" y="50" width="8" height="3.5" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+perel:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#0e0508"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#100810" stroke="#000" stroke-width="1.5"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 30 Q15 54 19 68 Q29 64 40 64 Q51 64 61 68 Q65 54 61 30 Q56 14 40 13 Q24 14 19 30Z" fill="#0e0808" stroke="#000" stroke-width="1.5"/><path d="M19 27 Q25 12 40 12 Q55 12 61 27 Q57 16 40 16 Q23 16 19 27Z" fill="#060404" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M24 29 Q30 25 36 29" fill="none" stroke="#000" stroke-width="2"/><path d="M44 29 Q50 25 56 29" fill="none" stroke="#000" stroke-width="2"/><ellipse cx="31" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="7" ry="6" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="3.5" fill="#000"/><circle cx="50" cy="36" r="3.5" fill="#000"/><circle cx="33.5" cy="35" r="1.2" fill="white"/><circle cx="51.5" cy="35" r="1.2" fill="white"/><path d="M24 31 Q29 28 33 31" fill="none" stroke="#000" stroke-width="1.8"/><path d="M41 31 Q46 28 50 31" fill="none" stroke="#000" stroke-width="1.8"/><path d="M40 41 Q43 45 40 47 Q37 45 40 41Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M34 50 Q42 55 47 49" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><rect x="36" y="49" width="8" height="3.5" rx="1" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+coulson:`<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#081008"/><rect x="33" y="57" width="14" height="10" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><path d="M16 80 Q22 57 40 59 Q58 57 64 80Z" fill="#2a4a2a" stroke="#000" stroke-width="1.5"/><path d="M35 59 L40 68 L45 59" fill="white" stroke="#000" stroke-width="1"/><ellipse cx="40" cy="37" rx="21" ry="23" fill="#FFD90F" stroke="#000" stroke-width="2"/><path d="M19 28 Q23 13 40 13 Q57 13 61 28 Q57 17 40 17 Q23 17 19 28Z" fill="#4a2810" stroke="#000" stroke-width="1.5"/><rect x="19" y="13" width="42" height="12" rx="5" fill="#4a2810" stroke="#000" stroke-width="1"/><ellipse cx="19" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="61" cy="39" rx="5" ry="6" fill="#FFD90F" stroke="#000" stroke-width="1.5"/><ellipse cx="31" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><ellipse cx="49" cy="36" rx="8" ry="7" fill="white" stroke="#000" stroke-width="1.5"/><circle cx="32" cy="36" r="4" fill="#000"/><circle cx="50" cy="36" r="4" fill="#000"/><circle cx="33.5" cy="35" r="1.5" fill="white"/><circle cx="51.5" cy="35" r="1.5" fill="white"/><path d="M40 42 Q44 46 40 48 Q36 46 40 42Z" fill="#e8b800" stroke="#c09000" stroke-width="0.8"/><path d="M28 51 Q40 62 52 51" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/><path d="M30 52 Q40 61 50 52 Q40 64 30 52Z" fill="white" stroke="#000" stroke-width="0.5"/></svg>`,
+};
+
+// ═══════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════
+let env = 'sunday';
+let activeCat = 'All';
+let sbFilter = '';
+let sessions = [];
+let scores = {};
+try { sessions = JSON.parse(localStorage.getItem('lp-s') || '[]'); } catch(e){}
+try { scores = JSON.parse(localStorage.getItem('lp-sc') || '{}'); } catch(e){}
+MENTORS.forEach(m => { if(!scores[m.id]) scores[m.id] = {mvp:0, app:0}; });
+
+function save() {
+  try {
+    localStorage.setItem('lp-s', JSON.stringify(sessions));
+    localStorage.setItem('lp-sc', JSON.stringify(scores));
+  } catch(e) {}
+}
+
+// ═══════════════════════════════════════════════════
+// NAV / VIEWS
+// ═══════════════════════════════════════════════════
+function showView(name, tabId) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
+  document.querySelectorAll('.ntab').forEach(t => t.classList.remove('on'));
+  document.getElementById('view-' + name).classList.add('on');
+  document.getElementById(tabId).classList.add('on');
+  if (name === 'stats') renderDash();
+  if (name === 'trophy') renderTrophy();
+}
+
+function setEnv(e) {
+  env = e;
+  document.getElementById('btn-s').classList.toggle('on', e === 'sunday');
+  document.getElementById('btn-b').classList.toggle('on', e === 'boardroom');
+}
+
+function changeKey() {
+  const k = prompt('Paste your Anthropic API key (starts with sk-ant-…)\nGet one free at console.anthropic.com/keys', '');
+  if (k && k.trim()) {
+    sessionStorage.setItem('lp-key', k.trim());
+    setStatus('live', 'API key saved — ready to convene your council');
+  }
+}
+
+// ═══════════════════════════════════════════════════
+// SIDEBAR
+// ═══════════════════════════════════════════════════
+function filterSB(v) { sbFilter = v.toLowerCase(); renderSidebar(); }
+
+function renderSidebar(selIds = []) {
+  const body = document.getElementById('sb-body');
+  const leg = document.getElementById('sb-leg');
+  if (!body) return;
+  leg.style.display = selIds.length ? 'block' : 'none';
+  body.innerHTML = '';
+
+  const grouped = {};
+  MENTORS.forEach(m => {
+    if (sbFilter && !m.name.toLowerCase().includes(sbFilter) && !m.role.toLowerCase().includes(sbFilter) && !m.cat.toLowerCase().includes(sbFilter)) return;
+    if (!grouped[m.cat]) grouped[m.cat] = [];
+    grouped[m.cat].push(m);
+  });
+
+  Object.keys(grouped).forEach(cat => {
+    const lbl = document.createElement('div');
+    lbl.className = 'cat-lbl';
+    lbl.style.color = CAT_COL[cat] || 'var(--mu2)';
+    lbl.textContent = cat;
+    body.appendChild(lbl);
+    grouped[cat].forEach(m => {
+      const isSel = selIds.includes(m.id);
+      const el = document.createElement('div');
+      el.className = 'mi' + (m.active ? ' on' : ' off') + (isSel ? ' sel' : '');
+      el.innerHTML = `<div class="mi-av" style="background:${m.bg};color:${m.col}">${m.init}</div>
+        <div class="mi-info"><div class="mi-name">${m.name}</div><div class="mi-role">${m.role}</div></div>
+        <span class="mi-star">★</span>
+        <div class="mi-tog${m.active ? ' on' : ''}" onclick="toggleM('${m.id}',event)"></div>`;
+      body.appendChild(el);
+    });
+  });
+  document.getElementById('act-num').textContent = MENTORS.filter(m => m.active).length;
+}
+
+function toggleM(id, e) {
+  e.stopPropagation();
+  const m = MENTORS.find(x => x.id === id);
+  if (m) { m.active = !m.active; renderSidebar(); }
+}
+
+// ═══════════════════════════════════════════════════
+// LEADERBOARD
+// ═══════════════════════════════════════════════════
+function renderLB() {
+  const sorted = [...MENTORS].sort((a, b) => (scores[b.id]?.mvp || 0) - (scores[a.id]?.mvp || 0));
+  const mx = Math.max(1, scores[sorted[0]?.id]?.mvp || 0);
+  document.getElementById('lb').innerHTML = sorted.slice(0, 8).map((m, i) => `
+    <div class="lbr">
+      <div class="lb-rk">${i + 1}</div>
+      <div class="lb-dot" style="background:${m.col}"></div>
+      <div style="flex:1;min-width:0">
+        <div class="lb-n">${m.name.split(' ').pop()}</div>
+        <div style="height:2px;border-radius:2px;background:${m.col};opacity:.45;width:${Math.round(((scores[m.id]?.mvp || 0) / mx) * 100)}%;margin-top:1px"></div>
+      </div>
+      <div class="lb-pts">${scores[m.id]?.mvp || 0}</div>
+    </div>`).join('');
+}
+
+// ═══════════════════════════════════════════════════
+// STATUS
+// ═══════════════════════════════════════════════════
+function setStatus(type, text) {
+  document.getElementById('sdot').className = 'sdot ' + (type || '');
+  document.getElementById('stxt').textContent = text;
+}
+
+// ═══════════════════════════════════════════════════
+// MESSAGES
+// ═══════════════════════════════════════════════════
+function scrollMsgs() { const w = document.getElementById('mw'); requestAnimationFrame(() => w.scrollTop = w.scrollHeight); }
+
+function addDiv(text) {
+  const d = document.createElement('div');
+  d.className = 'divider';
+  d.innerHTML = `<span>${text}</span>`;
+  document.getElementById('msgs').appendChild(d);
+  scrollMsgs();
+}
+
+function addMsg(m, text) {
+  document.getElementById('empty-st').style.display = 'none';
+  const d = document.createElement('div');
+  d.className = 'msg';
+  d.innerHTML = `<div class="mav" style="background:${m.bg};color:${m.col}">${m.init}</div>
+    <div class="mbody">
+      <div class="mmeta"><span class="mname" style="color:${m.col}">${m.name}</span><span class="mtag">${m.role}</span></div>
+      <div class="mtext">${text}</div>
+    </div>`;
+  document.getElementById('msgs').appendChild(d);
+  scrollMsgs();
+}
+
+function addBanner(html) {
+  document.getElementById('empty-st').style.display = 'none';
+  const d = document.createElement('div');
+  d.className = 'banner';
+  d.innerHTML = html;
+  document.getElementById('msgs').appendChild(d);
+  scrollMsgs();
+}
+
+function addErr(text) {
+  document.getElementById('empty-st').style.display = 'none';
+  const d = document.createElement('div');
+  d.className = 'errmsg';
+  d.textContent = text;
+  document.getElementById('msgs').appendChild(d);
+  scrollMsgs();
+}
+
+function renderOutput(data) {
+  if (data.takeaways?.length)
+    document.getElementById('out-tk').innerHTML = `<div class="tk-list">${data.takeaways.map(t => `<div class="tki">${t}</div>`).join('')}</div>`;
+  if (data.actions?.length)
+    document.getElementById('out-ac').innerHTML = `<div class="ac-list">${data.actions.map(a => `<div class="aci">${a}</div>`).join('')}</div>`;
+  if (data.mvp) {
+    const m = MENTORS.find(x => x.id === data.mvp.id);
+    if (m) {
+      scores[m.id].mvp = (scores[m.id].mvp || 0) + 1;
+      document.getElementById('out-mvp').innerHTML = `<div class="mvp-c">
+        <div class="mvp-av" style="background:${m.bg};color:${m.col}">${m.init}</div>
+        <div class="mvp-n">${m.name}</div>
+        <div class="mvp-w">${data.mvp.reason}</div>
+      </div>`;
+      renderLB();
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════
+// AUTO-SELECT ENGINE
+// ═══════════════════════════════════════════════════
+function autoSelect(topic, ctx) {
+  const text = (topic + ' ' + ctx).toLowerCase();
+  const pool = MENTORS.filter(m => m.active);
+  const scored = pool.map(m => {
+    let score = 0;
+    (m.kw || []).forEach(k => { if (text.includes(k)) score += 3; });
+    if (/money|invest|finance|revenue|income|budget|wealth/.test(text) && m.cat === 'Finance') score += 5;
+    if (/ai|tech|code|build|software|app|product|saas/.test(text) && m.cat === 'AI & Tech') score += 5;
+    if (/health|sleep|energy|stress|sauna|diet|fitness|recovery/.test(text) && m.cat === 'Health') score += 5;
+    if (/adhd|brain|emotion|trigger|react|psychology|behaviour/.test(text) && m.cat === 'Psychology') score += 5;
+    if (/mindset|clarity|purpose|why|motivation|focus|peace/.test(text) && m.cat === 'Mindset') score += 5;
+    if (/kids|daughters|parenting|co-parent|family|jordan|miley|frankie/.test(text) && m.cat === 'Parenting') score += 8;
+    score += Math.random() * 2;
+    return { m, score };
+  });
+  scored.sort((a, b) => b.score - a.score);
+  const words = topic.split(' ').length;
+  const count = Math.min(pool.length, words > 8 ? 5 : words > 4 ? 4 : 3);
+  return scored.slice(0, count).map(x => x.m);
+}
+
+// ═══════════════════════════════════════════════════
+// MAIN SESSION
+// ═══════════════════════════════════════════════════
+async function runSession() {
+  const topic = document.getElementById('topic').value.trim();
+  const ctx = document.getElementById('ctx').value.trim();
+  if (!topic) { document.getElementById('topic').focus(); return; }
+
+  let apiKey = sessionStorage.getItem('lp-key') || '';
+  if (!apiKey) {
+    apiKey = prompt('Paste your Anthropic API key to get started:\n(Get one free at console.anthropic.com/keys)', '');
+    if (!apiKey || !apiKey.trim()) return;
+    sessionStorage.setItem('lp-key', apiKey.trim());
+  }
+
+  const pool = MENTORS.filter(m => m.active);
+  if (pool.length < 2) { alert('Enable at least 2 mentors in the left panel.'); return; }
+
+  const selected = autoSelect(topic, ctx);
+  const selIds = selected.map(m => m.id);
+
+  document.getElementById('go-btn').disabled = true;
+  setStatus('run', 'Selecting mentors…');
+  renderSidebar(selIds);
+  selIds.forEach(id => { scores[id].app = (scores[id].app || 0) + 1; });
+
+  const envDesc = env === 'sunday'
+    ? 'Sunday Mode — casual, warm kitchen-table energy. Mates giving real talk, not consultants. Conversational and personal, dry humour welcome.'
+    : 'Boardroom Mode — structured, high-stakes, precise. Every word counts. Push for the best decision. No waffle.';
+
+  const profiles = selected.map(m =>
+    `[${m.id}] ${m.name} (${m.cat} — ${m.role})\nTone: ${m.energy}`
+  ).join('\n');
+
+  const prompt = `You run Luke's Place — a personal AI advisory council for Luke, a full-time single dad in Gosford NSW Australia. Luke runs: Basketball Software Hub, AI Agency Starter Kit, Labour Hire Made Easy, Papa Chilli, Evolute Tech (with Jared). He has a 90-day financial target. Partner Lisa. Three daughters: Jordan, Miley, Frankie. Has ADHD. Deep basketball knowledge.
+
+ENVIRONMENT: ${envDesc}
+
+SELECTED MENTORS:
+${profiles}
+
+RULES:
+- Each mentor speaks 2-4 times, spread naturally
+- Mentors reference each other by name — agree, push back, build on each other
+- At least one exposes a hidden assumption
+- At least one gives a specific numbered action
+- Real debate, not a list of separate opinions
+- Each turn: 2-4 punchy sentences
+- Reference Luke's ventures/situation where relevant
+- End with a clear recommendation
+
+TOPIC: ${topic}${ctx ? '\nCONTEXT: ' + ctx : ''}
+
+RETURN ONLY VALID JSON, nothing else:
+{"discussion":[{"mentorId":"id","text":"..."}],"takeaways":["...","...","..."],"actions":["...","...","..."],"mvp":{"id":"mentorId","reason":"one sentence"}}
+
+Valid mentorIds: ${selIds.join(', ')}`;
+
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt, apiKey: apiKey.trim() })
+    });
+
+    if (!res.ok) {
+      const j = await res.json().catch(() => ({}));
+      if (res.status === 401) sessionStorage.removeItem('lp-key');
+      throw new Error(j?.error || `HTTP ${res.status}`);
+    }
+
+    const data = await res.json();
+    const raw = (data.content || []).map(c => c.text || '').join('');
+    let parsed;
+    try {
+      parsed = JSON.parse(raw.replace(/```json|```/g, '').trim());
+    } catch (e) {
+      throw new Error('Response parse error. Raw: ' + raw.slice(0, 200));
+    }
+
+    document.getElementById('msgs').innerHTML = '';
+    document.getElementById('empty-st').style.display = 'none';
+    addDiv((env === 'sunday' ? '☕ Sunday' : '⬛ Boardroom') + ' · ' + new Date().toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' }));
+    addBanner('<strong>Auto-selected:</strong> ' + selected.map(m => `<span style="color:${m.col}">${m.name}</span>`).join(' · '));
+
+    for (let i = 0; i < parsed.discussion.length; i++) {
+      const turn = parsed.discussion[i];
+      const m = MENTORS.find(x => x.id === turn.mentorId);
+      if (!m) continue;
+      await new Promise(r => setTimeout(r, 250 + i * 140));
+      addMsg(m, turn.text);
+      setStatus('run', m.name + ' speaking…');
+    }
+
+    await new Promise(r => setTimeout(r, 300));
+    addDiv('Session concluded');
+    renderOutput(parsed);
+
+    const mvpM = MENTORS.find(m => m.id === parsed.mvp?.id);
+    sessions.push({
+      ts: Date.now(), topic: topic.slice(0, 80), env,
+      mentors: selIds, turns: parsed.discussion.length,
+      mvp: parsed.mvp?.id || null
+    });
+    if (sessions.length > 60) sessions = sessions.slice(-60);
+    save();
+    setStatus('live', `Done · ${parsed.discussion.length} turns · MVP: ${mvpM?.name || '—'}`);
+
+  } catch (err) {
+    console.error(err);
+    addErr('Error: ' + err.message + '\n\nMake sure your API key is correct (sk-ant-…). For CORS errors, deploy to Vercel.');
+    setStatus('', 'Error — see message in chat');
+  }
+
+  document.getElementById('go-btn').disabled = false;
+  document.getElementById('topic').value = '';
+  setTimeout(() => renderSidebar([]), 5000);
+}
+
+document.getElementById('topic').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); runSession(); }
+});
+
+// ═══════════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════════
+function renderDash() {
+  const tot = sessions.length;
+  const totT = sessions.reduce((a, s) => a + (s.turns || 0), 0);
+  const topId = Object.entries(scores).sort((a, b) => (b[1].mvp || 0) - (a[1].mvp || 0))[0]?.[0];
+  const topM = MENTORS.find(m => m.id === topId);
+  const sn = sessions.filter(s => s.env === 'sunday').length;
+  const bn = sessions.filter(s => s.env === 'boardroom').length;
+
+  document.getElementById('s-total').textContent = tot;
+  document.getElementById('s-turns').textContent = totT;
+  document.getElementById('s-top').textContent = topM ? topM.name.split(' ').pop() : '—';
+  document.getElementById('s-top-d').textContent = topM ? `${scores[topId]?.mvp || 0} MVP wins` : '0 MVP wins';
+  document.getElementById('s-mode').textContent = tot === 0 ? '—' : sn >= bn ? '☕ Sunday' : '⬛ Boardroom';
+  document.getElementById('s-mode-d').textContent = (sn >= bn ? sn : bn) + ' sessions';
+
+  const recent = sessions.slice(-8);
+  const cEl = document.getElementById('achart');
+  if (!recent.length) { cEl.innerHTML = '<div class="no-data">No sessions yet.</div>'; }
+  else {
+    const mx = Math.max(...recent.map(s => s.turns || 0), 1);
+    cEl.innerHTML = recent.map(s => {
+      const h = Math.round(((s.turns || 0) / mx) * 72);
+      const d = new Date(s.ts);
+      return `<div class="abw"><div class="ab hd" style="height:${h}px"></div><div class="abl">${d.getDate()}/${d.getMonth() + 1}</div></div>`;
+    }).join('');
+  }
+
+  const sortedM = [...MENTORS].sort((a, b) => (scores[b.id]?.app || 0) - (scores[a.id]?.app || 0)).slice(0, 10);
+  const mxA = Math.max(1, scores[sortedM[0]?.id]?.app || 0);
+  const muEl = document.getElementById('mu-list');
+  if (!sessions.length) { muEl.innerHTML = '<div class="no-data">No data yet.</div>'; }
+  else {
+    muEl.innerHTML = sortedM.map(m => `<div class="mu-row">
+      <div class="mu-av" style="background:${m.bg};color:${m.col}">${m.init}</div>
+      <div class="mu-nm">${m.name.split(' ')[0]}</div>
+      <div class="mu-bw"><div class="mu-b" style="background:${m.col};opacity:.7;width:${Math.round(((scores[m.id]?.app || 0) / mxA) * 100)}%"></div></div>
+      <div class="mu-ct">${scores[m.id]?.app || 0}</div>
+    </div>`).join('');
+  }
+
+  const words = sessions.map(s => s.topic || '').join(' ').toLowerCase().split(/\s+/)
+    .filter(w => w.length > 4 && !/should|would|could|about|going|their|there|where|which|after|being|every/.test(w));
+  const freq = {};
+  words.forEach(w => freq[w] = (freq[w] || 0) + 1);
+  const topW = Object.entries(freq).sort((a, b) => b[1] - a[1]).slice(0, 24);
+  const tEl = document.getElementById('t-tags');
+  if (!topW.length) { tEl.innerHTML = '<div class="no-data">Topics appear as you run sessions.</div>'; }
+  else { tEl.innerHTML = topW.map(([w, c]) => `<span class="ttag ${c >= 3 ? 'f3' : c >= 2 ? 'f2' : ''}">${w}</span>`).join(''); }
+
+  const sEl = document.getElementById('slog');
+  if (!sessions.length) { sEl.innerHTML = '<div class="no-data">No sessions logged.</div>'; }
+  else {
+    sEl.innerHTML = [...sessions].reverse().slice(0, 14).map(s => {
+      const mvM = MENTORS.find(m => m.id === s.mvp);
+      const d = new Date(s.ts);
+      return `<div class="slr">
+        <div class="sl-env ${s.env}"></div>
+        <div class="sl-body"><div class="sl-topic">${s.topic || '—'}</div><div class="sl-meta">${d.toLocaleDateString('en-AU')} · ${s.turns} turns · ${(s.mentors || []).length} mentors</div></div>
+        ${mvM ? `<div class="sl-mvp">${mvM.init}</div>` : ''}
+      </div>`;
+    }).join('');
+  }
+}
+
+// ═══════════════════════════════════════════════════
+// TROPHY CASE
+// ═══════════════════════════════════════════════════
+function renderTrophy() {
+  const pillsEl = document.getElementById('cat-pills');
+  pillsEl.innerHTML = CATS.map(c =>
+    `<button class="cpill${activeCat === c ? ' on' : ''}" onclick="setCat('${c}')">${c}</button>`
+  ).join('');
+
+  const topMvpId = Object.entries(scores).sort((a, b) => (b[1].mvp || 0) - (a[1].mvp || 0))[0]?.[0];
+  const filtered = activeCat === 'All' ? MENTORS : MENTORS.filter(m => m.cat === activeCat);
+  const grid = document.getElementById('tgrid');
+
+  grid.innerHTML = filtered.map(m => {
+    const isCrown = m.id === topMvpId && (scores[m.id]?.mvp || 0) > 0;
+    const catCol = CAT_COL[m.cat] || '#888';
+    const portrait = PORT[m.id];
+    return `<div class="tc${m.active ? ' active-m' : ''}">
+      <div class="tc-glow" style="background:${m.col}"></div>
+      ${isCrown ? '<div class="tc-crown">👑</div>' : ''}
+      <div class="tc-status ${m.active ? 'active' : 'inactive'}"></div>
+      <div class="tc-top">
+        <div class="tc-portrait" style="border-color:${m.col}50">${portrait || `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:${m.bg};color:${m.col};font-weight:700;font-size:16px">${m.init}</div>`}</div>
+        <div class="tc-id">
+          <div class="tc-name" style="color:${m.col}">${m.name}</div>
+          <div class="tc-role">${m.role}</div>
+          <div class="tc-cat" style="background:${catCol}18;color:${catCol};border:1px solid ${catCol}40">${m.cat}</div>
+          <div class="tc-tags">${(m.tags || []).map(t => `<span class="tc-tag">${t}</span>`).join('')}</div>
+        </div>
+      </div>
+      <div class="tc-energy"><strong>Energy:</strong> ${m.energy}</div>
+      <div class="tc-quote" style="border-color:${m.col}50">${m.quote}</div>
+      <div class="tc-why">${m.why}</div>
+      <div class="tc-stats">
+        <div class="tcs"><div class="tcs-num" style="color:${m.col}">${scores[m.id]?.app || 0}</div><div class="tcs-lbl">Sessions</div></div>
+        <div class="tcs"><div class="tcs-num" style="color:${m.col}">${scores[m.id]?.mvp || 0}</div><div class="tcs-lbl">MVP wins</div></div>
+        <div class="tcs"><div class="tcs-num" style="color:${m.col};font-size:11px;margin-top:2px">${m.active ? 'Active' : 'Paused'}</div><div class="tcs-lbl">Status</div></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function setCat(cat) {
+  activeCat = cat;
+  renderTrophy();
+}
+
+// ═══════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════
+renderSidebar();
+renderLB();
+const hasKey = !!sessionStorage.getItem('lp-key');
+setStatus(hasKey ? 'live' : '', hasKey
+  ? 'Ready — 26 mentors across 6 categories. Type a topic to begin.'
+  : 'Click 🔑 API Key top-right to get started, then type a topic and hit Convene'
+);
+</script>
+</body>
+</html>
