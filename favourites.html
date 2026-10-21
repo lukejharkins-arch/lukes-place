@@ -1,0 +1,337 @@
+<title>Luke's Favourites</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a bento grid of favourites under a live greeting, in Luke's Place ink and gold. Dark only, by design. */
+:root{
+  color-scheme:dark;
+  --ink:#0c0b14;
+  --ink2:#14131f;
+  --line:rgba(236,226,206,.09);
+  --line2:rgba(236,226,206,.18);
+  --text:#ece6da;
+  --muted:#9a93a8;
+  --faint:#5f596d;
+  --gold:#c8a96e;
+  --gold-hi:#f0d49a;
+  --gold-wash:rgba(200,169,110,.12);
+  --sea:#6fb3c4;
+  --leaf:#7fc79a;
+  --display:'Syne','Avenir Next','Segoe UI',sans-serif;
+  --body:'DM Sans','Helvetica Neue',Arial,sans-serif;
+  --mono:'DM Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+  --r:16px;
+}
+*{box-sizing:border-box}
+body{background:var(--ink);color:var(--text);font-family:var(--body);font-size:15px;line-height:1.5;
+  background-image:radial-gradient(900px 500px at 85% -10%,rgba(200,169,110,.10),transparent 60%),radial-gradient(700px 500px at -10% 110%,rgba(111,179,196,.07),transparent 60%);
+  background-attachment:fixed}
+.wrap{max-width:1120px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Header */
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 32px;margin-bottom:32px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,6vw,58px);line-height:1;letter-spacing:-.02em;margin:10px 0 0;text-wrap:balance}
+h1 span{color:var(--gold)}
+.clock{text-align:right;min-width:0}
+.clock .time{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.5vw,44px);font-variant-numeric:tabular-nums;line-height:1}
+.clock .date{color:var(--muted);margin-top:6px}
+.toolbar{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+button{font:inherit;cursor:pointer}
+.btn{font-family:var(--mono);font-size:12px;letter-spacing:.06em;padding:7px 14px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--muted);transition:color .15s,border-color .15s,background .15s}
+.btn:hover{color:var(--text);border-color:var(--gold)}
+.btn[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+
+/* Grid */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{position:relative;background:var(--ink2);border:1px solid var(--line);border-radius:var(--r);padding:22px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.span-4{grid-column:span 4}.span-3{grid-column:span 3}.span-2{grid-column:span 2}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:flex;justify-content:space-between;gap:8px}
+.label b{color:var(--gold);font-weight:500}
+h2{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.15;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0}
+.note{color:var(--muted);font-size:14px;margin:0;max-width:60ch}
+
+[contenteditable="true"]{outline:1px dashed var(--gold);outline-offset:4px;border-radius:4px;background:var(--gold-wash)}
+
+/* Now playing */
+.player{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center}
+.vinyl{width:150px;aspect-ratio:1;max-width:100%;border-radius:50%;position:relative;
+  background:repeating-radial-gradient(circle at 50% 50%,#17151f 0 2px,#0d0c13 2px 4px);box-shadow:0 10px 30px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.04)}
+.vinyl::after{content:"";position:absolute;inset:34%;border-radius:50%;background:radial-gradient(circle,var(--ink) 0 9%,var(--gold) 10% 100%)}
+.vinyl.spin{animation:spin 3.2s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tracks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.tracks li{display:flex;gap:12px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line);font-size:14px}
+.tracks li:last-child{border-bottom:none}
+.tracks .n{font-family:var(--mono);color:var(--faint);font-size:12px;width:1.6em;font-variant-numeric:tabular-nums}
+.tracks .t{flex:1;min-width:0}
+.tracks .d{font-family:var(--mono);color:var(--faint);font-size:12px;font-variant-numeric:tabular-nums}
+.tracks li.on .t{color:var(--gold-hi)}
+
+/* Coffee */
+.big{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;font-variant-numeric:tabular-nums}
+.cups{display:flex;gap:6px;flex-wrap:wrap}
+.cup{width:26px;height:26px;border-radius:50%;border:1px solid var(--line2);background:transparent;padding:0}
+.cup.full{background:var(--gold);border-color:var(--gold)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Reading */
+.bar{height:6px;border-radius:999px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-hi));border-radius:inherit}
+.meta{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* Watchlist */
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.list li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.list li:last-child{border-bottom:none}
+.chip{font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line2);color:var(--muted);white-space:nowrap;align-self:center}
+.chip.go{color:var(--leaf);border-color:rgba(127,199,154,.4)}
+.chip.next{color:var(--gold);border-color:var(--gb,rgba(200,169,110,.4))}
+
+/* Beach */
+.beach{background:linear-gradient(180deg,rgba(111,179,196,.10),var(--ink2) 70%)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{border-top:1px solid var(--line2);padding-top:8px;min-width:0}
+.stat .v{font-family:var(--display);font-weight:700;font-size:20px;font-variant-numeric:tabular-nums}
+.stat .k{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.08em;text-transform:uppercase}
+.wave{width:100%;height:36px;display:block}
+
+/* Footy */
+.ladder{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.ladder td{padding:6px 0;border-bottom:1px solid var(--line)}
+.ladder tr:last-child td{border-bottom:none}
+.ladder td:last-child{text-align:right;font-family:var(--mono);color:var(--muted)}
+.ladder td.w{color:var(--leaf)}.ladder td.l{color:#d98b7a}
+
+/* Food + links */
+.dish{display:flex;flex-direction:column;gap:4px;padding:10px 0;border-bottom:1px solid var(--line)}
+.dish:last-child{border-bottom:none}
+.dish small{color:var(--muted);font-size:13px}
+.links{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.links a{display:flex;flex-direction:column;gap:2px;padding:14px;border-radius:12px;border:1px solid var(--line);color:var(--text);text-decoration:none;transition:border-color .15s,background .15s;min-width:0}
+.links a:hover{border-color:var(--gold);background:var(--gold-wash)}
+.links a span{font-family:var(--mono);font-size:11px;color:var(--faint)}
+
+footer{margin-top:28px;color:var(--faint);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .span-4,.span-3,.span-2{grid-column:span 6}
+  .links{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:520px){
+  .player{grid-template-columns:1fr}
+  .vinyl{width:120px}
+  .clock{text-align:left}.toolbar{justify-content:flex-start}
+  header{align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){.vinyl.spin{animation:none}*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Luke's Place · Favourites</div>
+      <h1><span id="greet">G'day</span>, Luke.</h1>
+    </div>
+    <div class="clock">
+      <div class="time" id="time">--:--</div>
+      <div class="date" id="date">&nbsp;</div>
+      <div class="toolbar">
+        <button class="btn" id="editBtn" aria-pressed="false">Edit favourites</button>
+        <button class="btn" id="resetBtn">Reset</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid">
+    <!-- Now playing -->
+    <section class="card span-4" aria-label="On rotation">
+      <div class="label">On rotation <b id="playState">Paused</b></div>
+      <div class="player">
+        <button class="vinyl" id="vinyl" aria-label="Play or pause the record" style="border:none;cursor:pointer"></button>
+        <div style="min-width:0;display:flex;flex-direction:column;gap:10px">
+          <div>
+            <h2 data-edit="album">Currents</h2>
+            <p class="sub" data-edit="artist">Tame Impala · 2015</p>
+          </div>
+          <ol class="tracks" id="tracks">
+            <li class="on"><span class="n">01</span><span class="t">Let It Happen</span><span class="d">7:47</span></li>
+            <li><span class="n">05</span><span class="t">The Less I Know the Better</span><span class="d">3:36</span></li>
+            <li><span class="n">07</span><span class="t">'Cause I'm a Man</span><span class="d">4:01</span></li>
+            <li><span class="n">13</span><span class="t">New Person, Same Old Mistakes</span><span class="d">6:03</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coffee -->
+    <section class="card span-2" aria-label="Coffee">
+      <div class="label">Coffee order</div>
+      <h3 data-edit="coffee">Double-shot flat white, oat</h3>
+      <div class="row">
+        <div><div class="big" id="cupCount">0</div><div class="meta">cups this week</div></div>
+        <button class="btn" id="cupAdd">+ One more</button>
+      </div>
+      <div class="cups" id="cups" aria-label="Cups this week"></div>
+      <p class="note">Tap a cup to fill it. Counts reset each Monday.</p>
+    </section>
+
+    <!-- Reading -->
+    <section class="card span-2" aria-label="Reading">
+      <div class="label">Reading</div>
+      <div>
+        <h3 data-edit="book">Project Hail Mary</h3>
+        <p class="sub" data-edit="author">Andy Weir</p>
+      </div>
+      <div class="bar"><i id="bookBar" style="width:62%"></i></div>
+      <div class="row"><span class="meta" id="bookPct">p. 296 of 476</span><span class="meta">62%</span></div>
+      <p class="note">Up next: <span data-edit="nextBook">The Rosie Project, Graeme Simsion</span></p>
+    </section>
+
+    <!-- Watching -->
+    <section class="card span-2" aria-label="Watchlist">
+      <div class="label">Watchlist</div>
+      <ul class="list">
+        <li><span data-edit="w1">Bluey, season 3</span><span class="chip go">Watching</span></li>
+        <li><span data-edit="w2">Mystery Road: Origin</span><span class="chip next">Next</span></li>
+        <li><span data-edit="w3">The Bear</span><span class="chip">Rewatch</span></li>
+        <li><span data-edit="w4">Muriel's Wedding</span><span class="chip">Classic</span></li>
+      </ul>
+    </section>
+
+    <!-- Footy -->
+    <section class="card span-2" aria-label="Footy">
+      <div class="label">Footy · AFL</div>
+      <h3 data-edit="team">Sydney Swans</h3>
+      <table class="ladder">
+        <tr><td>Rd 21 v Geelong</td><td class="w">W</td><td>94–71</td></tr>
+        <tr><td>Rd 22 v Collingwood</td><td class="l">L</td><td>68–80</td></tr>
+        <tr><td>Rd 23 v GWS</td><td class="w">W</td><td>102–88</td></tr>
+      </table>
+      <p class="note">Favourite player: <span data-edit="player">Isaac Heeney</span></p>
+    </section>
+
+    <!-- Beach -->
+    <section class="card span-3 beach" aria-label="Favourite place">
+      <div class="label">Favourite place <b>Typical spring arvo</b></div>
+      <div>
+        <h3 data-edit="place">Bronte Beach, Sydney</h3>
+        <p class="sub" data-edit="placeNote">Early swim at the baths, then bacon and egg roll on the grass.</p>
+      </div>
+      <svg class="wave" viewBox="0 0 400 36" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 22 Q25 10 50 22 T100 22 T150 22 T200 22 T250 22 T300 22 T350 22 T400 22 V36 H0Z" fill="rgba(111,179,196,.22)"/>
+        <path d="M0 26 Q25 16 50 26 T100 26 T150 26 T200 26 T250 26 T300 26 T350 26 T400 26" fill="none" stroke="#6fb3c4" stroke-width="1.5"/>
+      </svg>
+      <div class="stats">
+        <div class="stat"><div class="v">19°C</div><div class="k">Water</div></div>
+        <div class="stat"><div class="v">0.8 m</div><div class="k">Swell</div></div>
+        <div class="stat"><div class="v">UV 9</div><div class="k">Slip slop slap</div></div>
+      </div>
+    </section>
+
+    <!-- Food -->
+    <section class="card span-3" aria-label="Food">
+      <div class="label">Food</div>
+      <div>
+        <div class="dish"><strong data-edit="f1">Lamb souvlaki</strong><small>Friday night takeaway</small></div>
+        <div class="dish"><strong data-edit="f2">Barramundi on the barbie</strong><small>Sunday cook-up, with lemon myrtle</small></div>
+        <div class="dish"><strong data-edit="f3">Pav with passionfruit</strong><small>The only acceptable dessert at Christmas</small></div>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section class="card span-6" aria-label="Quick links">
+      <div class="label">Quick links</div>
+      <nav class="links">
+        <a href="https://open.spotify.com" target="_blank" rel="noopener">Spotify<span>open.spotify.com</span></a>
+        <a href="https://www.afl.com.au" target="_blank" rel="noopener">AFL<span>afl.com.au</span></a>
+        <a href="https://www.bom.gov.au" target="_blank" rel="noopener">BOM weather<span>bom.gov.au</span></a>
+        <a href="https://www.goodreads.com" target="_blank" rel="noopener">Goodreads<span>goodreads.com</span></a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <span>Example picks. Hit Edit favourites to make them yours; changes save in this browser.</span>
+    <span id="saved"></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var KEY='lukes-favourites-v1';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+  function save(s){try{localStorage.setItem(KEY,JSON.stringify(s));return true}catch(e){return false}}
+  var state=load();
+
+  // Clock and greeting
+  function tick(){
+    var d=new Date(),h=d.getHours();
+    document.getElementById('time').textContent=d.toLocaleTimeString('en-AU',{hour:'numeric',minute:'2-digit'});
+    document.getElementById('date').textContent=d.toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+    document.getElementById('greet').textContent=h<5?'Late one':h<12?'Morning':h<17?'Arvo':'Evening';
+  }
+  tick();setInterval(tick,15000);
+
+  // Editable text
+  var fields=document.querySelectorAll('[data-edit]');
+  var defaults={};
+  fields.forEach(function(el){
+    defaults[el.dataset.edit]=el.textContent;
+    if(state.text&&state.text[el.dataset.edit])el.textContent=state.text[el.dataset.edit];
+  });
+  var editBtn=document.getElementById('editBtn'),editing=false;
+  editBtn.addEventListener('click',function(){
+    editing=!editing;
+    editBtn.setAttribute('aria-pressed',editing);
+    editBtn.textContent=editing?'Done':'Edit favourites';
+    fields.forEach(function(el){el.contentEditable=editing?'true':'false'});
+    if(!editing){
+      state.text={};
+      fields.forEach(function(el){
+        var v=el.textContent.trim();
+        if(v&&v!==defaults[el.dataset.edit])state.text[el.dataset.edit]=v;
+      });
+      flash(save(state)?'Saved':'Could not save in this browser');
+    }else fields[0].focus();
+  });
+  fields.forEach(function(el){el.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();el.blur()}})});
+
+  document.getElementById('resetBtn').addEventListener('click',function(){
+    state={};save(state);
+    fields.forEach(function(el){el.textContent=defaults[el.dataset.edit]});
+    renderCups();flash('Reset to examples');
+  });
+
+  function flash(msg){var s=document.getElementById('saved');s.textContent=msg;clearTimeout(flash.t);flash.t=setTimeout(function(){s.textContent=''},2400)}
+
+  // Coffee tally, resets each Monday
+  function weekKey(){var d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d.toISOString().slice(0,10)}
+  var MAX=14;
+  function cups(){if(state.week!==weekKey()){state.week=weekKey();state.cups=0}return state.cups||0}
+  function renderCups(){
+    var n=cups(),wrap=document.getElementById('cups');wrap.innerHTML='';
+    document.getElementById('cupCount').textContent=n;
+    for(var i=0;i<MAX;i++){
+      var b=document.createElement('button');
+      b.className='cup'+(i<n?' full':'');
+      b.setAttribute('aria-label',(i+1)+' cups');
+      (function(i){b.addEventListener('click',function(){state.cups=(cups()===i+1)?i:i+1;save(state);renderCups()})})(i);
+      wrap.appendChild(b);
+    }
+  }
+  document.getElementById('cupAdd').addEventListener('click',function(){state.cups=Math.min(MAX,cups()+1);save(state);renderCups()});
+  renderCups();
+
+  // Record player
+  var vinyl=document.getElementById('vinyl'),ps=document.getElementById('playState'),tracks=document.querySelectorAll('#tracks li');
+  vinyl.addEventListener('click',function(){var on=vinyl.classList.toggle('spin');ps.textContent=on?'Playing':'Paused'});
+  tracks.forEach(function(li){li.style.cursor='pointer';li.addEventListener('click',function(){
+    tracks.forEach(function(x){x.classList.remove('on')});li.classList.add('on');vinyl.classList.add('spin');ps.textContent='Playing';
+  })});
+})();
+</script>
