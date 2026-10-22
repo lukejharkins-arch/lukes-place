@@ -7,6 +7,11 @@ Single source of truth for every dashboard, command centre and dashboard busines
 - **Not searched:** ChatGPT (excluded by request); Notion, Google Drive and Gmail (not Claude sources; available on request)
 - **Status:** DRAFT. Nothing gets filed or archived until Luke confirms this list is complete.
 
+> **Direction (22 Oct):**
+> - **Focus:** C1 SONIC, C2 Luke's Place and P3 Kairo, merged in `life-assistant-blueprint.md`.
+> - **Reference:** C3 to C9, M2, M3 and M5.
+> - **Later:** P1, P2, P4, P6, P7, M1 and M4, kept separate in `business-tools-later.md`. This replaces the scoring in section 4 for now.
+
 ---
 
 ## 0. Security first
