@@ -106,12 +106,15 @@ Source tags:
 
 ---
 
-## 3. Decisions to make
+## 3. Decisions (locked 2 Nov 2026)
 
-1. **Name.** SONIC is the assistant's name. Kairo or Orra only matters if you white-label later.
-2. **Brain.** The Kairo brief asked for the ChatGPT API, but everything you've built runs on Claude. The spec is model-agnostic, so either works.
-3. **Users.** Just you, or you and Lisa from day one? The Snapshot already syncs with Lisa through Supabase.
-4. **Voice and avatar.** This is the most expensive part by far. Build it after the hub is useful, starting with an off-the-shelf voice (ElevenLabs) before anything custom.
+1. **Name: Jarvis.** This is for personal use. A white-label version needs its own public name (Kairo or Orra), because Marvel owns JARVIS.
+2. **Brain: Claude first.** Build behind a model switch so ChatGPT can bolt on later as a "super brain". Options for that:
+   - route each task to the best model
+   - ask for a second opinion on big decisions
+   - let both models argue in the Council
+3. **Users: one household, two profiles.** Luke and Lisa each get their own login and profile, with private spaces and shared spaces. Either of you can share an item with the other.
+4. **Voice and avatar.** Start with off-the-shelf services and templates. Keep a priced upgrade path to high-end, chosen for the best price.
 
 ## 4. Lessons the reference builds already paid for
 
