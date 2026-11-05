@@ -1,0 +1,936 @@
+{
+  "meta": {
+    "compiled": "2026-11-05",
+    "compiled_by": "ON COURT ONLY - Australian Basketball Relationships researcher (AI agent)",
+    "method": "WebSearch only; WebFetch blocked (DNS not allowed) for wikipedia, basketball.com.au, sen.com.au, flashscore, pr.nba.com, so facts come from search-result snippets/summaries of the cited URLs. No one was contacted; nothing purchased.",
+    "verification_key": {
+      "VERIFIED": "fact surfaced directly from cited source(s) in search results, preferably 2+ independent sources",
+      "PARTIAL": "core fact sourced but some fields (college/draft/years) are from general knowledge or a single secondary source and not confirmed from a fetched page",
+      "UNVERIFIED": "could not confirm from any retrieved source"
+    }
+  },
+  "current_nba": [
+    {
+      "name": "Dyson Daniels",
+      "team": "Atlanta Hawks",
+      "position": "Guard",
+      "college": null,
+      "pre_nba": "NBA Global Academy (Canberra); NBA G League Ignite",
+      "draft": "2022, Round 1 Pick 8 (New Orleans Pelicans)",
+      "season": "2026-27",
+      "contract_note": "Guaranteed deal; headlines Aussie contingent",
+      "source_urls": [
+        "https://www.espn.com/nba/story/_/id/50216358/nba-espn-disney-schedule-teams-how-watch-nba-australia-2026-27",
+        "https://www.nba.com/news/2026-27-international-players-opening-night",
+        "https://www.basketball.com.au/news/australians-nba-contract-status-2026-27-free-agency-outlook"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "2026-27 team verified (ESPN Oct 2026). Draft details from general knowledge, not fetched."
+    },
+    {
+      "name": "Josh Giddey",
+      "team": "Chicago Bulls",
+      "position": "Guard",
+      "college": null,
+      "pre_nba": "NBA Global Academy; Adelaide 36ers (NBL Next Stars)",
+      "draft": "2021, Round 1 Pick 6 (Oklahoma City Thunder)",
+      "season": "2026-27",
+      "source_urls": [
+        "https://www.espn.com/nba/story/_/id/50216358/nba-espn-disney-schedule-teams-how-watch-nba-australia-2026-27",
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "2026-27 team verified; draft details from general knowledge."
+    },
+    {
+      "name": "Jock Landale",
+      "team": "Atlanta Hawks",
+      "position": "Center",
+      "college": "Saint Mary's College of California",
+      "draft": "Undrafted (2018)",
+      "season": "2026-27",
+      "contract_note": "Reported 1-year, US$14M re-signing (AP, June 2026)",
+      "source_urls": [
+        "https://www.ajc.com/sports/2026/06/hawks-agree-to-re-sign-center-jock-landale-source-says/",
+        "https://www.tsn.ca/nba/article/report-centre-landale-agrees-to-14-million-one-year-deal-to-re-sign-with-hawks/",
+        "https://www.espn.com/nba/story/_/id/50216358/nba-espn-disney-schedule-teams-how-watch-nba-australia-2026-27",
+        "https://www.sbs.com.au/news/article/aussies-snubbed-at-nba-draft/pdmtwzhe3"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Tyrese Proctor",
+      "team": "Cleveland Cavaliers",
+      "position": "Guard",
+      "college": "Duke (3 seasons)",
+      "draft": "2025, Round 2 Pick 49 (Cleveland)",
+      "season": "2026-27",
+      "source_urls": [
+        "https://basketball.com.au/news/aussies-in-nba-results-october-23-2026-tyrese-proctor",
+        "https://www.basketball.com.au/news/tyrese-proctor-donovan-mitchell-tenacity-hunger-cleveland-cavaliers-preseason"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Josh Green",
+      "team": "Utah Jazz",
+      "position": "Guard/Wing",
+      "college": "Arizona",
+      "draft": "2020, Round 1 Pick 18 (Dallas Mavericks)",
+      "season": "2026-27",
+      "contract_note": "Traded CHA->MIN (summer 2026, LaMelo Ball deal) then MIN->UTA (late Aug 2026) for Cody Williams, John Konchar",
+      "source_urls": [
+        "https://www.nbcsports.com/nba/news/timberwolves-trade-josh-green-to-jazz-clearing-way-for-kuminga-signing",
+        "https://basketball.com.au/news/josh-green-utah-jazz-boomers-trade-media-day-2026-27",
+        "https://nbl.com.au/news/josh-green-nba-trade-charlotte-minnesota-utah"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Team verified; college/draft from general knowledge."
+    },
+    {
+      "name": "Johnny Furphy",
+      "team": "Indiana Pacers",
+      "position": "Forward",
+      "college": "Kansas",
+      "draft": "2024, Round 2 Pick 35 (San Antonio, traded to Indiana)",
+      "season": "2026-27",
+      "contract_note": "Torn right ACL Feb 2026; on roster, no return date announced",
+      "source_urls": [
+        "https://www.nba.com/news/injury-depleted-pacers-suffer-as-johnny-furphy-tears-acl",
+        "https://www.basketball.com.au/news/johnny-furphy-acl-injury-recovery-indiana-pacers-return-update",
+        "https://www.espn.com/nba/story/_/id/50216358/nba-espn-disney-schedule-teams-how-watch-nba-australia-2026-27"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Team/injury verified; college/draft from general knowledge."
+    },
+    {
+      "name": "Rocco Zikarsky",
+      "team": "Minnesota Timberwolves",
+      "position": "Center",
+      "college": null,
+      "pre_nba": "Brisbane Bullets (NBL Next Stars)",
+      "draft": "2025, Round 2 Pick 45 (Minnesota)",
+      "season": "2026-27",
+      "contract_note": "Two-way, year 2 of 2",
+      "source_urls": [
+        "https://www.spotrac.com/nba/player/99259",
+        "https://league.nbl.com.au/news/we-had-him-much-higher-minnesota-shocked-zikarsky-was-still-available",
+        "https://www.espn.com/nba/story/_/id/50216358/nba-espn-disney-schedule-teams-how-watch-nba-australia-2026-27"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Duop Reath",
+      "team": "Phoenix Suns",
+      "position": "Forward/Center",
+      "college": "LSU (after Lee College JUCO - from general knowledge)",
+      "draft": "Undrafted (2018)",
+      "season": "2026-27",
+      "contract_note": "Signed Sept 2026 (Exhibit 10), converted to two-way; previously Portland, traded to ATL and waived",
+      "source_urls": [
+        "https://www.basketball.com.au/news/duop-reath-phoenix-suns-two-way-alex-toohey-waived-warriors",
+        "https://clutchpoints.com/nba/phoenix-suns/suns-news-phoenix-signs-ex-trail-blazers-center-with-mark-williams-sidelined",
+        "https://www.tsn.ca/nba/article/report-suns-add-center-depth-with-free-agent-reath-n1-49961989/"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Team verified; college from general knowledge."
+    },
+    {
+      "name": "Matisse Thybulle",
+      "team": "Los Angeles Lakers",
+      "position": "Forward/Wing",
+      "college": "Washington",
+      "draft": "2019, Round 1 Pick 20 (Boston, traded to Philadelphia)",
+      "season": "2026-27",
+      "dual_note": "Born in USA, raised partly in Sydney; Australian Boomers Olympic bronze 2021",
+      "contract_note": "1-year ~US$3.3M, July 2026",
+      "source_urls": [
+        "https://abc7.com/post/sources-matisse-thybulle-agrees-1-year-deal-lakers/19545075/",
+        "https://www.tsn.ca/nba/article/report-lakers-sign-free-agent-f-thybulle/",
+        "https://www.portnews.com.au/story/9314376/boomers-olympic-medallist-signs-with-los-angeles-lakers/"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Team verified; college/draft from general knowledge."
+    }
+  ],
+  "current_nba_edge_cases": [
+    {
+      "name": "Ben Simmons",
+      "team": "Sacramento Kings (signed one-year deal summer 2026)",
+      "position": "Guard/Forward",
+      "college": "LSU",
+      "draft": "2016, Round 1 Pick 1 (Philadelphia)",
+      "status": "Tore right Achilles in Kings practice before 2026-27 season; season appears over; not counted in ESPN's nine",
+      "source_urls": [
+        "https://www.nbcsportsphiladelphia.com/nba/ben-simmons-tears-achilles-tendon/759647/",
+        "https://www.nbcwashington.com/nba/ben-simmons-tears-achilles-tendon/4168955/"
+      ],
+      "verification": "PARTIAL"
+    },
+    {
+      "name": "Kyrie Irving",
+      "team": "Dallas Mavericks",
+      "college": "Duke",
+      "draft": "2011, Round 1 Pick 1 (Cleveland)",
+      "status": "Born in Melbourne; represents USA internationally. Counted by basketball.com.au preseason tally, not normally as an 'Aussie' by Boomers sources.",
+      "source_urls": [
+        "https://www.basketball.com.au/news/australians-nba-2026-27-contracts-free-agency-summer-league"
+      ],
+      "verification": "PARTIAL"
+    },
+    {
+      "name": "Dante Exum",
+      "status": "No reported NBA deal for 2026-27 as at early Oct 2026 per basketball.com.au tracker summary",
+      "source_urls": [
+        "https://www.basketball.com.au/news/nba-free-agency-2026-australians-tracker"
+      ],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "name": "Alex Toohey",
+      "status": "Waived by Golden State Dec 2025 (knee surgery); listed in Boomers 2026-27 tracker but not in ESPN's nine - current NBA status unclear",
+      "source_urls": [
+        "https://www.nbl.com.au/news/golden-state-warriors-waive-injured-alex-toohey",
+        "https://www.australia.basketball/news/4597627/nba-tracker-the-australians-shaping-the-2026-27-nba-season"
+      ],
+      "verification": "PARTIAL"
+    }
+  ],
+  "current_nba_count_note": "NBA.com opening-night release (Oct 2026) counts 9 players from Australia; ESPN Australia (Oct 2026) names the nine as Daniels, Giddey, Landale, Zikarsky, Reath, Thybulle, Proctor, Green, Furphy.",
+  "nba_champions": [
+    {
+      "name": "Luc Longley",
+      "team": "Chicago Bulls",
+      "years": [
+        1996,
+        1997,
+        1998
+      ],
+      "college": "New Mexico",
+      "source_urls": [
+        "https://basketball.com.au/news/aussies-in-the-nba-complete-list-of-every-australian-mens-basketballer-to-win-a-nba-championship-in-history",
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Andrew Gaze",
+      "team": "San Antonio Spurs",
+      "years": [
+        1999
+      ],
+      "college": "Seton Hall",
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/",
+        "https://basketball.com.au/news/aussies-in-the-nba-complete-list-of-every-australian-mens-basketballer-to-win-a-nba-championship-in-history"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Patty Mills",
+      "team": "San Antonio Spurs",
+      "years": [
+        2014
+      ],
+      "college": "Saint Mary's",
+      "source_urls": [
+        "https://basketball.com.au/news/aussies-in-the-nba-complete-list-of-every-australian-mens-basketballer-to-win-a-nba-championship-in-history"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Widely documented; search snippet did not explicitly quote it."
+    },
+    {
+      "name": "Aron Baynes",
+      "team": "San Antonio Spurs",
+      "years": [
+        2014
+      ],
+      "college": "Washington State",
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Andrew Bogut",
+      "team": "Golden State Warriors",
+      "years": [
+        2015
+      ],
+      "college": "Utah",
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Matthew Dellavedova",
+      "team": "Cleveland Cavaliers",
+      "years": [
+        2016
+      ],
+      "college": "Saint Mary's",
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Jack White",
+      "team": "Denver Nuggets",
+      "years": [
+        2023
+      ],
+      "college": "Duke",
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "name": "Alex Ducas",
+      "team": "Oklahoma City Thunder (two-way)",
+      "years": [
+        2025
+      ],
+      "college": "Saint Mary's",
+      "source_urls": [
+        "https://www.hoopsrumors.com/players/alex-ducas",
+        "https://smcgaels.com/news/2024/6/27/mens-basketball-mbb-ducas-sings-two-way-deal-with-the-oklahoma-city-thunder.aspx"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Hoops Rumors describes him as NBA champion; playoff participation not confirmed."
+    },
+    {
+      "name": "Kyrie Irving (born Melbourne, plays for USA)",
+      "team": "Cleveland Cavaliers",
+      "years": [
+        2016
+      ],
+      "college": "Duke",
+      "source_urls": [
+        "https://www.basketball.com.au/news/australians-nba-2026-27-contracts-free-agency-summer-league"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Include only if birthplace counts; not counted by Australian sources' '7 champions' lists."
+    }
+  ],
+  "nba_champions_note": "2026 title won by New York Knicks over San Antonio (no Australian player champion; Australian Matt Nielsen was a Spurs assistant). Source: https://www.basketball.com.au/news/jalen-brunson-knicks-spurs-nba-finals-2026-championship",
+  "former_nba": [
+    {
+      "name": "Luc Longley",
+      "nba_teams": [
+        "Minnesota Timberwolves 1991-94",
+        "Chicago Bulls 1994-98",
+        "Phoenix Suns 1998-2000",
+        "New York Knicks 2000-01"
+      ],
+      "college": "New Mexico",
+      "draft": "1991 R1 #7 (MIN)",
+      "notable_achievements": [
+        "NBA champion 1996, 1997, 1998 (Bulls)",
+        "First Australian to play in NBA (1991)"
+      ],
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/",
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia",
+        "https://basketball.realgm.com/nba/birth-cities/5/Melbourne-Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Championships and 'first Australian' verified; team years general knowledge."
+    },
+    {
+      "name": "Andrew Gaze",
+      "nba_teams": [
+        "Washington Bullets 1993-94",
+        "San Antonio Spurs 1998-99"
+      ],
+      "college": "Seton Hall",
+      "draft": "Undrafted",
+      "notable_achievements": [
+        "NBA champion 1999 (Spurs)"
+      ],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba",
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/",
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams and 1999 title verified; years general knowledge."
+    },
+    {
+      "name": "Shane Heal",
+      "nba_teams": [
+        "Minnesota Timberwolves 1996-97",
+        "San Antonio Spurs 2003-04"
+      ],
+      "college": null,
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba",
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams verified (basketball.com.au); years general knowledge."
+    },
+    {
+      "name": "Mark Bradtke",
+      "nba_teams": [
+        "Philadelphia 76ers 1996-97"
+      ],
+      "college": null,
+      "draft": "Undrafted (general knowledge)",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Mark_Bradtke"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Chris Anstey",
+      "nba_teams": [
+        "Dallas Mavericks 1997-99",
+        "Chicago Bulls 1999-2000"
+      ],
+      "college": null,
+      "draft": "1997 R1 #18 (POR, traded to DAL)",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia",
+        "https://basketball.realgm.com/nba/birth-cities/5/Melbourne-Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Andrew Bogut",
+      "nba_teams": [
+        "Milwaukee Bucks 2005-12",
+        "Golden State Warriors 2012-16, 2019",
+        "Dallas Mavericks 2016-17",
+        "Cleveland Cavaliers 2017",
+        "Los Angeles Lakers 2017-18"
+      ],
+      "college": "Utah",
+      "draft": "2005 R1 #1 (MIL)",
+      "notable_achievements": [
+        "NBA champion 2015 (Warriors)",
+        "2005 No.1 overall pick",
+        "All-NBA Third Team 2010 (general knowledge)"
+      ],
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/",
+        "https://basketball.realgm.com/player/Andrew-Bogut/Bests/58",
+        "https://en.wikipedia.org/wiki/Andrew_Bogut"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams (RealGM: CLE, DAL, GSW, LAL, MIL) and 2015 title verified; years general knowledge."
+    },
+    {
+      "name": "David Andersen",
+      "nba_teams": [
+        "Houston Rockets 2009-10",
+        "Toronto Raptors 2010",
+        "New Orleans Hornets 2010-11"
+      ],
+      "college": null,
+      "draft": "2002 R2 #37 (ATL)",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Nathan Jawai",
+      "nba_teams": [
+        "Toronto Raptors 2008-09",
+        "Minnesota Timberwolves 2009-10"
+      ],
+      "college": "Midland College (JUCO)",
+      "draft": "2008 R2 #41 (IND, traded)",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia",
+        "https://basketball.realgm.com/nba/birth-cities/64/Sydney-Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Patty Mills",
+      "nba_teams": [
+        "Portland Trail Blazers 2009-11",
+        "San Antonio Spurs 2012-21",
+        "Brooklyn Nets 2021-23",
+        "Atlanta Hawks 2023-24",
+        "Miami Heat 2024",
+        "LA Clippers 2024-25"
+      ],
+      "college": "Saint Mary's",
+      "draft": "2009 R2 #55 (POR)",
+      "notable_achievements": [
+        "NBA champion 2014 (Spurs)",
+        "Boomers Olympic bronze 2021 (general knowledge)"
+      ],
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/",
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia",
+        "https://basketball.com.au/news/aussies-in-the-nba-complete-list-of-every-australian-mens-basketballer-to-win-a-nba-championship-in-history"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Post-2023 teams and current status (active/retired) not verified for 2026-27."
+    },
+    {
+      "name": "Aron Baynes",
+      "nba_teams": [
+        "San Antonio Spurs 2012-15",
+        "Detroit Pistons 2015-17",
+        "Boston Celtics 2017-19",
+        "Phoenix Suns 2019-20",
+        "Toronto Raptors 2020-21"
+      ],
+      "college": "Washington State",
+      "draft": "Undrafted (2009)",
+      "notable_achievements": [
+        "NBA champion 2014 (Spurs)",
+        "Nine NBA seasons"
+      ],
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/",
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Spurs debut, 9 seasons, 2014 title verified; other teams general knowledge."
+    },
+    {
+      "name": "Matthew Dellavedova",
+      "nba_teams": [
+        "Cleveland Cavaliers 2013-16, 2019-21",
+        "Milwaukee Bucks 2016-19",
+        "Sacramento Kings 2022-23"
+      ],
+      "college": "Saint Mary's",
+      "draft": "Undrafted (2013)",
+      "notable_achievements": [
+        "NBA champion 2016 (Cavaliers)"
+      ],
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/",
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "2013 Cavs debut and 2016 title verified; other stints general knowledge."
+    },
+    {
+      "name": "Joe Ingles",
+      "nba_teams": [
+        "Utah Jazz 2014-22",
+        "Milwaukee Bucks 2022",
+        "Orlando Magic 2023-24",
+        "Minnesota Timberwolves 2024-25"
+      ],
+      "college": null,
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "2025-26/2026-27 status not verified."
+    },
+    {
+      "name": "Dante Exum",
+      "nba_teams": [
+        "Utah Jazz 2014-21",
+        "Cleveland Cavaliers 2021",
+        "Dallas Mavericks 2023-25"
+      ],
+      "college": null,
+      "draft": "2014 R1 #5 (UTA)",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba",
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams verified (basketball.com.au); no 2026-27 deal reported as at early Oct 2026."
+    },
+    {
+      "name": "Thon Maker",
+      "nba_teams": [
+        "Milwaukee Bucks 2016-19",
+        "Detroit Pistons 2019-20",
+        "Cleveland Cavaliers 2021"
+      ],
+      "college": null,
+      "draft": "2016 R1 #10 (MIL)",
+      "notable_achievements": [],
+      "source_urls": [],
+      "verification": "UNVERIFIED",
+      "verification_note": "Not surfaced in any search result this session (Wikipedia category snippet did not show him). Details general knowledge only; Maker is South Sudanese-born, represented Australia."
+    },
+    {
+      "name": "Ben Simmons",
+      "nba_teams": [
+        "Philadelphia 76ers 2016-22",
+        "Brooklyn Nets 2022-25",
+        "LA Clippers 2025",
+        "Sacramento Kings 2026 (signed, Achilles tear pre-season)"
+      ],
+      "college": "LSU",
+      "draft": "2016 R1 #1 (PHI)",
+      "notable_achievements": [
+        "2018 Rookie of the Year, 3x All-Star (general knowledge)"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ben_Simmons",
+        "https://www.nbcsportsphiladelphia.com/nba/ben-simmons-tears-achilles-tendon/759647/"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Jonah Bolden",
+      "nba_teams": [
+        "Philadelphia 76ers 2018-19",
+        "Phoenix Suns 2020"
+      ],
+      "college": "UCLA",
+      "draft": "2017 R2 #36 (PHI)",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia",
+        "https://basketball.realgm.com/nba/birth-cities/5/Melbourne-Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Ryan Broekhoff",
+      "nba_teams": [
+        "Dallas Mavericks 2018-20",
+        "Philadelphia 76ers 2020"
+      ],
+      "college": "Valparaiso",
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba",
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "2018 Mavericks debut verified."
+    },
+    {
+      "name": "Mitch Creek",
+      "nba_teams": [
+        "Brooklyn Nets 2019",
+        "Minnesota Timberwolves 2019"
+      ],
+      "college": null,
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Deng Adel",
+      "nba_teams": [
+        "Cleveland Cavaliers 2018-19"
+      ],
+      "college": "Louisville",
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Category:NBA_players_from_Australia"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Isaac Humphries",
+      "nba_teams": [
+        "Atlanta Hawks 2019"
+      ],
+      "college": "Kentucky",
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Team verified; year/college general knowledge."
+    },
+    {
+      "name": "Mangok Mathiang",
+      "nba_teams": [
+        "Charlotte Hornets 2018"
+      ],
+      "college": "Louisville",
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Team verified; year/college general knowledge."
+    },
+    {
+      "name": "Xavier Cooks",
+      "nba_teams": [
+        "Washington Wizards 2023"
+      ],
+      "college": "Winthrop",
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [],
+      "verification": "UNVERIFIED",
+      "verification_note": "Not surfaced in search this session."
+    },
+    {
+      "name": "Jack White",
+      "nba_teams": [
+        "Denver Nuggets 2022-23 (two-way)",
+        "Memphis Grizzlies 2024 (general knowledge)"
+      ],
+      "college": "Duke",
+      "draft": "Undrafted",
+      "notable_achievements": [
+        "NBA champion 2023 (Nuggets)"
+      ],
+      "source_urls": [
+        "https://aussiehoopla.com/all-seven-australian-nba-champions-our-breakdown/"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Alex Ducas",
+      "nba_teams": [
+        "Oklahoma City Thunder 2024-25 (two-way)"
+      ],
+      "college": "Saint Mary's",
+      "draft": "Undrafted (2024)",
+      "notable_achievements": [
+        "21 NBA games 2024-25; on 2025 championship roster"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Alex_Ducas",
+        "https://www.hoopsrumors.com/players/alex-ducas",
+        "https://smcgaels.com/news/2024/6/27/mens-basketball-mbb-ducas-sings-two-way-deal-with-the-oklahoma-city-thunder.aspx"
+      ],
+      "verification": "VERIFIED",
+      "verification_note": "Now playing outside NBA (Brisbane Bullets 2025-26 per Wikipedia)."
+    },
+    {
+      "name": "Jack McVeigh",
+      "nba_teams": [
+        "Houston Rockets 2025"
+      ],
+      "college": "Nebraska (general knowledge)",
+      "draft": "Undrafted",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Teams/years/college from researcher general knowledge; not confirmed from a fetched page this session (search budget exhausted, WebFetch blocked)."
+    },
+    {
+      "name": "Lachlan Olbrich",
+      "nba_teams": [
+        "Chicago Bulls 2025-26"
+      ],
+      "college": null,
+      "draft": "2025 R2 (CHI) - pick number not verified",
+      "notable_achievements": [
+        "Won 2026 NBA Summer League title (basketball.com.au headline)"
+      ],
+      "source_urls": [
+        "https://www.basketball.com.au/news/quick-guide-the-40-aussies-who-have-played-in-the-nba",
+        "https://www.basketball.com.au/news/australians-nba-summer-league-2026-tracker"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Not among ESPN's nine for 2026-27; current status unverified."
+    },
+    {
+      "name": "Alex Toohey (drafted, no NBA appearance)",
+      "nba_teams": [
+        "Golden State Warriors 2025 (waived Dec 2025, 0 NBA games)"
+      ],
+      "college": null,
+      "draft": "2025 R2 #52 (SAC->GSW) - pick number general knowledge",
+      "notable_achievements": [],
+      "source_urls": [
+        "https://www.nbl.com.au/news/golden-state-warriors-waive-injured-alex-toohey",
+        "https://africa.espn.com/nba/story/_/id/47252246/nba-nbl-aussie-alex-toohey-waived-golden-state-warriors"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Did not play an NBA game per reporting; not a 'former NBA player' in the games-played sense."
+    }
+  ],
+  "former_nba_note": "basketball.com.au says 40+ Australians (born and naturalised) have played in the NBA. List above is 27 records (incl. Toohey, 0 games) and is NOT complete; names likely missing include Will Magnay and others unverifiable this session. Josh Giddey, Dyson Daniels, Landale, Reath, Green, Thybulle, Furphy, Proctor are in current_nba.",
+  "ncaa_current_players": [],
+  "ncaa_current_players_note": "NOT COMPLETED. No official roster pages could be fetched (WebFetch DNS-blocked for all hosts tried) and the session's 200-search web budget was exhausted before NCAA roster searches began. No players recorded rather than risk unverified entries.",
+  "ncaa_programmes_with_aussie_alumni": [
+    {
+      "school": "Saint Mary's College of California (Gaels)",
+      "conference": "West Coast Conference",
+      "notable_aussie_alumni": [
+        "Patty Mills",
+        "Matthew Dellavedova",
+        "Jock Landale",
+        "Alex Ducas",
+        "Daniel Kickert (general knowledge, unverified)"
+      ],
+      "source_urls": [
+        "https://smcgaels.com/news/2024/6/27/mens-basketball-mbb-ducas-sings-two-way-deal-with-the-oklahoma-city-thunder.aspx",
+        "https://www.sbs.com.au/news/article/aussies-snubbed-at-nba-draft/pdmtwzhe3",
+        "https://basketball.com.au/news/aussies-in-the-nba-complete-list-of-every-australian-mens-basketballer-to-win-a-nba-championship-in-history"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Ducas and Landale verified from sources; Mills/Dellavedova general knowledge; Mitch Creek did NOT attend Saint Mary's (no college) per general knowledge - treat as not an alumnus."
+    },
+    {
+      "school": "Utah",
+      "conference": "Big 12 (from 2024-25)",
+      "notable_aussie_alumni": [
+        "Andrew Bogut"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Andrew_Bogut"
+      ],
+      "verification": "PARTIAL"
+    },
+    {
+      "school": "Washington State",
+      "conference": "West Coast Conference (from 2025-26, general knowledge)",
+      "notable_aussie_alumni": [
+        "Aron Baynes"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "school": "Duke",
+      "conference": "ACC",
+      "notable_aussie_alumni": [
+        "Tyrese Proctor",
+        "Jack White",
+        "Kyrie Irving (Melbourne-born, USA)"
+      ],
+      "source_urls": [
+        "https://www.basketball.com.au/news/tyrese-proctor-donovan-mitchell-tenacity-hunger-cleveland-cavaliers-preseason"
+      ],
+      "verification": "PARTIAL",
+      "verification_note": "Proctor verified; White general knowledge."
+    },
+    {
+      "school": "Kansas",
+      "conference": "Big 12",
+      "notable_aussie_alumni": [
+        "Johnny Furphy"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "school": "LSU",
+      "conference": "SEC",
+      "notable_aussie_alumni": [
+        "Ben Simmons",
+        "Duop Reath"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ben_Simmons"
+      ],
+      "verification": "PARTIAL"
+    },
+    {
+      "school": "Arizona",
+      "conference": "Big 12",
+      "notable_aussie_alumni": [
+        "Josh Green"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "school": "New Mexico",
+      "conference": "Mountain West",
+      "notable_aussie_alumni": [
+        "Luc Longley"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "school": "Seton Hall",
+      "conference": "Big East",
+      "notable_aussie_alumni": [
+        "Andrew Gaze"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "school": "UCLA",
+      "conference": "Big Ten",
+      "notable_aussie_alumni": [
+        "Jonah Bolden"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "school": "Louisville",
+      "conference": "ACC",
+      "notable_aussie_alumni": [
+        "Deng Adel",
+        "Mangok Mathiang"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    },
+    {
+      "school": "Valparaiso",
+      "conference": "Missouri Valley",
+      "notable_aussie_alumni": [
+        "Ryan Broekhoff"
+      ],
+      "source_urls": [],
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "ncaa_programmes_reference": "basketball.com.au '10 best Aussies in NCAA men's basketball' (not fetched): https://www.basketball.com.au/news/10-best-aussies-in-ncaa-mens-basketball-players-in-history-according-to-our-experts",
+  "ncaa_tournament_appearances": {
+    "records": [],
+    "verification": "UNVERIFIED",
+    "note": "Not researched - search budget exhausted. Do not populate from memory."
+  },
+  "msu_denver_check": {
+    "institution": "Metropolitan State University of Denver (Roadrunners)",
+    "ncaa_division": "Division II (believed)",
+    "conference": "Rocky Mountain Athletic Conference (RMAC) (believed)",
+    "australian_mens_basketball_connection": "None verified.",
+    "source_urls": [],
+    "verification": "UNVERIFIED",
+    "note": "Could not be checked this session: web search budget exhausted before this item and roadrunners/NCAA sites unreachable via WebFetch. Division II/RMAC matches general knowledge but is NOT verified here. No genuine Australian men's basketball connection was found or verified - treat as none until checked on msudenverathletics / ncaa.com roster pages."
+  },
+  "notes_and_blockers": [
+    "WebFetch failed (getaddrinfo ENOTFOUND) for en.wikipedia.org, www.sen.com.au, www.flashscore.com, pr.nba.com, www.basketball.com.au - these hosts must be allowed in the session's network settings for page-level verification.",
+    "The 200-call WebSearch budget for this turn was exhausted mid-task; NCAA rosters (item 4), NCAA tournament appearances (item 7) and MSU Denver (item 6) were not researched.",
+    "All facts come from search-engine summaries of the cited URLs, not from reading full pages; summaries occasionally conflated seasons (e.g. older rosters), so PARTIAL is used liberally.",
+    "Current-season count: NBA.com/ESPN say 9 Australians on 2026-27 opening-night rosters; basketball.com.au preseason tallies said 10-12 (incl. Kyrie Irving, camp deals).",
+    "Former list is incomplete (27 of 40+); Thon Maker and Xavier Cooks are UNVERIFIED this session.",
+    "Unverified premise in brief: Mitch Creek did not play for Saint Mary's; Oklahoma State has no Aussie alumnus confirmed here.",
+    "No contact made with anyone; no purchases; no emails collected."
+  ]
+}

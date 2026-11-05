@@ -1,0 +1,2192 @@
+[
+ {
+  "team": "Atlanta Hawks",
+  "city": "Atlanta",
+  "conference": "Eastern",
+  "division": "Southeast",
+  "arena": "State Farm Arena",
+  "official_site": "https://www.nba.com/hawks",
+  "official_contact_route": {
+   "url": "https://www.nba.com/hawks/membership/meet-service-team",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "1-866-715-1500 (Option 3, membership/tickets)",
+     "source": "https://www.nba.com/hawks/membership/meet-service-team"
+    },
+    {
+     "type": "email",
+     "value": "hawkstickets@hawks.com (ticket management)",
+     "source": "https://statefarmarena.com/contact-information"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 46-36, East 6th seed; lost first round 2-4 to eventual champion New York Knicks. 2026 champion: New York Knicks (beat Spurs 4-1). 2025 champion: Oklahoma City Thunder (Thunder described as 'reigning champs' in 2026 playoff coverage).",
+  "current_australian_players": [
+   {
+    "name": "Dyson Daniels",
+    "status": "on 2026-27 roster (multi-year deal)",
+    "confidence": "PARTIAL"
+   },
+   {
+    "name": "Jock Landale",
+    "status": "on 2026-27 roster (re-signed with Atlanta per reports)",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Patty Mills",
+    "note": "2023-24 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1990s Hawks 'Pac-Man'/Dominique Wilkins era and the 1995-2007 hawk-on-basketball red/black look are the most collected vintage styles (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/hawks",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://www.flashscore.com/news/basketball-nba-the-nine-australians-who-made-nba-opening-night-rosters/ADC7Ns75/",
+    "supports": "Nine Australians on 2026-27 opening-night rosters (seen via search summary only; full list not readable)"
+   },
+   {
+    "url": "https://abc7.com/post/how-watch-nba-australia-2026-27-espn-disney/19953659/",
+    "supports": "ESPN/Disney guide to Australians in 2026-27 (Daniels ATL, Giddey CHI, Landale ATL, Green UTA, Reath PHX, Zikarsky MIN two-way) - via search summary"
+   },
+   {
+    "url": "https://www.basketball.com.au/news/australians-nba-contract-status-2026-27-free-agency-outlook",
+    "supports": "basketball.com.au Australian contract tracker 2026-27 - via search summary"
+   },
+   {
+    "url": "https://statefarmarena.com/contact-information",
+    "supports": "arena page directing ticket inquiries to Hawks email/phone"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Boston Celtics",
+  "city": "Boston",
+  "conference": "Eastern",
+  "division": "Atlantic",
+  "arena": "TD Garden",
+  "official_site": "https://www.nba.com/celtics",
+  "official_contact_route": {
+   "url": "https://www.nba.com/celtics/contact",
+   "published_details": [
+    {
+     "type": "email",
+     "value": "fanrelations@celtics.com (general inquiries)",
+     "source": "https://www.nba.com/celtics/contact"
+    },
+    {
+     "type": "mail",
+     "value": "100 Causeway Street, Suite 1210, Boston, MA 02114",
+     "source": "https://www.nba.com/celtics/contact"
+    },
+    {
+     "type": "phone",
+     "value": "866-423-5849 (Celtics main office listed by TD Garden / ticket pages)",
+     "source": "https://tdgarden.com/tdgarden/contact-us"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Celtics lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 56-26, East 2nd seed; lost first round 3-4 to Philadelphia 76ers (upset). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Aron Baynes",
+    "note": "2017-19 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1980s Larry Bird-era Celtics warmups (and 2008 Big Three era) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/celtics",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://www.nba.com/celtics/contact",
+    "supports": "official contact page with fanrelations email & mailing address"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Brooklyn Nets",
+  "city": "Brooklyn, New York",
+  "conference": "Eastern",
+  "division": "Atlantic",
+  "arena": "Barclays Center",
+  "official_site": "https://www.nba.com/nets",
+  "official_contact_route": {
+   "url": "https://www.barclayscenter.com/arena/contact-us",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "(917) 618-6100 (Barclays Center main line)",
+     "source": "https://www.barclayscenter.com/arena/contact-us"
+    },
+    {
+     "type": "phone",
+     "value": "718-NETS-TIX (member services; page ~7 yrs old)",
+     "source": "https://www.nba.com/nets/tickets/2019-20/member-services-team"
+    },
+    {
+     "type": "email",
+     "value": "mediainquiries@brooklynnets.com (media only)",
+     "source": "https://www.barclayscenter.com/connect-with-us/media-info"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: finished in bottom of East per Basketball-Reference snippet; did not make playoffs. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Patty Mills",
+    "note": "2021-23 (BG)"
+   },
+   {
+    "name": "Ben Simmons",
+    "note": "2022-25 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "New Jersey Nets 1990s (Derrick Coleman/Kenny Anderson) and 2012 Brooklyn black-and-white launch era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/nets",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.basketball-reference.com/leagues/NBA_2026_standings.html",
+    "supports": "2025-26 standings (Brooklyn near bottom of East) via snippet"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Charlotte Hornets",
+  "city": "Charlotte",
+  "conference": "Eastern",
+  "division": "Southeast",
+  "arena": "Spectrum Center",
+  "official_site": "https://www.nba.com/hornets",
+  "official_contact_route": {
+   "url": "https://www.nba.com/hornets/staff",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "704.688.8600 (Hornets Basketball LLC main line, 333 East Trade Street)",
+     "source": "https://www.nba.com/hornets/staff"
+    },
+    {
+     "type": "phone",
+     "value": "704.HORNETS (tickets)",
+     "source": "https://www.nba.com/hornets/staff"
+    },
+    {
+     "type": "email",
+     "value": "arenainfo@hornets.com (guest experience)",
+     "source": "https://www.spectrumcentercharlotte.com/arena-info/a-z-guide"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Hornets lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 44-38, East 9th; did not reach first round (play-in). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Josh Green",
+    "note": "2024-25 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1988-2002 original teal/purple pinstripe Charlotte Hornets (Larry Johnson/Alonzo Mourning, Starter jackets) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/hornets",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.nba.com/hornets/staff",
+    "supports": "official staff directory with main phone"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Chicago Bulls",
+  "city": "Chicago",
+  "conference": "Eastern",
+  "division": "Central",
+  "arena": "United Center",
+  "official_site": "https://www.nba.com/bulls",
+  "official_contact_route": {
+   "url": "https://www.nba.com/bulls/tickets/mobile-ticketing",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "312.455.4000 (Chicago Bulls ticket office)",
+     "source": "https://www.nba.com/bulls/tickets/mobile-ticketing"
+    },
+    {
+     "type": "mail",
+     "value": "United Center, 1901 W Madison St, Chicago, IL 60612",
+     "source": "https://www.nba.com/bulls/tickets/mobile-ticketing"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page. No dedicated contact-us page found."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Bulls lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: bottom of East per Basketball-Reference snippet; did not make playoffs. 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Josh Giddey",
+    "status": "on 2026-27 roster (multi-year deal)",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Luc Longley",
+    "note": "1994-98, three championships (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1990s Jordan/Pippen/Longley dynasty warmups (1991-98) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/bulls",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.flashscore.com/news/basketball-nba-the-nine-australians-who-made-nba-opening-night-rosters/ADC7Ns75/",
+    "supports": "Nine Australians on 2026-27 opening-night rosters (seen via search summary only; full list not readable)"
+   },
+   {
+    "url": "https://abc7.com/post/how-watch-nba-australia-2026-27-espn-disney/19953659/",
+    "supports": "ESPN/Disney guide to Australians in 2026-27 (Daniels ATL, Giddey CHI, Landale ATL, Green UTA, Reath PHX, Zikarsky MIN two-way) - via search summary"
+   },
+   {
+    "url": "https://www.basketball.com.au/news/australians-nba-contract-status-2026-27-free-agency-outlook",
+    "supports": "basketball.com.au Australian contract tracker 2026-27 - via search summary"
+   },
+   {
+    "url": "https://www.basketball-reference.com/leagues/NBA_2026_standings.html",
+    "supports": "2025-26 standings snippet"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Cleveland Cavaliers",
+  "city": "Cleveland",
+  "conference": "Eastern",
+  "division": "Central",
+  "arena": "Rocket Arena",
+  "official_site": "https://www.nba.com/cavaliers",
+  "official_contact_route": {
+   "url": "https://www.rocketarena.com/contact",
+   "published_details": [
+    {
+     "type": "email",
+     "value": "contactus@cavs.com (general)",
+     "source": "https://www.rocketarena.com/privacy-policy"
+    },
+    {
+     "type": "phone",
+     "value": "216-420-2000 (business office)",
+     "source": "https://www.rocketarena.com/contact"
+    },
+    {
+     "type": "mail",
+     "value": "Cavaliers Operating Company, LLC, 1 Center Court, Cleveland, OH 44115",
+     "source": "https://www.rocketarena.com/privacy-policy"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/buy/1bf69e2e-814e-4d5b-b190-24f8c08dffc5",
+     "supports": "Cavaliers jerseys in NBA Auctions Premier: 2026 Playoffs (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 52-30, East 4th; beat Toronto 4-3, beat No.1 Detroit 4-3, lost East finals 0-4 to Knicks. 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Tyrese Proctor",
+    "status": "second season with Cleveland 2026-27",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Matthew Dellavedova",
+    "note": "2013-16 (2016 champion), 2019-21 (BG)"
+   },
+   {
+    "name": "Andrew Bogut",
+    "note": "2017 brief (BG)"
+   },
+   {
+    "name": "Dante Exum",
+    "note": "2019-21 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "2016 championship era (LeBron/Kyrie/Dellavedova) wine-and-gold warmups (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/cavaliers",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "https://www.flashscore.com/news/basketball-nba-the-nine-australians-who-made-nba-opening-night-rosters/ADC7Ns75/",
+    "supports": "Nine Australians on 2026-27 opening-night rosters (seen via search summary only; full list not readable)"
+   },
+   {
+    "url": "https://www.basketball.com.au/news/australians-nba-contract-status-2026-27-free-agency-outlook",
+    "supports": "basketball.com.au Australian contract tracker 2026-27 - via search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Detroit Pistons",
+  "city": "Detroit",
+  "conference": "Eastern",
+  "division": "Central",
+  "arena": "Little Caesars Arena",
+  "official_site": "https://www.nba.com/pistons",
+  "official_contact_route": {
+   "url": "https://www.nba.com/pistons/connect",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "(313) 747-8667 (team page listing, 6201 2nd Ave, Detroit)",
+     "source": "https://www.nba.com/pistons/hooper"
+    },
+    {
+     "type": "mail",
+     "value": "Fan mail c/o Detroit Pistons, 6201 Second Ave, Detroit, MI 48202",
+     "source": "https://www.313presents.com/venue/little-caesars-arena/little-caesars-a-z-guide"
+    },
+    {
+     "type": "phone",
+     "value": "313-PISTONS (ticketing)",
+     "source": "https://cdn.nba.com/teams/uploads/sites/1610612765/2024/10/Pistons-Mobile-Ticketing-Guide25.pdf"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Pistons lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 60-22, East No.1 seed; beat Orlando 4-3, lost conference semifinal 3-4 to Cleveland. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Aron Baynes",
+    "note": "2015-17 (BG)"
+   },
+   {
+    "name": "Thon Maker",
+    "note": "2019-20 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "'Bad Boys' 1989-90 championship era and 1996-2001 teal horse-head era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/pistons",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Indiana Pacers",
+  "city": "Indianapolis",
+  "conference": "Eastern",
+  "division": "Central",
+  "arena": "Gainbridge Fieldhouse",
+  "official_site": "https://www.nba.com/pacers",
+  "official_contact_route": {
+   "url": "https://www.nba.com/pacers/contact-us",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "(317) 917-2500 (main / guest relations)",
+     "source": "https://www.nba.com/pacers/contact-us"
+    },
+    {
+     "type": "email",
+     "value": "GuestServices@Pacers.com",
+     "source": "https://www.gainbridgefieldhouse.com/contact-us"
+    },
+    {
+     "type": "mail",
+     "value": "125 S. Pennsylvania Street, Indianapolis",
+     "source": "https://www.nba.com/pacers/contact-us"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Pacers lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: bottom of East per Basketball-Reference snippet; did not make playoffs (heavy injuries incl. Furphy ACL Feb 2026). 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Johnny Furphy",
+    "status": "under guaranteed contract for 2026-27 (team option 27-28); recovering from Feb 2026 right ACL tear, est. return ~Jan 2027; opening-night roster status not confirmed",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [],
+  "iconic_warmup_era": "1990s Reggie Miller 'Flo-Jo' pinstripe era (1997-2005 pinstripes; 2000 Finals) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/pacers",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.hoopsrumors.com/2026/02/pacers-johnny-furphy-out-for-season-with-torn-acl.html",
+    "supports": "Furphy ACL tear Feb 2026; contract details"
+   },
+   {
+    "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-08-28/johnny-furphy-knee-still-not-cleared-for-5-on-5",
+    "supports": "Furphy not cleared for 5-on-5 as at 28 Aug 2026"
+   },
+   {
+    "url": "https://www.basketball-reference.com/leagues/NBA_2026_standings.html",
+    "supports": "standings snippet"
+   },
+   {
+    "url": "",
+    "supports": "iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Miami Heat",
+  "city": "Miami",
+  "conference": "Eastern",
+  "division": "Southeast",
+  "arena": "Kaseya Center",
+  "official_site": "https://www.nba.com/heat",
+  "official_contact_route": {
+   "url": "https://www.nba.com/heat/contact/directory",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "(786) 777-1000 (The HEAT Group, 601 Biscayne Blvd., Miami, FL 33132)",
+     "source": "https://www.nba.com/heat/contact/directory"
+    },
+    {
+     "type": "email",
+     "value": "guestexperience@heat.com (guest services)",
+     "source": "https://www.kaseyacenter.com/connect/contact-us"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 43-39, East 10th; did not reach first round (play-in). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Patty Mills",
+    "note": "2024 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "2006/2012-13 championship eras; 'Vice' City Edition (2017-) is highly collected (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/heat",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.nba.com/heat/contact/directory",
+    "supports": "official HEAT Group directory"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Milwaukee Bucks",
+  "city": "Milwaukee",
+  "conference": "Eastern",
+  "division": "Central",
+  "arena": "Fiserv Forum",
+  "official_site": "https://www.nba.com/bucks",
+  "official_contact_route": {
+   "url": "https://www.nba.com/bucks/contact",
+   "published_details": [
+    {
+     "type": "form",
+     "value": "contact form on official page",
+     "source": "https://www.nba.com/bucks/contact"
+    },
+    {
+     "type": "phone",
+     "value": "(414) 227-0504 (Fiserv Forum general information)",
+     "source": "https://www.fiservforum.com/connect"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://auctions.nba.com/",
+     "supports": "Bucks 2023 Playoffs team auction lots on auctions.nba.com (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: bottom half of East per Basketball-Reference snippet; did not make playoffs. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Andrew Bogut",
+    "note": "2005-12, No.1 pick 2005 (BG)"
+   },
+   {
+    "name": "Thon Maker",
+    "note": "2016-19 (BG)"
+   },
+   {
+    "name": "Matthew Dellavedova",
+    "note": "2016-19 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1993-2006 purple/green 'Bogut rookie' era jerseys and 1970s Kareem/Oscar era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/bucks",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.nba.com/bucks/contact",
+    "supports": "official contact page/form"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "New York Knicks",
+  "city": "New York",
+  "conference": "Eastern",
+  "division": "Atlantic",
+  "arena": "Madison Square Garden",
+  "official_site": "https://www.nba.com/knicks",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/buy/1bf69e2e-814e-4d5b-b190-24f8c08dffc5",
+     "supports": "Knicks jerseys in NBA Auctions Premier: 2026 Playoffs (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 53-29, East 3rd; 2026 NBA CHAMPIONS - beat Atlanta 4-2, Philadelphia 4-0, Cleveland 4-0, San Antonio 4-1 (clinched 13 Jun 2026 in San Antonio; Jalen Brunson Finals MVP; first title since 1973).",
+  "current_australian_players": [],
+  "historic_australian_players": [],
+  "iconic_warmup_era": "1990s Ewing-era Knicks (and 1970 & 1973 title eras); 2026 championship-season items now highly topical (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/knicks",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://abc7ny.com/post/new-york-knicks-win-2026-nba-finals-path-championship/19292510/",
+    "supports": "New York Knicks won 2026 NBA Finals over San Antonio Spurs (4-1; Game 5 13 Jun 2026; Brunson Finals MVP per multiple search results; first title since 1973)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "",
+    "supports": "iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Orlando Magic",
+  "city": "Orlando",
+  "conference": "Eastern",
+  "division": "Southeast",
+  "arena": "Kia Center",
+  "official_site": "https://www.nba.com/magic",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 45-37, East 8th; lost first round 3-4 to No.1 Detroit. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [],
+  "iconic_warmup_era": "1990s pinstripes Shaq/Penny era (1992-98) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/magic",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "",
+    "supports": "iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Philadelphia 76ers",
+  "city": "Philadelphia",
+  "conference": "Eastern",
+  "division": "Atlantic",
+  "arena": "Xfinity Mobile Arena (formerly Wells Fargo Center; rename per BG)",
+  "official_site": "https://www.nba.com/sixers",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "76ers lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 45-37, East 7th; upset No.2 Boston 4-3 in first round, swept 0-4 by Knicks in conference semis. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Ben Simmons",
+    "note": "2016-22, No.1 pick 2016 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "Allen Iverson era 1997-2009 (2001 Finals) and 1970s-80s Dr J era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/sixers",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Toronto Raptors",
+  "city": "Toronto",
+  "conference": "Eastern",
+  "division": "Atlantic",
+  "arena": "Scotiabank Arena",
+  "official_site": "https://www.nba.com/raptors",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 46-36, East 5th; lost first round 3-4 to Cleveland. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Aron Baynes",
+    "note": "2020-21 (BG)"
+   },
+   {
+    "name": "Nathan Jawai",
+    "note": "2008-09 (BG)"
+   },
+   {
+    "name": "David Andersen",
+    "note": "2010 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1995-99 purple dinosaur era (Vince Carter) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/raptors",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Washington Wizards",
+  "city": "Washington, D.C.",
+  "conference": "Eastern",
+  "division": "Southeast",
+  "arena": "Capital One Arena",
+  "official_site": "https://www.nba.com/wizards",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: bottom of East per Basketball-Reference snippet; did not make playoffs. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Andrew Gaze",
+    "note": "Washington Bullets 1993-94 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "Washington Bullets 1970s-1997 (1978 title; pre-rename) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/wizards",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.basketball-reference.com/leagues/NBA_2026_standings.html",
+    "supports": "standings snippet"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Dallas Mavericks",
+  "city": "Dallas",
+  "conference": "Western",
+  "division": "Southwest",
+  "arena": "American Airlines Center",
+  "official_site": "https://www.nba.com/mavs",
+  "official_contact_route": {
+   "url": "https://www.americanairlinescenter.com/contactus",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "214-747-MAVS (6287) (Dallas Mavericks line listed by arena)",
+     "source": "https://www.americanairlinescenter.com/contactus"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Team jerseys listed in Sotheby's NBA Auctions Christmas Day lots (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: did not make playoffs (not in 2026 first-round bracket). 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Kyrie Irving",
+    "status": "on 2026-27 roster; Melbourne-born Australian citizen (counted among Australians by some outlets)",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Andrew Bogut",
+    "note": "2016-17 (BG)"
+   },
+   {
+    "name": "Chris Anstey",
+    "note": "1997-99 (BG)"
+   },
+   {
+    "name": "Dante Exum",
+    "note": "2023-25 (BG)"
+   },
+   {
+    "name": "Josh Green",
+    "note": "2020-24 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "2011 championship era (Dirk) and 1980s-2001 green/blue cowboy-hat era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/mavs",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://www.flashscore.com/news/basketball-nba-the-nine-australians-who-made-nba-opening-night-rosters/ADC7Ns75/",
+    "supports": "Nine Australians on 2026-27 opening-night rosters (seen via search summary only; full list not readable)"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Denver Nuggets",
+  "city": "Denver",
+  "conference": "Western",
+  "division": "Northwest",
+  "arena": "Ball Arena",
+  "official_site": "https://www.nba.com/nuggets",
+  "official_contact_route": {
+   "url": "https://www.nba.com/nuggets/connect-with-us",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "303.405.1100 (main, 1000 Chopper Circle, Denver, CO 80204)",
+     "source": "https://www.nba.com/nuggets/staff"
+    },
+    {
+     "type": "phone",
+     "value": "303.405.8548 (guest relations)",
+     "source": "https://www.beta.nba.com/nuggets/contact/faqs"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://catalogs.scpauctions.com/online-auctions/scp-auctions-inc/2023-24-nikola-jokic-denver-nuggets-3rd-mvp-season-player-issued-warm-up-suit-shooting-shirt-pants-nba-sothebys-loas-8336521",
+     "supports": "Jokic 2023-24 player-issued warm-up suit with NBA/Sotheby's LOA resold at SCP - shows Nuggets team-issued warmups flow via official programme"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 54-28, West 3rd; lost first round 2-4 to Minnesota. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [],
+  "iconic_warmup_era": "1980s-93 rainbow skyline era (Alex English/Mutombo) and 2023 championship era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/nuggets",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "",
+    "supports": "iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Golden State Warriors",
+  "city": "San Francisco",
+  "conference": "Western",
+  "division": "Pacific",
+  "arena": "Chase Center",
+  "official_site": "https://www.nba.com/warriors",
+  "official_contact_route": {
+   "url": "https://chasecenter.com/events-tickets/ticketing-info/",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "888-GSW-HOOP (option 1, tickets)",
+     "source": "https://www.nba.com/warriors/tickets/promotions?filter=dynamicdeal"
+    },
+    {
+     "type": "mail",
+     "value": "Box office, 1 Warriors Way, San Francisco",
+     "source": "https://chasecenter.com/events-tickets/ticketing-info/"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page. Ticketing route only; no general business contact page found."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://auctions.nba.com/",
+     "supports": "Warriors 2023 Playoffs team auction lots on auctions.nba.com and Christmas lots (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: did not make playoffs (not in 2026 first-round bracket). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Andrew Bogut",
+    "note": "2012-16 (2015 champion), 2019 (BG)"
+   },
+   {
+    "name": "Alex Toohey",
+    "note": "2025-26 two-way; returned on Exhibit 10 for 2026 camp, reportedly waived before 2026-27 season (Fox Sports)"
+   }
+  ],
+  "iconic_warmup_era": "2015-2019 dynasty era ('The Town'/'The Bay' alternates) and 1970s 'The City' (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/warriors",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://www.rotoballer.com/player-news/warriors-bring-back-alex-toohey-on-an-exhibit-10-deal",
+    "supports": "Toohey Exhibit 10 deal Sept 2026"
+   },
+   {
+    "url": "https://www.foxsports.com/nba/alex-toohey-player",
+    "supports": "Toohey reportedly waived pre-season 2026-27 (unconfirmed)"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Houston Rockets",
+  "city": "Houston",
+  "conference": "Western",
+  "division": "Southwest",
+  "arena": "Toyota Center",
+  "official_site": "https://www.nba.com/rockets",
+  "official_contact_route": {
+   "url": "https://www.toyotacenter.com/connect-with-us/contact-us",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "713-758-7200 (Toyota Center general line)",
+     "source": "https://www.toyotacenter.com/connect-with-us/contact-us"
+    },
+    {
+     "type": "mail",
+     "value": "Clutch City Sports & Entertainment, L.P., 1510 Polk Street, Houston, TX 77002",
+     "source": "https://www.toyotacenter.com/privacy-policy"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Team jerseys listed in Sotheby's NBA Auctions Christmas Day lots (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 52-30, West 5th; lost first round 2-4 to LA Lakers. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "David Andersen",
+    "note": "2009-10 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1994-95 back-to-back title era (Hakeem) pinstripes and 1995-2003 'Clutch City' red/navy (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/rockets",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "LA Clippers",
+  "city": "Inglewood (Los Angeles)",
+  "conference": "Western",
+  "division": "Pacific",
+  "arena": "Intuit Dome",
+  "official_site": "https://www.nba.com/clippers",
+  "official_contact_route": {
+   "url": "https://www.nba.com/clippers/member-center",
+   "published_details": [
+    {
+     "type": "email",
+     "value": "sales@clippers.com / 213-204-2900 (sales)",
+     "source": "https://www.nba.com/clippers/seasontickets"
+    },
+    {
+     "type": "mail",
+     "value": "Legal Dept, 3930 W. Century Blvd., Inglewood, CA 90303",
+     "source": "https://intuitdome.com/legal/terms-of-use"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Clippers lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: did not make playoffs (not in 2026 first-round bracket). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Ben Simmons",
+    "note": "2025 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "'Lob City' 2011-17 era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/clippers",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Los Angeles Lakers",
+  "city": "Los Angeles",
+  "conference": "Western",
+  "division": "Pacific",
+  "arena": "Crypto.com Arena",
+  "official_site": "https://www.nba.com/lakers",
+  "official_contact_route": {
+   "url": "https://nba.com/lakers/tickets/account-manager-faq",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "(310) 426-6031 (Lakers ticketing)",
+     "source": "https://nba.com/lakers/tickets/account-manager-faq"
+    },
+    {
+     "type": "email",
+     "value": "lalakers@la-lakers.com (ticketing)",
+     "source": "https://nba.com/lakers/tickets/account-manager-faq"
+    },
+    {
+     "type": "phone",
+     "value": "310-426-6000 (UCLA Health Training Center, El Segundo)",
+     "source": "https://www.nba.com/lakers/ucla-health-training-center/contact"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page. No general front-office contact page found."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://auctions.nba.com/lonnie-walker-iv---los-angeles-lakers---game-issued/isynmv1/aucd/4615156",
+     "supports": "auctions.nba.com 'game issued' Lakers lot - direct evidence of team-issued items in official programme"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 53-29, West 4th; beat Houston 4-2, swept 0-4 by Oklahoma City in conference semis. 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Matisse Thybulle",
+    "status": "signed with Lakers for 2026-27; holds Australian citizenship (some outlets classify him as American)",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Andrew Bogut",
+    "note": "2018 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "Showtime 1980s and 2000-02 Shaq/Kobe three-peat warmups (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/lakers",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "https://www.basketball.com.au/news/nba-preseason-2026-27-australians-fixtures-aussie-v-aussie",
+    "supports": "Thybulle with Lakers 2026 preseason"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Memphis Grizzlies",
+  "city": "Memphis",
+  "conference": "Western",
+  "division": "Southwest",
+  "arena": "FedExForum",
+  "official_site": "https://www.nba.com/grizzlies",
+  "official_contact_route": {
+   "url": "https://www.beta.nba.com/grizzlies/connect/contact-us",
+   "published_details": [
+    {
+     "type": "phone",
+     "value": "(901) 205-1234 (general; 191 Beale Street, Memphis, TN 38103) - page ~5 yrs old",
+     "source": "https://www.beta.nba.com/grizzlies/connect/contact-us"
+    },
+    {
+     "type": "phone",
+     "value": "(901) 888-HOOP (tickets)",
+     "source": "https://www.beta.nba.com/grizzlies/connect/contact-us"
+    }
+   ],
+   "note": "Details read from search-engine index snippets of official pages; direct page fetch was blocked in this session (nba.com and most hosts refused by egress proxy), so not confirmed on the live page."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: did not make playoffs (not in 2026 first-round bracket). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [],
+  "iconic_warmup_era": "Vancouver Grizzlies 1995-2001 teal era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/grizzlies",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "",
+    "supports": "iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Minnesota Timberwolves",
+  "city": "Minneapolis",
+  "conference": "Western",
+  "division": "Northwest",
+  "arena": "Target Center",
+  "official_site": "https://www.nba.com/timberwolves",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Team jerseys listed in Sotheby's NBA Auctions Christmas Day lots (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: West 6th; upset Denver 4-2 in first round, lost conference semis 2-4 to San Antonio. 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Rocco Zikarsky",
+    "status": "two-way contract 2026-27",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Luc Longley",
+    "note": "1991-94 (BG)"
+   },
+   {
+    "name": "Shane Heal",
+    "note": "1996-97 (BG)"
+   },
+   {
+    "name": "Nathan Jawai",
+    "note": "2009-10 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1996-2004 Kevin Garnett pine-tree era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/timberwolves",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/how-watch-nba-australia-2026-27-espn-disney/19953659/",
+    "supports": "ESPN/Disney guide to Australians in 2026-27 (Daniels ATL, Giddey CHI, Landale ATL, Green UTA, Reath PHX, Zikarsky MIN two-way) - via search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "New Orleans Pelicans",
+  "city": "New Orleans",
+  "conference": "Western",
+  "division": "Southwest",
+  "arena": "Smoothie King Center",
+  "official_site": "https://www.nba.com/pelicans",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Pelicans lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: did not make playoffs (not in 2026 first-round bracket). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Dyson Daniels",
+    "note": "2022-24 (BG)"
+   },
+   {
+    "name": "David Andersen",
+    "note": "New Orleans Hornets 2010-11 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "Zion-era (2019-) and Mardi Gras City Edition designs (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/pelicans",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Oklahoma City Thunder",
+  "city": "Oklahoma City",
+  "conference": "Western",
+  "division": "Northwest",
+  "arena": "Paycom Center",
+  "official_site": "https://www.nba.com/thunder",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/buy/1bf69e2e-814e-4d5b-b190-24f8c08dffc5",
+     "supports": "Thunder jerseys in NBA Auctions Premier: 2026 Playoffs and Christmas lots (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: 64-18, West No.1 (best record); swept Phoenix and LA Lakers, lost West finals 3-4 to San Antonio. 2025 NBA champion (described as 'reigning champs' in 2026 coverage). 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Josh Giddey",
+    "note": "2021-24 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "2025 championship season (SGA era); 2012 Finals Durant/Westbrook/Harden era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/thunder",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://shrpsports.com/nba/stand/2026finalcnf.htm",
+    "supports": "2025-26 final conference standings (records partially visible in search snippet)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Phoenix Suns",
+  "city": "Phoenix",
+  "conference": "Western",
+  "division": "Pacific",
+  "arena": "Mortgage Matchup Center (formerly Footprint Center; rename per BG)",
+  "official_site": "https://www.nba.com/suns",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/en/buy/series/NBA-auctions",
+     "supports": "Suns lots in past NBA Auctions series (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: West 8th; swept 0-4 by Oklahoma City in first round. 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Duop Reath",
+    "status": "back with Phoenix 2026-27; South Sudan-born Australian international (Flashscore reportedly classifies him as South Sudanese)",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Aron Baynes",
+    "note": "2019-20 (BG)"
+   },
+   {
+    "name": "Jock Landale",
+    "note": "2022-23 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1992-93 Barkley Finals era and 1990s sunburst/'Gorilla' era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/suns",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/how-watch-nba-australia-2026-27-espn-disney/19953659/",
+    "supports": "ESPN/Disney guide to Australians in 2026-27 (Daniels ATL, Giddey CHI, Landale ATL, Green UTA, Reath PHX, Zikarsky MIN two-way) - via search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Portland Trail Blazers",
+  "city": "Portland",
+  "conference": "Western",
+  "division": "Northwest",
+  "arena": "Moda Center",
+  "official_site": "https://www.nba.com/blazers",
+  "official_contact_route": {
+   "url": "https://www.nba.com/blazers/contact-us",
+   "published_details": [],
+   "note": "Official 'Contact Us' page URL appeared in search index; contents not read (fetch blocked)."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: West 7th; lost first round 1-4 to San Antonio. 2026 champion: New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Patty Mills",
+    "note": "2009-11 (BG)"
+   },
+   {
+    "name": "Duop Reath",
+    "note": "2023-25 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1977 title / Clyde Drexler 1990-92 Finals era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/blazers",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://www.nba.com/blazers/contact-us",
+    "supports": "official contact page exists (URL only)"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "PARTIAL"
+ },
+ {
+  "team": "Sacramento Kings",
+  "city": "Sacramento",
+  "conference": "Western",
+  "division": "Pacific",
+  "arena": "Golden 1 Center",
+  "official_site": "https://www.nba.com/kings",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: did not make playoffs (not in 2026 first-round bracket). 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Ben Simmons",
+    "status": "signed with Kings (veteran minimum) and reportedly on opening-night roster; injury status conflicting across sources",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [],
+  "iconic_warmup_era": "1999-2004 Webber/Bibby/Divac 'Greatest Show on Court' era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/kings",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.flashscore.com/news/basketball-nba-the-nine-australians-who-made-nba-opening-night-rosters/ADC7Ns75/",
+    "supports": "Nine Australians on 2026-27 opening-night rosters (seen via search summary only; full list not readable)"
+   },
+   {
+    "url": "https://www.nba.com/news/2026-27-international-players-opening-night",
+    "supports": "NBA.com 2026-27 opening-night international players release (Australia listed) - via search summary"
+   },
+   {
+    "url": "",
+    "supports": "iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "San Antonio Spurs",
+  "city": "San Antonio",
+  "conference": "Western",
+  "division": "Southwest",
+  "arena": "Frost Bank Center",
+  "official_site": "https://www.nba.com/spurs",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/buy/1bf69e2e-814e-4d5b-b190-24f8c08dffc5",
+     "supports": "Spurs jerseys in NBA Auctions Premier: 2026 Playoffs and Christmas lots (per search summary)"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots seen in search results)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: West 2nd; beat Portland 4-1, Minnesota 4-2, Oklahoma City 4-3 (Game 7 111-103), lost 2026 NBA Finals 1-4 to New York Knicks.",
+  "current_australian_players": [],
+  "historic_australian_players": [
+   {
+    "name": "Patty Mills",
+    "note": "2012-21 (2014 champion) (BG)"
+   },
+   {
+    "name": "Aron Baynes",
+    "note": "2012-15 (2014 champion) (BG)"
+   },
+   {
+    "name": "Andrew Gaze",
+    "note": "1998-99 (1999 champion) (BG)"
+   },
+   {
+    "name": "Shane Heal",
+    "note": "2003-04 (BG)"
+   },
+   {
+    "name": "Jock Landale",
+    "note": "2021-22 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "Fiesta-colour 1990s Robinson era and 1999-2014 Duncan dynasty ('Aussie Spurs' 2014) (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/spurs",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://abc7ny.com/post/new-york-knicks-win-2026-nba-finals-path-championship/19292510/",
+    "supports": "New York Knicks won 2026 NBA Finals over San Antonio Spurs (4-1; Game 5 13 Jun 2026; Brunson Finals MVP per multiple search results; first title since 1973)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/2026-nba-playoffs-conference-semifinals-takeaways/19040614/",
+    "supports": "2026 conference semifinal results per search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ },
+ {
+  "team": "Utah Jazz",
+  "city": "Salt Lake City",
+  "conference": "Western",
+  "division": "Northwest",
+  "arena": "Delta Center",
+  "official_site": "https://www.nba.com/jazz",
+  "official_contact_route": {
+   "url": "",
+   "published_details": [],
+   "note": "Not researched: shared web-search budget (200/turn) exhausted before this team; web fetch blocked. Leave for follow-up."
+  },
+  "official_auction_route": {
+   "programme": "NBA Auctions at Sotheby's - the league's official game-worn/game-issued programme (covers all 30 teams). No separate team-run auction programme verified this session.",
+   "url": "https://auctions.nba.com/",
+   "evidence": [
+    {
+     "url": "https://pr.nba.com/sothebys-nba-partnership",
+     "supports": "NBA press release: Sotheby's named Official Game-Worn Source of the NBA (multiyear, Nov 2023) - seen in search index"
+    },
+    {
+     "url": "https://www.sothebys.com/nbaauctions",
+     "supports": "Sotheby's NBA Auctions hub; 2025-26 season programme incl. Tip-Off, All-Star, Finals jerseys, photomatched - seen in search index"
+    }
+   ],
+   "status": "PARTIAL (league programme verified via search index; team-specific lots not individually confirmed)"
+  },
+  "equipment_staff_public": "",
+  "recent_success": "2025-26: did not make playoffs (not in 2026 first-round bracket). 2026 champion: New York Knicks.",
+  "current_australian_players": [
+   {
+    "name": "Josh Green",
+    "status": "traded to Utah in 2026 offseason",
+    "confidence": "PARTIAL"
+   }
+  ],
+  "historic_australian_players": [
+   {
+    "name": "Joe Ingles",
+    "note": "2014-22 (BG)"
+   },
+   {
+    "name": "Dante Exum",
+    "note": "2014-20 (BG)"
+   }
+  ],
+  "iconic_warmup_era": "1996-98 Stockton/Malone mountain Finals era (Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use.)",
+  "sources": [
+   {
+    "url": "https://www.nba.com/jazz",
+    "supports": "official team site (standard NBA.com team URL pattern)"
+   },
+   {
+    "url": "https://www.landofbasketball.com/yearbyyear/2025_2026_playoffs_series.htm",
+    "supports": "2026 playoff series results (first round) per search summary"
+   },
+   {
+    "url": "https://abc7.com/post/how-watch-nba-australia-2026-27-espn-disney/19953659/",
+    "supports": "ESPN/Disney guide to Australians in 2026-27 (Daniels ATL, Giddey CHI, Landale ATL, Green UTA, Reath PHX, Zikarsky MIN two-way) - via search summary"
+   },
+   {
+    "url": "",
+    "supports": "historic players & iconic era: Background knowledge - NOT source-verified in this session (search budget exhausted / fetch blocked); verify before use."
+   }
+  ],
+  "confidence": "UNVERIFIED"
+ }
+]

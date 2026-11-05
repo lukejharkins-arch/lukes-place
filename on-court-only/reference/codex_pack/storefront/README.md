@@ -1,0 +1,2 @@
+# Static storefront starter
+Open `index.html` in a modern browser. No install required. Switch between CURRENT COURT and OG ARCHIVE. The product cards are intentionally clearly marked placeholders because no product rights, inventory or image licenses have been established. This is NOT Shopify, no checkout, no accounts, no backend, no products for sale. Codex should use it as a visual starter and build genuine integrations later.

@@ -1,0 +1,6 @@
+data/oco.db
+data/*.db
+data/ADMIN_CREDENTIALS.local
+__pycache__/
+*.pyc
+.env

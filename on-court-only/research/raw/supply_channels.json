@@ -1,0 +1,967 @@
+{
+ "meta": {
+  "generated": "2026-11-05",
+  "status": "complete_with_gaps",
+  "method_note": "WebFetch and curl to target sites blocked by session egress policy; evidence from WebSearch result snippets only."
+ },
+ "channels": [
+  {
+   "name": "MeiGray Group",
+   "channel_type": "official league/team game-worn authenticator and marketer",
+   "sells": "NBA & MeiGray Game-Worn Authentication Program; photo-matched game-worn jerseys, game-used shoes; team partnerships (Warriors, Clippers, Bucks, Valkyries)",
+   "item_class": "game-worn / game-issued",
+   "contact": {
+    "email": "sales@meigray.com",
+    "phone": "908.541.0114; toll-free 888-463-4472 (registration lookup)",
+    "form_url": "https://www.meigray.com/authenticationrequest.aspx",
+    "contact_source_url": "https://www.meigray.com/viewuserdefinedpage.aspx?pn=faq",
+    "contact_status": "search-snippet attributes to meigray.com FAQ; page not fetched"
+   },
+   "source_urls": [
+    "https://www.meigray.com/viewuserdefinedpage.aspx?pn=faq",
+    "https://www.meigray.com/authenticationrequest.aspx",
+    "https://sportscollectorsdigest.com/news/meigray-expands-authentication-deal-with-nba",
+    "https://meigray.com/viewuserdefinedpage.aspx?pn=game-used-shoes"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 5,
+   "fit_reason": "Official NBA game-worn program with team relationships; most legitimate primary source."
+  },
+  {
+   "name": "NBA Auctions (auctions.nba.com)",
+   "channel_type": "official league auction platform",
+   "sells": "Game-worn, warmup-worn and game-issued warmup jackets (Finals, All-Star, City Edition, 'Game Theater' jackets); registered in NBA & MeiGray program; game-issued jackets observed at ~$200-640",
+   "item_class": "game-worn + game-issued (team-issued) \u2014 both explicitly labelled",
+   "ships_international": "UNVERIFIED (FAQ not retrievable; site blocked)",
+   "partner_programme": "No wholesale; auction only",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": null,
+    "contact_status": "NOT FOUND - site not fetchable"
+   },
+   "source_urls": [
+    "https://auctions.nba.com/andre-iguodala---golden-state-warriors---2019-nba-finals/isynmv1/aucd/2810201?sid=1101461&auctionId=2810201",
+    "https://auctions.nba.com/usman-garuba---houston-rockets---game-issued-city-edition/isynmv1/aucd/4180604",
+    "https://auctions.nba.com/iSynApp/allAuction.action?sid=1101461&selectedCatId=16921"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 5,
+   "fit_reason": "Official, explicitly 'game-issued' warmup jackets with registry numbers at sub-$500 price points; ideal retail-grade provenance."
+  },
+  {
+   "name": "Grey Flannel Auctions",
+   "channel_type": "sports memorabilia auction house",
+   "sells": "Player-worn / team-issued NBA warm-up suits, shooting shirts, warm-up pants (e.g. Jared Jeffries Knicks shooting shirt & warm-up pants; late-1980s Celtics team-issued warm-up jacket)",
+   "item_class": "team-issued + player-worn",
+   "ships_international": "Buyer responsible for all shipping/insurance per FAQ; international not explicitly confirmed",
+   "partner_programme": "Consignment ('Consign Today'; consignments ext. 230)",
+   "contact": {
+    "email": "info@greyflannelauctions.com",
+    "phone": "(631) 288-7800 (consignments ext. 230, registration ext. 223)",
+    "address": "16411 N 90th St, Suite #107, Scottsdale, AZ 85260",
+    "form_url": "https://greyflannelauctions.com/contact/",
+    "contact_source_url": "https://greyflannelauctions.com/contact/",
+    "contact_status": "from search snippet of own contact page"
+   },
+   "buyers_premium": "20% (third-party review cardlines.com \u2014 unconfirmed on own site)",
+   "payment": "No credit cards or PayPal (own FAQ)",
+   "source_urls": [
+    "https://greyflannelauctions.com/contact/",
+    "https://www.greyflannelauctions.com/ViewUserDefinedPage.aspx?pn=faq",
+    "https://greyflannelauctions.com/?p=54330",
+    "https://greyflannelauctions.com/?p=182772"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 5,
+   "fit_reason": "Deep archive of NBA warm-ups/shooting shirts incl. team-issued; consignment route to source and to sell."
+  },
+  {
+   "name": "Lelands",
+   "channel_type": "sports memorabilia auction house",
+   "sells": "Has run 'NBA warm up game issued and worn collection' lots",
+   "item_class": "game-issued + game-worn",
+   "ships_international": "UNVERIFIED",
+   "partner_programme": "Consignment form at /consign-and-sell",
+   "contact": {
+    "email": "contact@lelands.com",
+    "phone": "(732) 290-8000",
+    "address": "435 State Route 34, Suite H, Matawan, NJ 07747",
+    "form_url": "https://lelands.com/consign-and-sell",
+    "contact_source_url": "https://lelands.com/contact ; https://auction.lelands.com/terms.pdf"
+   },
+   "source_urls": [
+    "https://lelands.com/contact",
+    "https://lelands.com/consign-and-sell",
+    "https://lelands.com/bids/nba-warm-up-game-issued-and-worn-collection",
+    "https://auction.lelands.com/terms.pdf"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 4,
+   "fit_reason": "Documented bulk game-issued NBA warm-up lot; auction cadence irregular."
+  },
+  {
+   "name": "Heritage Auctions (sports.ha.com)",
+   "channel_type": "major auction house",
+   "sells": "Sports memorabilia incl. game-worn basketball; weekly sports auctions",
+   "item_class": "game-worn / game-used, some team-issued",
+   "ships_international": "Yes - invoices show shipping TBD due to customs; international handled per lot",
+   "partner_programme": "Consignment (Consignor Hotline 1-800-872-6467 ext. 1010)",
+   "contact": {
+    "email": "Bid@HA.com",
+    "phone": "877-HERITAGE (437-4824); consignor hotline 1-800-872-6467 x1010",
+    "form_url": "https://sports.ha.com/c/contact-us.zx?topicId=36",
+    "contact_source_url": "https://sports.ha.com/consign-your-collectibles.s ; https://www.ha.com/c/contact-us.zx?topicId=21"
+   },
+   "buyers_premium": "Set per auction (historically 20-25%); +5% via third-party platforms",
+   "source_urls": [
+    "https://sports.ha.com/c/ref/terms-and-conditions.zx?view=terms",
+    "https://sports.ha.com/c/ref/faq.zx",
+    "https://sports.ha.com/consign-your-collectibles.s"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 4,
+   "fit_reason": "High volume, ships internationally, but premium-priced and mostly game-worn not bulk TI."
+  },
+  {
+   "name": "Goldin (goldin.co)",
+   "channel_type": "auction house / marketplace",
+   "sells": "Cards + memorabilia incl. game-worn NBA; marketplace",
+   "item_class": "mostly game-worn/signed; limited team-issued",
+   "ships_international": "Yes - buyer pays duties/tariffs; item held until customs fees settled",
+   "partner_programme": "Consignment; international consignors need W-8BEN",
+   "buyers_premium": "22% (min $19) per FAQ",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": "https://goldin.co/faq",
+    "contact_status": "no email/phone captured from own pages"
+   },
+   "source_urls": [
+    "https://goldin.co/faq",
+    "https://goldin.co/aboutSansMarketplaceAndVault.html"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 3,
+   "fit_reason": "Ships internationally but focus is high-end cards/autos, not apparel volume."
+  },
+  {
+   "name": "SCP Auctions",
+   "channel_type": "auction house",
+   "sells": "Game-used basketball memorabilia (Kobe, Jordan uniforms/shoes); trainer-worn Celtics warm-up jacket",
+   "item_class": "game-used",
+   "ships_international": "UNVERIFIED (will travel internationally to collect large consignments)",
+   "partner_programme": "Consign / private sale / direct purchase",
+   "contact": {
+    "email": null,
+    "phone": "949-831-3700",
+    "form_url": "https://scpauctions.com/consign/",
+    "contact_source_url": "https://scpauctions.com/consign/ ; https://scpauctions.com/rules-and-regulations/"
+   },
+   "source_urls": [
+    "https://scpauctions.com/consign/",
+    "https://scpauctions.com/rules-and-regulations/",
+    "https://catalogs.scpauctions.com/online-auctions/scp-auctions-inc/c-1985-boston-celtics-warm-up-jacket-worn-by-longtime-trainer-ray-melchiorre-5968924"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 3,
+   "fit_reason": "Legit, but high-end; occasional warm-ups."
+  },
+  {
+   "name": "Hunt Auctions",
+   "channel_type": "auction house",
+   "sells": "All sports incl. basketball game-worn jerseys/sneakers",
+   "item_class": "game-used",
+   "ships_international": "UNVERIFIED",
+   "partner_programme": "Consignment; buyer's premium 17.5% (current page) vs 15% (older)",
+   "contact": {
+    "email": "Consignments@huntauctions.com",
+    "phone": "610.524.0822",
+    "address": "256 Welsh Pool Rd., Exton, PA 19341",
+    "form_url": "https://huntauctions.com/consignment-form.cfm",
+    "contact_source_url": "https://huntauctions.com/consignment.cfm"
+   },
+   "source_urls": [
+    "https://huntauctions.com/consignment.cfm",
+    "https://huntauctions.com/faqs.cfm"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 2,
+   "fit_reason": "Baseball-heavy; basketball warm-ups rare."
+  },
+  {
+   "name": "RR Auction",
+   "channel_type": "auction house",
+   "sells": "Autographs/artifacts incl. sports",
+   "item_class": "signed/game-used, little apparel",
+   "ships_international": "Yes - written shipping instructions + customs declaration at hammer value",
+   "partner_programme": "Consignment",
+   "buyers_premium": "25%",
+   "contact": {
+    "email": null,
+    "phone": "800-937-3880; intl +1 (603) 732-4280",
+    "form_url": "https://www.rrauction.com/departments/sports-memorabilia/",
+    "contact_source_url": "https://www.rrauction.com/departments/sports-memorabilia/"
+   },
+   "source_urls": [
+    "https://www.rrauction.com/departments/sports-memorabilia/",
+    "https://www.rrauction.com/buy/how-to-bid/"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 2,
+   "fit_reason": "International-friendly but autograph-centric; low TI apparel volume."
+  },
+  {
+   "name": "Classic Auctions",
+   "channel_type": "auction house (Canada)",
+   "sells": "Mainly hockey game-worn with team LOAs",
+   "item_class": "game-worn",
+   "ships_international": "Yes - international via Express Postal Services air; buyer pays duties",
+   "buyers_premium": "20%, bidding in USD",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": "https://www.classicauctions.net/rules.aspx",
+    "contact_status": "not captured"
+   },
+   "source_urls": [
+    "https://www.classicauctions.net/rules.aspx"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 1,
+   "fit_reason": "Hockey specialist; little basketball."
+  },
+  {
+   "name": "The Realest (therealest.com)",
+   "channel_type": "team-partner game-used marketplace / authenticator",
+   "sells": "Partner-attested game-used items supplied directly by teams (e.g. Cavaliers 'Mantra' warm-up used shooting shirt - Dean Wade; Cavs ECF net), PWHL, NFL, Unrivaled",
+   "item_class": "warm-up used / game-used, direct from team",
+   "ships_international": "UNVERIFIED (ships 2-3 weeks after auction; Terms of Sale not retrieved)",
+   "partner_programme": "Team partner programme (teams supply items); no buyer wholesale found",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": null,
+    "contact_status": "not found in snippets"
+   },
+   "source_urls": [
+    "https://develop.therealest.com/item/cleveland-cavaliers-warm-up-used-mantra-short-sleeve-shooting-shirt-dean-wade-32",
+    "https://therealest.com/item/game-used-partner-attested-eastern-conference-finals-patch-basketball-net-from-rocket-arena"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 4,
+   "fit_reason": "Team-direct warm-up shooting shirts with authenticator; strong provenance."
+  },
+  {
+   "name": "Fanatics Authentic - Game Used",
+   "channel_type": "league-licensed memorabilia retailer",
+   "sells": "NBA game-used and 'Player-Issued' jerseys; on-court retail apparel",
+   "item_class": "game-used + player-issued + retail",
+   "ships_international": "Yes - 'almost all products available for international shipping'; buyer pays duties",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": "https://www.fanaticsauthentic.com/international-shipping--handling/ch-2274",
+    "contact_status": "Contact Us link only"
+   },
+   "source_urls": [
+    "https://www.fanaticsauthentic.com/nba-authentic/jerseys-game-used/o-2492+d-96116631+fa-70+z-9346-2584883720",
+    "https://www.fanaticsauthentic.com/international-shipping--handling/ch-2274"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 3,
+   "fit_reason": "Ships to AU officially; player-issued stock exists but retail pricing, no wholesale."
+  },
+  {
+   "name": "Locker Room Direct",
+   "channel_type": "non-profit resale of donated team-issued apparel",
+   "sells": "Authentic team-issued apparel donated by pro & college team members (NCAA, MLS, Nike, adidas, Team 365); proceeds to Uncommon Sports Group 501(c)(3)",
+   "item_class": "team-issued",
+   "ships_international": "UNVERIFIED (free shipping on apparel, domestic implied)",
+   "partner_programme": "Donation-based; bulk/partner unknown",
+   "contact": {
+    "email": "customerservice@lockerroomdirect.com",
+    "phone": "(855) 874-8326",
+    "address": "6318 Cambridge Street, Minneapolis, MN 55416",
+    "contact_source_url": "https://lockerroomdirect.com/our-mission/"
+   },
+   "source_urls": [
+    "https://lockerroomdirect.com/",
+    "https://lockerroomdirect.com/our-mission/",
+    "https://lockerroomdirect.com/league/ncaa/"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 5,
+   "fit_reason": "Explicitly team-issued at volume, mission-driven, published contacts; best bulk-partnership candidate."
+  },
+  {
+   "name": "Duke Athletics Surplus Sale",
+   "channel_type": "university athletics surplus (in-person)",
+   "sells": "Shoes, warm-up sets, apparel at Cameron Indoor Stadium; 18 Apr 2026; historically warm-up sets $30, shoes $45",
+   "item_class": "team-issued",
+   "ships_international": "No - in-person, card only, all sales final",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": null
+   },
+   "source_urls": [
+    "https://goduke.com/news/2026/3/31/duke-athletics-to-hold-surplus-sale-april-18",
+    "https://today.duke.edu/2015/05/surplussale"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 3,
+   "fit_reason": "Genuine TI warm-ups cheaply but needs US buying agent on site annually."
+  },
+  {
+   "name": "UK Athletics Auctions (Kentucky)",
+   "channel_type": "university official online auction",
+   "sells": "Official auctions for University of Kentucky Athletics; UK has also held public surplus sales incl. men's basketball warmups and practice jerseys",
+   "item_class": "team-issued / game-worn",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": "https://auctions.ukathletics.com/"
+   },
+   "source_urls": [
+    "https://auctions.ukathletics.com/",
+    "https://uknow.uky.edu/uk-athletics/men/football/uk-athletics-hold-public-surplus-sale-saturday"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 4,
+   "fit_reason": "Blue-blood program with online channel + historic warmup surplus."
+  },
+  {
+   "name": "Purdue University Surplus Store",
+   "channel_type": "university surplus (store + online + GovDeals)",
+   "sells": "'Large selection of Purdue athletics apparel' (Dec 2025); athletics apparel & equipment appear in store and on GovDeals; online store catalog",
+   "item_class": "team-issued (surplus)",
+   "ships_international": "UNVERIFIED - online orders described as pickup; GovDeals seller terms vary",
+   "partner_programme": "None; first-come, as-is, no refunds",
+   "contact": {
+    "email": "surplus@purdue.edu",
+    "phone": "765-496-2222",
+    "address": "698 Ahlers Drive (store)",
+    "form_url": "https://www.purdue.edu/operations/surplus/shopping/",
+    "contact_source_url": "https://www.purdue.edu/operations/surplus/"
+   },
+   "source_urls": [
+    "https://www.purdue.edu/operations/blog/2025/12/01/purdue-surplus-store-to-be-open-saturday-dec-6/",
+    "https://www.purdue.edu/surplus/about/sustainability.html",
+    "https://www.purdue.edu/operations/surplus/shopping/"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 4,
+   "fit_reason": "Ongoing documented Big Ten athletics apparel surplus with published contacts and GovDeals route."
+  },
+  {
+   "name": "University of Iowa Surplus (via GovDeals)",
+   "channel_type": "university surplus on public platform",
+   "sells": "GovDeals lots 'straight from the equipment room at Kinnick... team issued or game worn' Nike Iowa jerseys; Nike team T-shirts; historic sales of game jerseys, practice shorts, sweat suits",
+   "item_class": "team-issued / game-worn",
+   "ships_international": "UNVERIFIED - pickup at 2222 Old Highway 218 S, Iowa City per listing context",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": null,
+    "contact_status": "not captured from uiowa.edu"
+   },
+   "source_urls": [
+    "https://bidprowl.com/listing/team-issued-iowa-football-jersey-white-91-north-american-bid-ia-govdeals-11489-17272",
+    "https://hawkeyesports.com/news/2009/07/07/ui-surplus-selling-iowa-football-equipment"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 3,
+   "fit_reason": "Proven equipment-room-to-GovDeals pipeline; football-heavy, basketball unconfirmed."
+  },
+  {
+   "name": "Indiana University Surplus Store",
+   "channel_type": "university surplus store",
+   "sells": "IU Athletics gear 'in big sizes', past-season unworn football cleats size 12+ $40",
+   "item_class": "team-issued",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "address": "3050 East Discovery Parkway, Bloomington",
+    "form_url": "https://surplus.indiana.edu/contact",
+    "contact_source_url": "https://surplus.indiana.edu/contact"
+   },
+   "source_urls": [
+    "https://www.magbloom.com/?p=73227",
+    "https://surplus.indiana.edu/",
+    "https://www.idsnews.com/article/2022/08/iu-surplus-store-sells-unneeded-university-property"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 3,
+   "fit_reason": "Basketball-heritage school selling athletics gear; in-person focus."
+  },
+  {
+   "name": "App State Athletics Surplus Sale",
+   "channel_type": "university athletics surplus (event)",
+   "sells": "'Team-issued uniforms and gear across all varsity App State sports, Nike apparel' (Aug 2025 FanFest; May 2024)",
+   "item_class": "team-issued",
+   "ships_international": "No - in-person event",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": null
+   },
+   "source_urls": [
+    "https://appstatesports.com/news/2025/7/15/app-state-athletics-surplus-sale-set-for-august-16.aspx",
+    "https://appstatesports.com/news/2024/3/29/app-state-athletics-surplus-sale-set-for-may-18.aspx"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 2,
+   "fit_reason": "Explicitly team-issued but mid-major, event-only."
+  },
+  {
+   "name": "Other NCAA athletics surplus sales (Auburn, Mississippi State, Seattle U, Northern Iowa, Central Michigan, Oregon State, ODU)",
+   "channel_type": "university athletics surplus (events)",
+   "sells": "Auburn Aug 2025: 35,000+ items incl. basketball uniform tops $35; MSU May 2026: team uniforms/footwear issued to student-athletes; UNI 2023: game jerseys $50, practice jerseys $5; ODU: Nike apparel lots $15-75",
+   "item_class": "team-issued / game-worn",
+   "ships_international": "No - in-person",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://auburntigers.com/news/2025/7/30/auburn-athletics-to-host-surplus-sale-on-august-2",
+    "https://hailstate.com/news/2026/4/23/msu-athletics-to-host-surplus-equipment-sale-at-davis-wade-stadium-on-may-9",
+    "https://unipanthers.com/news/2023/9/1/general-uni-athletics-to-host-equipment-surplus-sale",
+    "https://events.seattleu.edu/event/athletics-apparel-equipment-surplus-sale",
+    "https://cmuchippewas.com/news/2025/4/8/general-athletic-department-to-hold-spring-surplus-sale-on-friday-and-saturday",
+    "https://www.odu.edu/announcements/student/2014/4/2/surplus_sale_athleti"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 3,
+   "fit_reason": "Cheap genuine TI at volume via a US buying agent; needs event calendar tracking."
+  },
+  {
+   "name": "University of Michigan Property Disposition",
+   "channel_type": "university surplus",
+   "sells": "Surplus incl. from sports venues; athletics says any athletic property would be listed via Property Disposition (hockey sale ended 2024)",
+   "item_class": "team-issued (if any)",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://mgoblue.com/sports/2024/4/23/michigan-ice-hockey-garage-sale-status"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 1,
+   "fit_reason": "No current basketball apparel evidence; note 2017 Michigan inquiry into athletes selling team-issued shoes = compliance-sensitive."
+  },
+  {
+   "name": "Ohio State athletics equipment sales",
+   "channel_type": "university athletics surplus (historic)",
+   "sells": "Past French Field House equipment sales (shirts, cleats etc.) 2015-2016",
+   "item_class": "team-issued",
+   "ships_international": "No",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://www.elevenwarriors.com/ohio-state-football/2015/04/52669/ohio-state-equipment-sale-sells-out-early?amp"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 1,
+   "fit_reason": "Only historic evidence; no current channel found."
+  },
+  {
+   "name": "Texas State University (policy)",
+   "channel_type": "university athletics disposal policy",
+   "sells": "Policy: athletic apparel disposal/resale needs AD + Compliance approval; coaches may sell used apparel for fundraising",
+   "item_class": "team-issued",
+   "ships_international": "N/A",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://policies.txst.edu/division-policies/athletics/05-01.html"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 2,
+   "fit_reason": "Shows a legitimate route: buy from programme fundraising sales with compliance sign-off."
+  },
+  {
+   "name": "GovDeals",
+   "channel_type": "public surplus platform",
+   "sells": "Government/university surplus incl. Iowa & Purdue athletics apparel",
+   "item_class": "team-issued (seller-dependent)",
+   "ships_international": "Seller-set; many 'DO NOT SHIP INTERNATIONALLY'/pickup-only; third-party pack&ship (MoveIt, Navis, Pak Mail) listed on some seller profiles",
+   "contact": {
+    "email": "customerservice@govdeals.com",
+    "phone": "1-800-613-0156",
+    "contact_source_url": "https://blog.govdeals.com/is-govdeals-legit-everything-you-need-to-know-before-you-bid"
+   },
+   "source_urls": [
+    "https://govdeals.com/TsandCs.cfm?acctid=10337",
+    "https://blog.govdeals.com/is-govdeals-legit-everything-you-need-to-know-before-you-bid"
+   ],
+   "verification": "VERIFIED",
+   "fit_score": 3,
+   "fit_reason": "Real equipment-room lots exist but need US freight forwarder / pickup agent."
+  },
+  {
+   "name": "Public Surplus",
+   "channel_type": "public surplus platform",
+   "sells": "University surplus stores (USC, UCLA, UF, UNT incl. football shoes auction)",
+   "item_class": "team-issued (seller-dependent)",
+   "ships_international": "Often NO - UF bars sales outside continental US; export controls apply; UNT 'Buyer must pickup'",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://www.publicsurplus.com/sms/usc,ca/browse/home",
+    "https://m.publicsurplus.com/sms/unt,tx/auction/view?auc=4084344",
+    "https://m.publicsurplus.com/sms/docviewer/aucterms?auc=3916718"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 2,
+   "fit_reason": "Some university athletics items but explicit anti-export terms at some sellers."
+  },
+  {
+   "name": "PropertyRoom.com",
+   "channel_type": "police/municipal surplus auction",
+   "sells": "Ships to winning bidder (Wikipedia); no evidence of team-issued basketball",
+   "item_class": "mixed/unknown",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/PropertyRoom.com"
+   ],
+   "verification": "UNVERIFIED",
+   "fit_score": 1,
+   "fit_reason": "No athletics evidence."
+  },
+  {
+   "name": "Municibid",
+   "channel_type": "public surplus platform",
+   "sells": "No evidence retrieved",
+   "item_class": "unknown",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [],
+   "verification": "UNVERIFIED",
+   "fit_score": 1,
+   "fit_reason": "Not researched successfully (search budget)."
+  },
+  {
+   "name": "Clean Sweep Auctions",
+   "channel_type": "sports auction house (Lelands affiliate)",
+   "sells": "Sports memorabilia auctions",
+   "item_class": "mixed",
+   "ships_international": "Yes - 'international shipping primarily to Canada and Europe' (FAQ snippet); Australia not stated",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": "https://cleansweepauctions.com/faq"
+   },
+   "source_urls": [
+    "https://cleansweepauctions.com/faq",
+    "https://lelands.com/"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 2,
+   "fit_reason": "International-friendly but AU unconfirmed; apparel depth unknown."
+  },
+  {
+   "name": "Sotheby's NBA Auctions",
+   "channel_type": "major auction house / NBA partnership",
+   "sells": "NBA Auctions series (2024 All-Star Game, 'Game Legends' 2025) game-worn jerseys/sneakers for charity",
+   "item_class": "game-worn",
+   "ships_international": "Sotheby's is international (policy not retrieved)",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://www.sothebys.com/en/buy/series/NBA-auctions?locale=en",
+    "https://www.sothebys.com/en/buy/auction/2025/nba-auction-3"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 2,
+   "fit_reason": "Elite game-worn pieces; too high-end for apparel stock."
+  },
+  {
+   "name": "Team foundation / charity auctions (Warriors Community Foundation; NBA x Mamba foundations)",
+   "channel_type": "team/league charity auctions",
+   "sells": "Warriors Opening Night warm-up gear auction (with Turner/NBA) for Warriors Community Foundation fire relief; All-Star game-worn jerseys for Mamba & Mambacita",
+   "item_class": "game-worn / warm-up worn",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://www.wcpo.com/news/national/nba-auctions-all-star-jerseys-to-benefit-kobe-bryants-foundations"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 3,
+   "fit_reason": "Warm-up gear surfaces via foundation drops, usually hosted on auctions.nba.com; no Celtics Shamrock Foundation auction evidence found."
+  },
+  {
+   "name": "EH Treasures (ehtreasures.com)",
+   "channel_type": "independent team-issued reseller",
+   "sells": "e.g. Westchester Knicks NBA G-League Nike Team Issued Practice Warm Up Shirt Sz LT",
+   "item_class": "team-issued (seller claim)",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://ehtreasures.com/products/westchester-knicks-nba-g-league-nike-team-issued-practice-warm-up-shirt-sz-lt"
+   ],
+   "verification": "UNVERIFIED",
+   "fit_score": 2,
+   "fit_reason": "Sells TI pro gear incl. 'LT' tall sizes; sourcing provenance undocumented."
+  },
+  {
+   "name": "Sports Artifacts (sportsartifacts.com)",
+   "channel_type": "memorabilia dealer",
+   "sells": "Memorabilia; 'International orders are welcome'",
+   "item_class": "unknown",
+   "ships_international": "Yes (own about page snippet)",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://sportsartifacts.com/aboutsa.html"
+   ],
+   "verification": "UNVERIFIED",
+   "fit_score": 1,
+   "fit_reason": "International but no basketball TI evidence."
+  },
+  {
+   "name": "JSA (James Spence Authentication) - MeiGray partner",
+   "channel_type": "authenticator",
+   "sells": "Dual Authentication tier with MeiGray for signed game-worn/game-issued items via MeiGray online submission form",
+   "item_class": "authentication service",
+   "ships_international": "N/A",
+   "contact": {
+    "email": null,
+    "phone": null,
+    "form_url": "https://www.meigray.com/authenticationrequest.aspx"
+   },
+   "source_urls": [
+    "https://www.cgccards.com/news/article/14955/jsa-meigray-authentication-partner/"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 3,
+   "fit_reason": "Use for signed items only."
+  },
+  {
+   "name": "PSA/DNA and MEARS (game-used authenticators)",
+   "channel_type": "authenticator",
+   "sells": "Named by SCP Auctions as game-used equipment authenticators",
+   "item_class": "authentication service",
+   "ships_international": "N/A",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [
+    "https://scpauctions.com/rules-and-regulations/"
+   ],
+   "verification": "PARTIAL",
+   "fit_score": 2,
+   "fit_reason": "Game-used LOAs; uneconomic for low-value TI warmups."
+  },
+  {
+   "name": "Beckett Authentication / Resolution Photomatching / Sports Investors Authentication",
+   "channel_type": "authenticator",
+   "sells": "Not researched - search budget exhausted",
+   "item_class": "authentication service",
+   "ships_international": "N/A",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [],
+   "verification": "UNVERIFIED",
+   "fit_score": 2,
+   "fit_reason": "Photo-matching relevant for game-worn; to research."
+  },
+  {
+   "name": "Vintage sportswear wholesalers (kilo/bale) - US/UK",
+   "channel_type": "vintage wholesale",
+   "sells": "NOT RESEARCHED - search budget exhausted before query ran; no supplier named to avoid invention",
+   "item_class": "retail vintage (mostly) - rarely true TI",
+   "ships_international": "UNVERIFIED",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [],
+   "verification": "UNVERIFIED",
+   "fit_score": 2,
+   "fit_reason": "Bales rarely contain genuine TI; useful only for 'popper/tearaway' vintage retail stock."
+  },
+  {
+   "name": "Deadstock/closeout liquidators & Australian auction houses / NBL",
+   "channel_type": "liquidation / AU channels",
+   "sells": "NOT RESEARCHED - search budget exhausted",
+   "item_class": "unknown",
+   "ships_international": "N/A",
+   "contact": {
+    "email": null,
+    "phone": null
+   },
+   "source_urls": [],
+   "verification": "UNVERIFIED",
+   "fit_score": 1,
+   "fit_reason": "Pending research."
+  }
+ ],
+ "top10_deep_dive": [
+  {
+   "rank": 1,
+   "name": "Locker Room Direct",
+   "contact_page": "https://lockerroomdirect.com/our-mission/",
+   "published_email": "customerservice@lockerroomdirect.com",
+   "published_phone": "(855) 874-8326",
+   "seller_terms": "Donated team-issued gear; 100% proceeds to Uncommon Sports Group 501(c)(3); some items monetised",
+   "buyers_premium": "N/A (fixed price)",
+   "international_shipping": "Not stated; free shipping on apparel advertised (likely US only)",
+   "question_to_ask": "Do you sell bulk/assorted lots of NBA/NCAA basketball team-issued warm-ups (snap/tearaway pants, jackets, shooting shirts) to an Australian reseller, and can you ship internationally with documentation of the donating team?",
+   "verification": "VERIFIED"
+  },
+  {
+   "rank": 2,
+   "name": "NBA Auctions",
+   "contact_page": null,
+   "published_email": null,
+   "published_phone": null,
+   "seller_terms": "Official; items registered in NBA & MeiGray program with registration numbers",
+   "buyers_premium": "UNVERIFIED",
+   "international_shipping": "UNVERIFIED (site blocked)",
+   "question_to_ask": "Do you ship game-issued warmup jackets/pants to Australia, and is there a bulk or recurring purchase route for game-issued (non-photo-matched) warmups?",
+   "verification": "PARTIAL"
+  },
+  {
+   "rank": 3,
+   "name": "MeiGray Group",
+   "contact_page": "https://www.meigray.com/viewuserdefinedpage.aspx?pn=faq",
+   "published_email": "sales@meigray.com",
+   "published_phone": "908.541.0114; 888-463-4472 (registration verification)",
+   "seller_terms": "Lifetime guarantee game-worn/game-used; MGS registration tag system",
+   "buyers_premium": "UNVERIFIED",
+   "international_shipping": "UNVERIFIED",
+   "question_to_ask": "Does MeiGray sell game-issued/team-issued warmups in volume (wholesale or retail partner), and can an Australian retailer verify MGS registration numbers on resale?",
+   "verification": "PARTIAL"
+  },
+  {
+   "rank": 4,
+   "name": "Grey Flannel Auctions",
+   "contact_page": "https://greyflannelauctions.com/contact/",
+   "published_email": "info@greyflannelauctions.com",
+   "published_phone": "(631) 288-7800 (consignments x230; registration x223)",
+   "seller_terms": "Consignment available",
+   "buyers_premium": "20% (third-party source; confirm)",
+   "international_shipping": "Buyer pays all shipping/insurance; no credit cards or PayPal",
+   "question_to_ask": "Do you accept international bidders shipping to Australia, what payment method (wire) is required, and do you group team-issued warm-ups into multi-item lots?",
+   "verification": "VERIFIED"
+  },
+  {
+   "rank": 5,
+   "name": "Purdue University Surplus",
+   "contact_page": "https://www.purdue.edu/operations/surplus/",
+   "published_email": "surplus@purdue.edu",
+   "published_phone": "765-496-2222",
+   "seller_terms": "As-is, first-come, no refunds; some items via GovDeals",
+   "buyers_premium": "N/A (store) / GovDeals terms",
+   "international_shipping": "Pickup implied; UNVERIFIED",
+   "question_to_ask": "Will you ship purchased athletics apparel (or release to a third-party pack-and-ship agent), and do men's basketball warm-ups ever reach the surplus store or GovDeals?",
+   "verification": "VERIFIED"
+  },
+  {
+   "rank": 6,
+   "name": "Heritage Auctions",
+   "contact_page": "https://sports.ha.com/c/contact-us.zx?topicId=36",
+   "published_email": "Bid@HA.com",
+   "published_phone": "877-437-4824; consignor 1-800-872-6467 x1010",
+   "seller_terms": "Consignment; non-US delivery may require consignor full BP",
+   "buyers_premium": "Set per auction (historically 20-25%); +5% via third-party platforms",
+   "international_shipping": "Yes; shipping TBD per customs",
+   "question_to_ask": "What is the current sports buyer's premium and typical shipping cost to Australia for a single apparel lot?",
+   "verification": "VERIFIED"
+  },
+  {
+   "rank": 7,
+   "name": "Lelands",
+   "contact_page": "https://lelands.com/contact",
+   "published_email": "contact@lelands.com",
+   "published_phone": "(732) 290-8000",
+   "seller_terms": "Online consignment form; photos -> evaluation -> consign",
+   "buyers_premium": "UNVERIFIED",
+   "international_shipping": "UNVERIFIED (affiliate Clean Sweep ships mainly Canada/Europe)",
+   "question_to_ask": "Do you ship to Australia, and do you have upcoming bulk 'NBA warm up game issued' collections?",
+   "verification": "VERIFIED"
+  },
+  {
+   "rank": 8,
+   "name": "GovDeals (Iowa/Purdue athletics sellers)",
+   "contact_page": "https://blog.govdeals.com/is-govdeals-legit-everything-you-need-to-know-before-you-bid",
+   "published_email": "customerservice@govdeals.com",
+   "published_phone": "1-800-613-0156",
+   "seller_terms": "Seller-set pickup/removal",
+   "buyers_premium": "Seller-dependent (not verified)",
+   "international_shipping": "Often prohibited; use US agent/forwarder",
+   "question_to_ask": "Can a foreign-registered buyer bid and nominate a US pack-and-ship agent for university athletics lots?",
+   "verification": "VERIFIED"
+  },
+  {
+   "rank": 9,
+   "name": "The Realest",
+   "contact_page": null,
+   "published_email": null,
+   "published_phone": null,
+   "seller_terms": "Partner-attested; all sales final; ships 2-3 weeks post-auction",
+   "buyers_premium": "UNVERIFIED",
+   "international_shipping": "UNVERIFIED",
+   "question_to_ask": "Do you ship to Australia and do NBA team partners supply warm-up pants/jackets in addition to shooting shirts?",
+   "verification": "PARTIAL"
+  },
+  {
+   "rank": 10,
+   "name": "Fanatics Authentic",
+   "contact_page": "https://www.fanaticsauthentic.com/international-shipping--handling/ch-2274",
+   "published_email": null,
+   "published_phone": null,
+   "seller_terms": "Retail",
+   "buyers_premium": "N/A",
+   "international_shipping": "Yes - almost all products; buyer pays duties",
+   "question_to_ask": "Are 'Player-Issued' NBA items eligible for shipping to Australia, and is there a B2B/reseller program?",
+   "verification": "VERIFIED"
+  }
+ ],
+ "terminology": [
+  {
+   "term": "Team issued / Team issue (TI)",
+   "meaning": "Supplied by the team's equipment room to players/staff; not necessarily worn in a game",
+   "evidence_url": "https://lockerroomdirect.com/"
+  },
+  {
+   "term": "Game issued",
+   "meaning": "Prepared for a specific game/season but not confirmed worn (lower value than game-worn)",
+   "evidence_url": "https://auctions.nba.com/andre-iguodala---golden-state-warriors---2019-nba-finals/isynmv1/aucd/2810201?sid=1101461&auctionId=2810201"
+  },
+  {
+   "term": "Warmup-worn / warm-up used",
+   "meaning": "Worn during pre-game warm-ups (not game action)",
+   "evidence_url": "https://auctions.nba.com/iSynApp/auctionDisplay.action?sid=1101461&auctionId=2594510"
+  },
+  {
+   "term": "Game-worn / game-used",
+   "meaning": "Worn/used in game action; MeiGray/Hunt define as authenticated use during game",
+   "evidence_url": "https://huntauctions.com/faqs.cfm"
+  },
+  {
+   "term": "Photo-matched",
+   "meaning": "Item matched to game photography by unique marks",
+   "evidence_url": "https://auctions.nba.com/kevin-durant---golden-state-warriors---2018-nba-finals/isynmv1/aucd/2355668?sid=1101461&auctionId=2355668"
+  },
+  {
+   "term": "Player-issued",
+   "meaning": "Issued to a named player (Fanatics label)",
+   "evidence_url": "https://www.fanaticsauthentic.com/nba-authentic/jerseys-game-used/o-2492+d-96116631+fa-70+z-9346-2584883720"
+  },
+  {
+   "term": "Partner attested",
+   "meaning": "Team/partner itself attests use; The Realest terminology",
+   "evidence_url": "https://therealest.com/item/game-used-partner-attested-eastern-conference-finals-patch-basketball-net-from-rocket-arena"
+  },
+  {
+   "term": "LOA / Team LOA",
+   "meaning": "Letter of authenticity, e.g. from team or athletic trainer",
+   "evidence_url": "https://www.classicauctions.net/lot-169044.aspx"
+  },
+  {
+   "term": "MGS registration / inventory tag",
+   "meaning": "MeiGray tag with registration number verifiable via 888-463-4472",
+   "evidence_url": "https://www.meigray.com/viewuserdefinedpage.aspx?pn=faq"
+  },
+  {
+   "term": "Team repairs",
+   "meaning": "Equipment-room repairs indicating real use",
+   "evidence_url": "https://www.classicauctions.net/Steve_Thomas__2000_01_Toronto_Maple_Leafs_Game_Wor-LOT187208.aspx"
+  },
+  {
+   "term": "Tall sizing (LT, 2XL-T)",
+   "meaning": "Length-added pro sizes on shooting shirts/warm-ups",
+   "evidence_url": "https://ehtreasures.com/products/westchester-knicks-nba-g-league-nike-team-issued-practice-warm-up-shirt-sz-lt"
+  },
+  {
+   "term": "Snap warmup",
+   "meaning": "Snap-button warm-up (seller usage)",
+   "evidence_url": "https://www.ebay.de/itm/236340377781"
+  },
+  {
+   "term": "Starter Authentic (warm-up)",
+   "meaning": "1990s Starter on-court warm-up line",
+   "evidence_url": "https://www.ebay.de/itm/285797883251"
+  },
+  {
+   "term": "Shooting shirt",
+   "meaning": "Pre-game warm-up top",
+   "evidence_url": "https://develop.therealest.com/item/cleveland-cavaliers-warm-up-used-mantra-short-sleeve-shooting-shirt-dean-wade-32"
+  },
+  {
+   "term": "Pro cut, PE (player exclusive), XL+2 / 4XL+3 / 3XLT, tear away / tearaway / rip away / breakaway / popper pants, Nike Team / Elite tags, Champion Pro Cut, Reebok Authentic on-court, Made in USA team tags, sewn-in name/number tags",
+   "meaning": "Common collector terms - NOT source-verified this session (search budget exhausted); treat as working vocabulary only",
+   "evidence_url": null
+  }
+ ],
+ "counterfeit_red_flags": [
+  {
+   "flag": "Retail products named 'Team Issue' / 'Locker Issued' (e.g. Nike Texas 'KD Team Issue Tee', adidas 'Locker Issued by Pregame') are mass-retail lines, not equipment-room stock",
+   "evidence_url": "https://www.universitycoop.com/products/nike-texas-longhorns-kd-team-issue-tee"
+  },
+  {
+   "flag": "'Authentic' shooting shirts sold by retailers (NBA Store/Fanatics on-court apparel, Stadium Goods 'NBA authentic shooting shirt') are retail authentic, not team-issued",
+   "evidence_url": "https://store.nba.com/denver-nuggets/fanatics-authentic-collectibles-on-court-apparel/t-47036248+br-913527+d-56943953+c-0743+z-9-1222315892"
+  },
+  {
+   "flag": "'Game-issued' does not mean worn - even official NBA listings note items could not be photo-matched",
+   "evidence_url": "https://auctions.nba.com/andre-iguodala---golden-state-warriors---2019-nba-finals/isynmv1/aucd/2810201?sid=1101461&auctionId=2810201"
+  },
+  {
+   "flag": "Missing or unverifiable registry tag - verify MeiGray MGS numbers via toll-free line",
+   "evidence_url": "https://www.meigray.com/viewuserdefinedpage.aspx?pn=faq"
+  },
+  {
+   "flag": "Auction-archive descriptions are seller claims ('presented as team-issued'); require provenance chain",
+   "evidence_url": "https://greyflannelauctions.com/?p=54330"
+  },
+  {
+   "flag": "NCAA compliance: items sold by athletes (not the department) may be impermissible benefits - Michigan investigated athletes selling team-issued shoes",
+   "evidence_url": "https://www.wxyz.com/sports/college-sports/michigan-wants-to-know-if-athletes-sold-team-issued-shoes"
+  },
+  {
+   "flag": "Further generic flags (wrong tag font/country, missing tall-length size tags, stitched-on fake player tags, wholesale 'TI' in bulk from Asia) - NOT source-verified this session",
+   "evidence_url": null
+  }
+ ],
+ "blockers": [
+  "WebFetch/curl blocked for www.meigray.com, auctions.nba.com, goldin.com, govdeals.com, sports.ha.com, publicsurplus.com (egress policy). Hosts need allowing in session network settings to verify contact pages directly.",
+  "WebSearch budget (200/turn, shared across agents) exhausted before vintage wholesale, liquidator, Australian channel, Beckett/Resolution Photomatching, Municibid, Clean Sweep, UNC and NBL research could run.",
+  "All contacts captured from search-engine snippets of the organisation's own pages; pages themselves not opened - re-verify before outreach.",
+  "Grey Flannel 20% buyer's premium from third-party (cardlines.com) - unconfirmed.",
+  "NCAA/university items may carry compliance restrictions; Public Surplus sellers (e.g. Univ. of Florida) prohibit export outside continental US."
+ ]
+}

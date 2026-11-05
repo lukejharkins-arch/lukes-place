@@ -1,0 +1,44 @@
+# ON COURT ONLY: daily agent cycle and reports.
+# GitHub runs scheduled workflows only from the default branch, so this is inactive until merged.
+# It never commits, pushes, sends messages or spends money: it uploads the reports as an artifact.
+name: ON COURT ONLY agents
+on:
+  schedule:
+    - cron: "17 20 * * *"   # 07:17 AEDT daily (20:17 UTC)
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: on-court-only
+    env:
+      OCO_ADMIN_PASSWORD: ${{ secrets.OCO_ADMIN_PASSWORD || 'ci-only-not-a-secret' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests
+        run: python -m unittest discover -s tests -t .
+      - name: Build database
+        run: python -m commerce.seed --reset
+      - name: Agent cycle
+        run: python -m agents.run all
+      - name: Reports for today
+        run: |
+          python -m reports.generate daily
+          [ "$(date -u +%u)" = "1" ] && python -m reports.generate weekly || true
+          case "$(date -u +%d)" in 01|15) python -m reports.generate fortnightly;; esac
+          [ "$(date -u +%d)" = "01" ] && python -m reports.generate monthly || true
+          python -m commerce.export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: oco-reports-${{ github.run_id }}
+          path: |
+            on-court-only/reports/
+            on-court-only/sourcing/search_plan_*.md
+            on-court-only/research/*.csv
+            on-court-only/outreach/crm_register.csv

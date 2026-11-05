@@ -1,0 +1,53 @@
+{
+  "assumptions_fx": "2026-11-05 (ESTIMATE, not a live quote)",
+  "scenarios": [
+    {
+      "scenario": "Cheap US pair, eBay-style",
+      "landed_aud": 144.67,
+      "sale_price_aud": 180,
+      "gst_payable_aud": 0.0,
+      "payment_fees_aud": 3.36,
+      "outbound_shipping_aud": 12.05,
+      "returns_allowance_aud": 5.4,
+      "net_proceeds_aud": 159.19,
+      "gross_profit_aud": 14.52,
+      "gross_margin_pct": 8.1
+    },
+    {
+      "scenario": "Mid US pair",
+      "landed_aud": 231.11,
+      "sale_price_aud": 300,
+      "gst_payable_aud": 0.0,
+      "payment_fees_aud": 5.4,
+      "outbound_shipping_aud": 12.05,
+      "returns_allowance_aud": 9.0,
+      "net_proceeds_aud": 273.55,
+      "gross_profit_aud": 42.44,
+      "gross_margin_pct": 14.1
+    },
+    {
+      "scenario": "Premium US pair",
+      "landed_aud": 395.36,
+      "sale_price_aud": 520,
+      "gst_payable_aud": 0.0,
+      "payment_fees_aud": 9.14,
+      "outbound_shipping_aud": 12.05,
+      "returns_allowance_aud": 15.6,
+      "net_proceeds_aud": 483.21,
+      "gross_profit_aud": 87.85,
+      "gross_margin_pct": 16.9
+    },
+    {
+      "scenario": "Local AU find",
+      "landed_aud": 75.0,
+      "sale_price_aud": 220,
+      "gst_payable_aud": 0.0,
+      "payment_fees_aud": 4.04,
+      "outbound_shipping_aud": 12.05,
+      "returns_allowance_aud": 6.6,
+      "net_proceeds_aud": 197.31,
+      "gross_profit_aud": 122.31,
+      "gross_margin_pct": 55.6
+    }
+  ]
+}
