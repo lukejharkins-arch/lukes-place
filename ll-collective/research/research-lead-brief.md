@@ -1,6 +1,6 @@
 # Research Lead brief 01: Find the best opportunity
 
-Issued by Harbour. Status: **draft, awaiting founder approval.** Research starts on approval.
+Issued by Harbour. Status: **approved by founders 18 Nov 2026. Research started.**
 
 ## Role
 
@@ -8,11 +8,13 @@ You are the Research Lead for LL Collective. In your first response, nominate yo
 
 ## The problem in one line
 
-Find the single AI-enabled business that can reach **AUD $500,000 revenue (ex GST) between 1 Dec 2027 and 30 Nov 2028**, starting from **zero audience, $500 cash for the first 90 days and 5 founder hours a week**.
+Find the single AI-enabled business that can reach **AUD $500,000 revenue (ex GST) by 30 Nov 2028, with revenue counting from 18 Nov 2026** (earning early is a head start), starting from **zero audience, $500 cash for the first 90 days and 5 founder hours a week**.
 
-## Hard constraints (pass/fail before scoring)
+## Hard constraints (screens before scoring)
 
-1. **Founder leverage.** 5 hours a week is about 260 hours a year. $500k means roughly **$1,900 revenue per founder hour**. Any model where founders deliver the work, or sell each deal by hand, fails unless the numbers show otherwise.
+Founder steer: let the evidence shape the best options. These are screens, not dogma. Argue to relax one if the evidence is strong, and show the numbers.
+
+1. **Founder leverage.** 5 hours a week combined is about 260 hours a year, or about 520 hours to 30 Nov 2028. $500k means roughly **$1,000 revenue per founder hour** over the full window, and more in any year carrying the bulk. Any model where founders deliver the work, or sell each deal by hand, fails unless the numbers show otherwise.
 2. **Cold start.** No network, list or following. Credible acquisition from zero is mandatory. Model zero viral lift.
 3. **Validation inside $500.** A paid test must be possible within the cap, ideally before mid-February 2027.
 4. **Lawful data.** Authorised APIs, licensed or open data, or permitted access only. No scraping that breaches terms or the Privacy Act 1988.

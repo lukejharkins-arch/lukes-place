@@ -16,3 +16,8 @@ Persistent answers from Luke and Lisa. Check here before asking a founder anythi
 | 9 | Social channels | Harbour chooses what is required | Channels selected to match the chosen buyer, after research. |
 | 10 | Founder exposure | Interviews captured as audio. Images recreated in a chosen style. | Founders' voices only. No faces required. |
 | 11 | Documentary or audience revenue counts to $500k | No | Tracked separately if any arises. Never counted towards the target. |
+| 12 | Charter and brief | Approved 18 Nov 2026 | Research started 18 Nov 2026 |
+| 13 | Research steer | "Some thinking of the best options based on what research says" | Evidence shapes the options; filters are screens (A6) |
+| 14 | Hours (A1) | Combined | 5 hours a week total |
+| 15 | 90-day window (A2) | Starts 18 Nov 2026. Reinvest half, keep half. | Cap to 15 Feb 2027; half of collected cash reinvested |
+| 16 | Early revenue (A4) | Counts. "Gives you a head start so be proactive." | Earn as early as possible |

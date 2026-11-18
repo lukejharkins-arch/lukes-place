@@ -2,8 +2,9 @@
 
 | ID | Assumption | Affects | Status | Confirm by |
 |---|---|---|---|---|
-| A1 | 5 founder hours a week is combined across Luke and Lisa, not each | Founder leverage threshold, delivery model | Provisional | Founders, next reply |
-| A2 | The 90-day $500 cap starts on charter approval (about 18 Nov 2026 to mid-Feb 2027) | Paid test timing | Provisional | Founders, next reply |
-| A3 | Spend after day 90 is funded only from collected validation revenue, with founder approval | Prep-period plan | Provisional | Day 60 review |
-| A4 | Revenue earned before 1 Dec 2027 is validation revenue and does not count towards the $500k | Revenue model | Provisional | Founders, next reply |
+| A1 | 5 founder hours a week is combined across Luke and Lisa | Founder leverage threshold, delivery model | **Confirmed 18 Nov 2026** | |
+| A2 | The 90-day $500 cap runs 18 Nov 2026 to 15 Feb 2027 | Paid test timing | **Confirmed 18 Nov 2026** | |
+| A3 | Spend after day 90 comes from the reinvested half of collected cash, each spend approved by founders | Budget after day 90 | Provisional (follows the half and half rule) | Day 60 review, 17 Jan 2027 |
+| A4 | Revenue from 18 Nov 2026 counts towards the $500k (head start) | Revenue model | **Confirmed 18 Nov 2026** (replaces earlier assumption) | |
 | A5 | Company will register for GST before taxable turnover is likely to pass $75k | Pricing, invoicing | Provisional | Before first sale |
+| A6 | Hard filters in the brief are screens, not dogma. Research may argue to relax one with evidence. | Shortlist | Founder steer 18 Nov 2026 | |
