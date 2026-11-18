@@ -10,3 +10,5 @@ Every key moment, dated, for the documentary. Newest at the bottom.
 | 18 Nov 2026 | A full year of prep is granted before the clock starts on 1 Dec 2027. | Founders | Sets up the two-act structure: prep, then the race | `../founder-record.md` |
 | 18 Nov 2026 | The founders approve the charter. Revenue counts from today: "it gives you a head start, so be proactive." Half of every dollar collected goes back in. | Luke, Lisa | The clock effectively starts now | `../decisions.md` |
 | 18 Nov 2026 | The research team is briefed and starts work. | Harbour and the research team | Act 1 begins: the search | `../research/` |
+| 18 Nov 2026 | Marlow, the Research Lead, reports: AI-built copycat sites in every niche searched. The strategy question becomes "AI made it cheap to copy; what can't be copied?" | Marlow | Turning point in Act 1 | `../research/01-longlist-and-shortlist.md` |
+| 18 Nov 2026 | The leading idea is a new anti-money-laundering law that 55% of affected businesses had not yet acted on. The team also finds no option reaches $500k under conservative assumptions. | Marlow, Harbour | Sets up the central tension | `../research/01-longlist-and-shortlist.md` |

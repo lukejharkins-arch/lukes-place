@@ -8,3 +8,8 @@
 | A4 | Revenue from 18 Nov 2026 counts towards the $500k (head start) | Revenue model | **Confirmed 18 Nov 2026** (replaces earlier assumption) | |
 | A5 | Company will register for GST before taxable turnover is likely to pass $75k | Pricing, invoicing | Provisional | Before first sale |
 | A6 | Hard filters in the brief are screens, not dogma. Research may argue to relax one with evidence. | Shortlist | Founder steer 18 Nov 2026 | |
+| A7 | First paid revenue from March 2027 (Marlow, research 01) | Revenue model | Provisional | Paid test result |
+| A8 | Linear customer ramp: cumulative customer-months = 11N | Revenue model | Provisional | Economics pass |
+| A9 | Australian B2B customer acquisition cost $350 base, $600 conservative | Cash model | Provisional | Paid test result |
+| A10 | Gross margin about 85% SaaS, about 60% voice agents | Profit model | Provisional | Economics pass |
+| A11 | C5 average placement fee $2,376 (8% of Class 4 package) | C5 model | Provisional | Legal yes/no (Q4) |
